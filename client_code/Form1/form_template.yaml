@@ -7,8 +7,59 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: linear_panel_1
+    properties: {visible: true}
+    type: LinearPanel
+    layout_properties: {grid_position: 'GEEWTS,ENJMHB'}
+    components:
+    - name: label_2
+      properties: {text: Login To The System, align: center, bold: true, icon: 'fa:500px',
+        background: 'theme:Primary Container', border: ''}
+      type: Label
+      layout_properties: {}
+  - name: grid_panel_1
+    properties: {background: 'theme:Primary Container'}
+    type: GridPanel
+    layout_properties: {grid_position: 'TEKWVC,RGXNLA'}
+    components:
+    - name: label_1
+      properties: {text: 'Enter User Name ::', bold: true}
+      type: Label
+      layout_properties: {row: ERWINA, width_xs: 3, col_xs: 1}
+    - name: text_box_1
+      properties: {}
+      type: TextBox
+      layout_properties: {row: ERWINA, width_xs: 3, col_xs: 7}
+  - name: grid_panel_2
+    properties: {background: 'theme:Primary Container'}
+    type: GridPanel
+    layout_properties: {grid_position: 'LWXYBX,UBWFQY'}
+    components:
+    - name: label_3
+      properties: {text: 'Enter Password ::', bold: true}
+      type: Label
+      layout_properties: {row: IKYNEE, width_xs: 3, col_xs: 1}
+    - name: text_box_2
+      properties: {}
+      type: TextBox
+      layout_properties: {row: IKYNEE, width_xs: 3, col_xs: 7}
+  - name: button_1
+    properties: {text: Submit, bold: true, background: green, foreground: black}
+    type: Button
+    layout_properties: {grid_position: 'QRCDSA,VJOXBA'}
+    data_bindings: []
+  - name: linear_panel_2
+    properties: {}
+    type: LinearPanel
+    layout_properties: {grid_position: 'FSKANQ,NXNFFR'}
+    components:
+    - name: button_2
+      properties: {text: Forgot Password, bold: true, background: orange}
+      type: Button
+      layout_properties: {}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+custom_component: true
