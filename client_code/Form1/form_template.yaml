@@ -49,6 +49,7 @@ components:
     type: Button
     layout_properties: {grid_position: 'QRCDSA,VJOXBA'}
     data_bindings: []
+    event_bindings: {click: button_1_click}
   - name: linear_panel_2
     properties: {}
     type: LinearPanel
