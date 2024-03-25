@@ -1,12 +1,21 @@
-allow_embedding: false
-package_name: M3_App_2
-name: M3 App 2
-startup_form: Form1
-renamed: true
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+package_name: M3_App_2
+allow_embedding: false
+name: M3 App 2
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: Form1
+db_schema:
+  table_1:
+    client: none
+    server: full
+    columns:
+    - name: document
+      admin_ui: {width: 200, order: 0}
+      type: media
+    title: Table 1
+renamed: true
