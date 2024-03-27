@@ -22,6 +22,17 @@ class Form1(Form1Template):
               open_form("Form1.Form2")
     else:
              alert("Invalid username or password. Please try again.")
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Form1.Form2")
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    name1= self.text_box_1.text
+    rows = app_tables.table_2.search(name=name1)
+    for row in rows:
+     print(row)
     
 
      

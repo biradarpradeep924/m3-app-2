@@ -51,6 +51,11 @@ components:
     layout_properties: {grid_position: 'QRCDSA,VJOXBA'}
     data_bindings: []
     event_bindings: {click: button_1_click}
+  - name: button_3
+    properties: {text: Sign-Up, bold: true, background: 'theme:Tertiary Container'}
+    type: Button
+    layout_properties: {grid_position: 'OJYDNM,ICMPNE'}
+    event_bindings: {click: button_3_click}
   - name: linear_panel_2
     properties: {}
     type: LinearPanel
@@ -60,6 +65,7 @@ components:
       properties: {text: Forgot Password, bold: true, background: orange}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

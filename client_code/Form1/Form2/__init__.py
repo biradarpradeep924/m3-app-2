@@ -17,9 +17,14 @@ class Form2(Form2Template):
     name1=self.text_box_1.text
     email1=self.text_box_2.text
     phone1=self.text_box_3.text
+    no = int(phone1)
     password1=self.text_box_4.text
-    response = server.call('add_data_to_table', name1, email1, phone1, password1)
+    response = server.call('add_data_to_table', name1, email1,no, password1)
     print(response)
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1')
     
     
     
