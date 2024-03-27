@@ -6,26 +6,26 @@ components:
   type: XYPanel
   layout_properties: {}
   components:
-  - name: button_1
-    properties: {text: Log Out, background: red}
-    type: Button
-    layout_properties: {x: 550.0000457763672, y: 18.17707671225071, width: 200.00001525878906}
-    event_bindings: {click: button_1_click}
   - name: label_2
     properties: {text: Academic Resources Hub, bold: true, align: center}
     type: Label
     layout_properties: {x: 199.6354302316904, y: 19.305557623505592, width: 285.99993896484375}
     data_bindings:
     - {property: font_size, code: '24', writeback: false}
-  - name: label_3
-    properties: {text: 'Upload document:'}
-    type: Label
-    layout_properties: {x: 24.045136347413063, y: 132.60416640341282, width: 200.00001525878906}
   - name: file_loader_1
     properties: {}
     type: FileLoader
     layout_properties: {x: 350.74654473364353, y: 124.84375227987766, width: 200.00001525878906}
     event_bindings: {change: file_loader_1_change}
+  - name: button_1
+    properties: {text: Log Out, background: red}
+    type: Button
+    layout_properties: {x: 687.7778167724609, y: 7.083334341645241, width: 200.00001525878906}
+    event_bindings: {click: button_1_click}
+  - name: label_3
+    properties: {text: 'Upload document:'}
+    type: Label
+    layout_properties: {x: 74.06250084936619, y: 130.41666640341282, width: 200.00001525878906}
 - name: label_1
   properties: {}
   type: Label
