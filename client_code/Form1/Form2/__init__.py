@@ -28,7 +28,7 @@ class Form2(Form2Template):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    pass
+    
     
     
     
