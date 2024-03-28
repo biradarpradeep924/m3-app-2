@@ -41,7 +41,7 @@ components:
     type: Label
     layout_properties: {x: 239.1999969482422, y: 376.1999969482422, width: 200}
   - name: label_5
-    properties: {text: Uploaded Date, bold: true}
+    properties: {text: Upload Date, bold: true}
     type: Label
     layout_properties: {x: 239.15000915527344, y: 300.15000915527344, width: 200}
   - name: button_2
