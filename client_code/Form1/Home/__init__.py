@@ -19,4 +19,8 @@ class Home(HomeTemplate):
   def file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
     app_tables.document.add_row(media_file=media_file)
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
   

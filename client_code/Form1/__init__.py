@@ -19,7 +19,7 @@ class Form1(Form1Template):
 
     if username == "admin" and password == "admin123":
               alert("successfully login") 
-              open_form("Form1.Form2")
+              open_form("Form1.Home")
     else:
              alert("Invalid username or password. Please try again.")
 

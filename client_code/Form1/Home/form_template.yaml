@@ -2,30 +2,63 @@ is_package: true
 container: {type: DataRowPanel}
 components:
 - name: xy_panel_1
-  properties: {height: 432.77777099609375}
+  properties: {height: 595}
   type: XYPanel
   layout_properties: {}
   components:
-  - name: label_2
-    properties: {text: Academic Resources Hub, bold: true, align: center}
-    type: Label
-    layout_properties: {x: 199.6354302316904, y: 19.305557623505592, width: 285.99993896484375}
-    data_bindings:
-    - {property: font_size, code: '24', writeback: false}
-  - name: file_loader_1
-    properties: {}
-    type: FileLoader
-    layout_properties: {x: 350.74654473364353, y: 124.84375227987766, width: 200.00001525878906}
-    event_bindings: {change: file_loader_1_change}
   - name: button_1
     properties: {text: Log Out, background: red}
     type: Button
-    layout_properties: {x: 687.7778167724609, y: 7.083334341645241, width: 200.00001525878906}
+    layout_properties: {x: 833.8333282470703, y: 14.133331298828125, width: 200}
     event_bindings: {click: button_1_click}
-  - name: label_3
-    properties: {text: 'Upload document:'}
+  - name: label_4
+    properties: {text: 'Class:', bold: true}
     type: Label
-    layout_properties: {x: 74.06250084936619, y: 130.41666640341282, width: 200.00001525878906}
+    layout_properties: {x: 236.25, y: 151.25, width: 200}
+  - name: text_box_1
+    properties: {}
+    type: TextBox
+    layout_properties: {x: 513.1500091552734, y: 154.15000915527344, width: 200}
+  - name: label_3
+    properties: {text: 'Upload document:', bold: true}
+    type: Label
+    layout_properties: {x: 229.26666259765625, y: 219.61666870117188, width: 200}
+  - name: file_loader_1
+    properties: {}
+    type: FileLoader
+    layout_properties: {x: 522.9500274658203, y: 227.0500030517578, width: 200}
+    event_bindings: {change: file_loader_1_change}
+  - name: date_picker_1
+    properties: {}
+    type: DatePicker
+    layout_properties: {x: 525.1499786376953, y: 295.15000915527344, width: 200}
+  - name: date_picker_2
+    properties: {}
+    type: DatePicker
+    layout_properties: {x: 541.0999908447266, y: 367.09999084472656, width: 200}
+  - name: label_6
+    properties: {text: Due -Date, bold: true}
+    type: Label
+    layout_properties: {x: 239.1999969482422, y: 376.1999969482422, width: 200}
+  - name: label_5
+    properties: {text: Uploaded Date, bold: true}
+    type: Label
+    layout_properties: {x: 239.15000915527344, y: 300.15000915527344, width: 200}
+  - name: button_2
+    properties: {text: Submit}
+    type: Button
+    layout_properties: {x: 402.0500030517578, y: 471.0500030517578, width: 200}
+    event_bindings: {click: button_2_click}
+  - name: label_7
+    properties: {text: Form, align: center, bold: true, italic: true, underline: true}
+    type: Label
+    layout_properties: {x: 339.0500030517578, y: 75.05000305175781, width: 200}
+  - name: label_2
+    properties: {text: Academic Resources Hub, bold: true, align: center}
+    type: Label
+    layout_properties: {x: 181.73333740234375, y: 11.400009155273438, width: 580}
+    data_bindings:
+    - {property: font_size, code: '28', writeback: false}
 - name: label_1
   properties: {}
   type: Label

@@ -14,9 +14,9 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: document
+    - name: class
       admin_ui: {width: 200, order: 0}
-      type: media
+      type: string
     title: Table 1
   table_2:
     client: none
