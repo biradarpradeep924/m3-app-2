@@ -26,15 +26,18 @@ def add_data_to_table(name, email, phone, password,role):
         return "Data added successfully."
     except Exception as e:
         return "Error: " + str(e)
-
+      
+@anvil.server.callable
 def get_password_by_name(username):
     # Search for the user by name
     user = app_tables.table_2.get(name=username)
-    
-    # If the user exists, return their password
     if user is not None:
-        return user['password']
+        # Access the password column directly
+        password = user['password']
+        return password
     else:
-        return None 
+        return None
+    
+  
 
          

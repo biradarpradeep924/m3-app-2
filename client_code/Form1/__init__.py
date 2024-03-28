@@ -17,8 +17,8 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     username = self.text_box_1.text
     password = self.text_box_2.text
-
-    if username == "admin" and password == "admin123":
+    password2 = server.call('get_password_by_name', username)
+    if password ==password2 :
               alert("successfully login") 
               open_form("Form1.Home")
     else:
@@ -34,12 +34,8 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     # Call the server function to get the password
     name = self.text_box_1.text
-    password = anvil.server.call('get_password_by_name', name)
-    
-    if password is not None:
-        print("Password for", name, "is:", password)
-    else:
-        print("User", name, "not found")
+    password = server.call('get_password_by_name', name)
+    alert(password)
     
 
      
