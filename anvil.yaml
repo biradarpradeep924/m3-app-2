@@ -34,5 +34,8 @@ db_schema:
     - name: password
       admin_ui: {width: 200, order: 3}
       type: string
+    - name: role
+      admin_ui: {width: 200, order: 4}
+      type: string
     title: Table 2
 renamed: true

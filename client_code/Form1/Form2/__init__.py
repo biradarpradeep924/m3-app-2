@@ -8,6 +8,7 @@ from anvil.tables import app_tables
 class Form2(Form2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    self.drop_down_1.items = ["Student", "Teacher", "CR","Alumni"]
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
@@ -18,8 +19,9 @@ class Form2(Form2Template):
     email1=self.text_box_2.text
     phone1=self.text_box_3.text
     no = int(phone1)
+    item = self.drop_down_1.selected_value
     password1=self.text_box_4.text
-    response = server.call('add_data_to_table', name1, email1,no, password1)
+    response = server.call('add_data_to_table', name1, email1,no,password1,item)
     print(response)
 
   def button_2_click(self, **event_args):
@@ -28,7 +30,9 @@ class Form2(Form2Template):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    self.dropdown_1.items = ["Option 1", "Option 2", "Option 3"]
+    selected_item = self.drop_down_1.selected_value
+    print("Selected item:", selected_item)
+    
 
     
     

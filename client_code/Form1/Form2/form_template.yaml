@@ -62,7 +62,10 @@ components:
       type: Label
       layout_properties: {x: 199.13331604003906, y: 39.69999694824219, width: 156.2666778564453}
     - name: drop_down_1
-      properties: {}
+      properties:
+        items: ['', '']
+        visible: true
+        enabled: true
       type: DropDown
       layout_properties: {x: 586.5500030517578, y: 214.0500030517578, width: 193.20001220703125}
       event_bindings: {change: drop_down_1_change}
