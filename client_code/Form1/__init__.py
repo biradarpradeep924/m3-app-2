@@ -27,12 +27,18 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     open_form("Form1.Form2")
 
+ 
+
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    name1= self.text_box_1.text
-    rows = app_tables.table_2.search(name=name1)
-    for row in rows:
-     print(row)
+    # Call the server function to get the password
+    name = self.text_box_1.text
+    password = anvil.server.call('get_password_by_name', name)
+    
+    if password is not None:
+        print("Password for", name, "is:", password)
+    else:
+        print("User", name, "not found")
     
 
      

@@ -22,7 +22,19 @@ def add_data_to_table(name, email, phone, password,role):
     try:
         # Access 'Table2' and insert data
         table2 = app_tables.table_2
-        table2.add_row(name=name, Email=email, phone=phone, password=password,role=item)
+        table2.add_row(name=name, Email=email, phone=phone, password=password,role=role)
         return "Data added successfully."
     except Exception as e:
         return "Error: " + str(e)
+
+def get_password_by_name(username):
+    # Search for the user by name
+    user = app_tables.table_2.get(name=username)
+    
+    # If the user exists, return their password
+    if user is not None:
+        return user['password']
+    else:
+        return None 
+
+         
