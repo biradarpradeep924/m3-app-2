@@ -37,7 +37,15 @@ def get_password_by_name(username):
         return password
     else:
         return None
-    
-  
+
+@anvil.server.callable
+def get_role_by_name(username):
+    user = app_tables.table_2.get(name=username)
+    if user is not None:
+        # Access the password column directly
+        password = user['role']
+        return password
+    else:
+        return None
 
          

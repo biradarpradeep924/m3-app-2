@@ -17,10 +17,11 @@ components:
       properties: {text: Academic Resource Hub, bold: true, font_size: 36}
       type: Label
       layout_properties: {x: 79.14999847486615, y: 2.5375030525028706, width: 493.78701220703124}
-    - name: outlined_button_1
-      properties: {text: outlined_button_1, role: outlined-button}
+    - name: button_1
+      properties: {text: Log-Out, background: '#dd2c2c'}
       type: Button
-      layout_properties: {x: 550, y: 6.450001526623964, width: 200}
+      layout_properties: {x: 548.9583672434092, y: 8.003472223877907, width: 200.00001525878906}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

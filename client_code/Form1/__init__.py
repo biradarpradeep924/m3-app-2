@@ -17,13 +17,38 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     username = self.text_box_1.text
     password = self.text_box_2.text
+    role1=server.call('get_role_by_name', username)
     password2 = server.call('get_password_by_name', username)
-    if password ==password2 :
-              alert("successfully login") 
-              open_form("Form1.Home")
-    else:
-             alert("Invalid username or password. Please try again.")
-
+    # if password ==password2 and role1=="Student":
+    #           alert("successfully login") 
+    #           open_form("Student1")
+    # elif  password ==password2 and role1=="Teacher":
+    #           alert("successfully login") 
+    #           open_form("Teacher")
+    # elif password ==password2 and role1=="Alumni":
+    #           alert("successfully login") 
+    #           open_form("Alumni")
+    # elif password ==password2 and role1=="BR":
+    #           alert("successfully login") 
+    #           open_form("BR")
+    # else:
+    #          alert("Invalid username or password. Please try again.")
+    if  password ==password2:
+      if role1=="Student":
+          alert("successfully login") 
+          open_form("Form1.Student")
+      elif role1=="Teacher":
+           alert("successfully login") 
+           open_form("Form1.Teacher")
+      elif role1=="Alumni":
+           alert("successfully login") 
+           open_form("Form1.Alumni")
+      elif role1=="BR":
+           alert("successfully login") 
+           open_form("Form1.BR")
+      else:alert("Role is not selected please sign-up!!!")  
+    else: alert("Invalid username or password. Please try again.")
+       
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1.Form2")
