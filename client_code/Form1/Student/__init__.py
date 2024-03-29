@@ -15,3 +15,7 @@ class Student(StudentTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1")
+
+  def button_2_copy_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Student.Form3")

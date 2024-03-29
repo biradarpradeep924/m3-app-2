@@ -57,6 +57,7 @@ components:
       type: Button
       layout_properties: {x: 371.1875, y: 482.9375, width: 200}
       data_bindings: []
+      event_bindings: {click: outlined_button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

@@ -31,6 +31,7 @@ components:
       properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
       type: Button
       layout_properties: {x: 396.296875, y: 454.6875, width: 200}
+      event_bindings: {click: button_2_copy_3_click}
     - name: button_1
       properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary',
         font_size: 18}
