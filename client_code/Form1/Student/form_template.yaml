@@ -18,11 +18,32 @@ components:
       type: Label
       layout_properties: {x: 79.14999847486615, y: 2.5375030525028706, width: 493.78701220703124}
     - name: button_1
-      properties: {text: Log-Out, background: '#dd2c2c'}
+      properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary'}
       type: Button
       layout_properties: {x: 548.9583672434092, y: 8.003472223877907, width: 200.00001525878906}
       event_bindings: {click: button_1_click}
+    - name: button_2
+      properties: {text: Announcements}
+      type: Button
+      layout_properties: {x: 275.09999542310834, y: 105.68749694898725, width: 200}
+    - name: button_2_copy
+      properties: {text: Research Papers, align: center}
+      type: Button
+      layout_properties: {x: 276.20000152662396, y: 161.80000000074506, width: 200}
+    - name: button_2_copy_2
+      properties: {text: Magzines}
+      type: Button
+      layout_properties: {x: 274.6499832160771, y: 216.2500122077763, width: 200}
+    - name: button_2_copy_3
+      properties: {text: Class}
+      type: Button
+      layout_properties: {x: 270.8375137336552, y: 269.2500122077763, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_2
+  properties: {text: Academic Resource Hub, background: 'theme:Primary Container',
+    foreground: Blue}
+  type: Label
+  layout_properties: {slot: title}
