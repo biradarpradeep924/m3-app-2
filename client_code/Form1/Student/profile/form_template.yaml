@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 395.5555419921875, background: 'theme:Primary Container'}
+    properties: {height: 417, background: 'theme:Primary Container'}
     type: XYPanel
     layout_properties: {grid_position: 'OBYLRB,EZKIOW'}
     components:
@@ -17,6 +17,7 @@ components:
       properties: {text: Log - Out, background: '#f02d2d'}
       type: Button
       layout_properties: {x: 550.0000457763672, y: 7.968743219971657, width: 200.00001525878906}
+      event_bindings: {click: button_1_click}
     - name: label_6
       properties: {text: 'Class :', bold: true}
       type: Label
@@ -55,9 +56,18 @@ components:
       type: Label
       layout_properties: {x: 424.49652184545994, y: 125.85070122778416, width: 200.00001525878906}
     - name: button_2
-      properties: {text: BACK, icon: back}
+      properties: {text: BACK, icon: 'fa:backward'}
       type: Button
       layout_properties: {x: 0, y: 10.190979853272438, width: 200.00001525878906}
+      event_bindings: {click: button_2_click}
+    - name: label_9
+      properties: {text: 'Mo No. :', bold: true}
+      type: Label
+      layout_properties: {x: 76.63192833960056, y: 370.3646019846201, width: 200.00001525878906}
+    - name: label_10
+      properties: {}
+      type: Label
+      layout_properties: {x: 367.743119135499, y: 375.74652947485447, width: 200.00001525878906}
 - type: FlowPanel
   properties: {}
   name: navbar_links
