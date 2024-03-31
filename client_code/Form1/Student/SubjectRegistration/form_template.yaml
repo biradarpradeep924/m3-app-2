@@ -9,46 +9,48 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 591.7777709960938}
+    properties: {height: 591.7777709960938, background: '#891ce3'}
     type: XYPanel
     layout_properties: {grid_position: 'YTZPIQ,MKECYG'}
     components:
-    - name: check_box_1
-      properties: {text: check_box_1}
-      type: CheckBox
-      layout_properties: {x: 339.47916497290134, y: 143.5763939768076, width: 200.00001525878906}
-    - name: check_box_2
-      properties: {text: check_box_2}
-      type: CheckBox
-      layout_properties: {x: 341.18058098852634, y: 194.6701439768076, width: 200.00001525878906}
-    - name: check_box_3
-      properties: {text: check_box_3}
-      type: CheckBox
-      layout_properties: {x: 342.81253899633884, y: 250.2778099924326, width: 200.00001525878906}
-    - name: check_box_4
-      properties: {text: check_box_4}
-      type: CheckBox
-      layout_properties: {x: 347.1875084787607, y: 346.8576439768076, width: 200.00001525878906}
     - name: check_box_5
-      properties: {text: check_box_5}
+      properties: {text: check_box_5, font_size: 20}
       type: CheckBox
-      layout_properties: {x: 344.9653099924326, y: 389.07990349829197, width: 200.00001525878906}
+      layout_properties: {x: 377.1875, y: 319.28125, width: 316.125}
+    - name: check_box_4
+      properties: {text: check_box_4, font_size: 20}
+      type: CheckBox
+      layout_properties: {x: 377.421875, y: 276.078125, width: 305.1875}
+    - name: check_box_3
+      properties: {text: check_box_3, font_size: 20}
+      type: CheckBox
+      layout_properties: {x: 376.03125, y: 233.484375, width: 317.28125}
     - name: check_box_6
-      properties: {text: check_box_6}
+      properties: {text: check_box_6, font_size: 20}
       type: CheckBox
-      layout_properties: {x: 346.11112298071384, y: 296.89237298071384, width: 200.00001525878906}
+      layout_properties: {x: 378.328125, y: 362.109375, width: 314.98412499999995}
     - name: check_box_7
-      properties: {text: check_box_7}
+      properties: {text: check_box_7, font_size: 20}
       type: CheckBox
-      layout_properties: {x: 349.4617699533701, y: 441.99656677246094, width: 200.00001525878906}
+      layout_properties: {x: 379.59375, y: 405.125, width: 313.70337500000005}
+    - name: check_box_1
+      properties: {text: check_box_1, font_size: 20}
+      type: CheckBox
+      layout_properties: {x: 375.796875, y: 135.890625, width: 306}
+    - name: check_box_2
+      properties: {text: check_box_2, font_size: 20}
+      type: CheckBox
+      layout_properties: {x: 375.546875, y: 183.03125, width: 319}
     - name: button_1
-      properties: {text: Submit}
+      properties: {text: Submit, background: '#280df2', foreground: 'theme:On Primary',
+        font_size: 25}
       type: Button
-      layout_properties: {x: 303.47223748266697, y: 537.5, width: 200.00001525878906}
+      layout_properties: {x: 348.703125, y: 481.734375, width: 190}
     - name: label_1
-      properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473'}
+      properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473',
+        icon: 'fa:pencil-square-o'}
       type: Label
-      layout_properties: {x: 264.9653099924326, y: 18.819451227784157, width: 240.98959350585938}
+      layout_properties: {x: 312.234375, y: 45.09375, width: 285.969}
 - type: FlowPanel
   properties: {}
   name: navbar_links
