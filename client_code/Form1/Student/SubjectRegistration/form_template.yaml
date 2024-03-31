@@ -14,9 +14,13 @@ components:
     layout_properties: {grid_position: 'CQVLAY,DHTEDB'}
     components:
     - name: label_1
-      properties: {text: Subject Registration, bold: true, font_size: 26}
+      properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473'}
       type: Label
-      layout_properties: {x: 324.0000305175781, y: 45.75, width: 256}
+      layout_properties: {x: 376.046875, y: 38.796875, width: 241}
+    - name: check_box_1
+      properties: {text: check_box_1}
+      type: CheckBox
+      layout_properties: {x: 137.046875, y: 145.796875, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
