@@ -46,6 +46,11 @@ components:
       type: Label
       layout_properties: {x: 298.546875, y: 17.921875, width: 409.765625}
       data_bindings: []
+    - name: button_3
+      properties: {text: Profile, icon: 'fa:address-book-o'}
+      type: Button
+      layout_properties: {x: 7.291649714112282, y: 25.74652947485447, width: 200.00001525878906}
+      event_bindings: {click: button_3_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
