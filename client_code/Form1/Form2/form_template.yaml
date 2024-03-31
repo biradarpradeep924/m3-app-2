@@ -19,7 +19,7 @@ components:
       type: Label
       layout_properties: {}
   - name: xy_panel_1
-    properties: {height: 480, border: '', background: 'theme:Primary Container'}
+    properties: {height: 532.25, border: '', background: 'theme:Primary Container'}
     type: XYPanel
     layout_properties: {grid_position: 'SSMXFT,YIKKGF'}
     components:
@@ -35,16 +35,6 @@ components:
       properties: {}
       type: TextBox
       layout_properties: {x: 576.8833160400391, y: 149.6999969482422, width: 200}
-    - name: button_1
-      properties: {text: Sign-Up, bold: true}
-      type: Button
-      layout_properties: {x: 389.40000915527344, y: 346.59999084472656, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_2
-      properties: {text: Log-In, bold: true}
-      type: Button
-      layout_properties: {x: 390.68333435058594, y: 423.6499786376953, width: 200}
-      event_bindings: {click: button_2_click}
     - name: label_4
       properties: {text: 'Phone No :', bold: true}
       type: Label
@@ -77,6 +67,24 @@ components:
       properties: {text: 'Role :', bold: true}
       type: Label
       layout_properties: {x: 204.59999084472656, y: 203.09999084472656, width: 200}
+    - name: button_2
+      properties: {text: Log-In, bold: true}
+      type: Button
+      layout_properties: {x: 368.71875, y: 467.6875, width: 200}
+      event_bindings: {click: button_2_click}
+    - name: button_1
+      properties: {text: Sign-Up, bold: true}
+      type: Button
+      layout_properties: {x: 370.4375, y: 402.6405944824219, width: 200}
+      event_bindings: {click: button_1_click}
+    - name: text_box_5
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 576.0469360351562, y: 347.796875, width: 200}
+    - name: label_7
+      properties: {text: 'Class :', bold: true}
+      type: Label
+      layout_properties: {x: 203.09378051757812, y: 344.828125, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links

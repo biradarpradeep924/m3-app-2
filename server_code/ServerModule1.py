@@ -18,11 +18,11 @@ import anvil.server
 # server_module.py
 
 @anvil.server.callable
-def add_data_to_table(name, email, phone, password,role):
+def add_data_to_table(name, email, phone, password,role,class2):
     try:
         # Access 'Table2' and insert data
         table2 = app_tables.table_2
-        table2.add_row(name=name, Email=email, phone=phone, password=password,role=role)
+        table2.add_row(name=name, Email=email, phone=phone, password=password,role=role,sclass=class2)
         return "Data added successfully."
     except Exception as e:
         return "Error: " + str(e)

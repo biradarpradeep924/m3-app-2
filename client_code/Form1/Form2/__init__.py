@@ -21,7 +21,8 @@ class Form2(Form2Template):
     no = int(phone1)
     item = self.drop_down_1.selected_value
     password1=self.text_box_4.text
-    response = server.call('add_data_to_table', name1, email1,no,password1,item)
+    class1=self.text_box_5.text
+    response = server.call('add_data_to_table', name1, email1,no,password1,item,class1)
     print(response)
 
   def button_2_click(self, **event_args):

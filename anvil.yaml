@@ -37,5 +37,8 @@ db_schema:
     - name: role
       admin_ui: {width: 200, order: 4}
       type: string
+    - name: sclass
+      admin_ui: {width: 200, order: 5}
+      type: string
     title: Table 2
 renamed: true
