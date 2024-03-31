@@ -18,26 +18,14 @@ components:
       type: Button
       layout_properties: {x: 550.0000457763672, y: 7.968743219971657, width: 200.00001525878906}
       event_bindings: {click: button_1_click}
-    - name: label_6
-      properties: {text: 'Class :', bold: true}
-      type: Label
-      layout_properties: {x: 89.98263634741306, y: 324.6701744943857, width: 200.00001525878906}
     - name: label_7
       properties: {}
       type: Label
       layout_properties: {x: 374.4791726022959, y: 318.0208519846201, width: 200.00001525878906}
-    - name: label_4
-      properties: {text: 'Email :', bold: true}
-      type: Label
-      layout_properties: {x: 88.92360009253025, y: 260.2951744943857, width: 200.00001525878906}
     - name: label_5
       properties: {}
       type: Label
       layout_properties: {x: 371.1805886179209, y: 258.07294549047947, width: 329.982666015625}
-    - name: label_2
-      properties: {text: 'ROLE :', bold: true}
-      type: Label
-      layout_properties: {x: 90.01735009253025, y: 206.9097222238779, width: 200.00001525878906}
     - name: label_3
       properties: {}
       type: Label
@@ -60,14 +48,26 @@ components:
       type: Button
       layout_properties: {x: 0, y: 10.190979853272438, width: 200.00001525878906}
       event_bindings: {click: button_2_click}
-    - name: label_9
-      properties: {text: 'Mo No. :', bold: true}
-      type: Label
-      layout_properties: {x: 76.63192833960056, y: 370.3646019846201, width: 200.00001525878906}
     - name: label_10
       properties: {}
       type: Label
       layout_properties: {x: 367.743119135499, y: 375.74652947485447, width: 200.00001525878906}
+    - name: label_9
+      properties: {text: 'Mo No. :', bold: true}
+      type: Label
+      layout_properties: {x: 81.671875, y: 370.40625, width: 200}
+    - name: label_4
+      properties: {text: 'Email :', bold: true}
+      type: Label
+      layout_properties: {x: 83.96875, y: 260.328125, width: 200}
+    - name: label_2
+      properties: {text: 'ROLE :', bold: true}
+      type: Label
+      layout_properties: {x: 82.0625, y: 206.953125, width: 200}
+    - name: label_6
+      properties: {text: 'Class :', bold: true}
+      type: Label
+      layout_properties: {x: 84.0625, y: 312.75, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
