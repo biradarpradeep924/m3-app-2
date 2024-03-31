@@ -36,7 +36,7 @@ class Form1(Form1Template):
     if  password ==password2:
       if role1=="Student":
           alert("successfully login") 
-          open_form("Form1.Student")
+          open_form("Form1.Student",arg1=username)
       elif role1=="Teacher":
            alert("successfully login") 
            open_form("Form1.Teacher")

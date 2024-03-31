@@ -6,10 +6,19 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class profile(profileTemplate):
-  def __init__(self, **properties):
+  def __init__(self,arg2, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.arg2=arg2
+    self.label_1.text=arg2
+    role1=server.call('get_role_by_name',self.arg2)
+    mono=server.call('get_mono_by_name',self.arg2)
+    class2=server.call('get_class2_by_name',self.arg2)
+    mail=server.call('get_mail_by_name',self.arg2)
+    
+    self.label_3.text=role1
+    
+    
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
