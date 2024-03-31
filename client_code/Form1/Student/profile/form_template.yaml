@@ -14,18 +14,10 @@ components:
     layout_properties: {grid_position: 'OBYLRB,EZKIOW'}
     components:
     - name: button_1
-      properties: {text: Log - Out, background: '#f02d2d'}
+      properties: {text: Log - Out, background: '#f02d2d', foreground: 'theme:On Surface'}
       type: Button
-      layout_properties: {x: 550.0000457763672, y: 7.968743219971657, width: 200.00001525878906}
+      layout_properties: {x: 550.0000457763672, y: 7.968743219971657, width: 120}
       event_bindings: {click: button_1_click}
-    - name: label_7
-      properties: {}
-      type: Label
-      layout_properties: {x: 374.4791726022959, y: 318.0208519846201, width: 200.00001525878906}
-    - name: label_5
-      properties: {}
-      type: Label
-      layout_properties: {x: 371.1805886179209, y: 258.07294549047947, width: 329.982666015625}
     - name: label_3
       properties: {}
       type: Label
@@ -39,10 +31,6 @@ components:
       type: Button
       layout_properties: {x: 0, y: 10.190979853272438, width: 200.00001525878906}
       event_bindings: {click: button_2_click}
-    - name: label_10
-      properties: {}
-      type: Label
-      layout_properties: {x: 367.743119135499, y: 375.74652947485447, width: 200.00001525878906}
     - name: label_9
       properties: {text: 'Mo No. :', bold: true}
       type: Label
@@ -64,10 +52,22 @@ components:
       type: Label
       layout_properties: {x: 207.88195122778416, y: 147.03127373754978, width: 200.00001525878906}
     - name: label_8
-      properties: {text: PROFILE, align: center, bold: true, background: 'theme:On
-          Primary'}
+      properties: {text: PROFILE, align: center, bold: true, background: 'theme:Surface
+          Variant'}
       type: Label
       layout_properties: {x: 236.15625, y: 11.390625, width: 153.40625}
+    - name: label_5
+      properties: {}
+      type: Label
+      layout_properties: {x: 367.21875, y: 253.109375, width: 329.96875}
+    - name: label_7
+      properties: {}
+      type: Label
+      layout_properties: {x: 364.515625, y: 309.0625, width: 200}
+    - name: label_10
+      properties: {}
+      type: Label
+      layout_properties: {x: 361.7812805175781, y: 360.78125, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
