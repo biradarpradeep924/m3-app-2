@@ -34,11 +34,6 @@ components:
       properties: {height: 106.22219848632812, source: _/theme/profile.png}
       type: Image
       layout_properties: {x: 227.777787104249, y: 55.763893976807594, width: 167.7604217529297}
-    - name: label_8
-      properties: {text: PROFILE, align: center, bold: true, background: 'theme:On
-          Primary'}
-      type: Label
-      layout_properties: {x: 211.07640160620213, y: 11.302086725831032, width: 271.7777099609375}
     - name: button_2
       properties: {text: BACK, icon: 'fa:backward'}
       type: Button
@@ -68,6 +63,11 @@ components:
       properties: {align: center}
       type: Label
       layout_properties: {x: 207.88195122778416, y: 147.03127373754978, width: 200.00001525878906}
+    - name: label_8
+      properties: {text: PROFILE, align: center, bold: true, background: 'theme:On
+          Primary'}
+      type: Label
+      layout_properties: {x: 236.15625, y: 11.390625, width: 153.40625}
 - type: FlowPanel
   properties: {}
   name: navbar_links
