@@ -47,5 +47,33 @@ def get_role_by_name(username):
         return password
     else:
         return None
+@anvil.server.callable
+def get_mono_by_name(username):
+    user = app_tables.table_2.get(name=username)
+    if user is not None:
+        # Access the password column directly
+        password = user['phone']
+        return password
+    else:
+        return None
 
+@anvil.server.callable
+def get_mail_by_name(username):
+    user = app_tables.table_2.get(name=username)
+    if user is not None:
+        # Access the password column directly
+        password = user['Email']
+        return password
+    else:
+        return None
+
+@anvil.server.callable
+def get_class2_by_name(username):
+    user = app_tables.table_2.get(name=username)
+    if user is not None:
+        # Access the password column directly
+        password = user['sclass']
+        return password
+    else:
+        return None
          

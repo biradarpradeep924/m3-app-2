@@ -29,11 +29,6 @@ components:
       properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
       type: Button
       layout_properties: {x: 402.96875, y: 361.546875, width: 200}
-    - name: button_2_copy_3
-      properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
-      type: Button
-      layout_properties: {x: 396.296875, y: 454.6875, width: 200}
-      event_bindings: {click: button_2_copy_3_click}
     - name: button_1
       properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary',
         font_size: 18}
@@ -51,6 +46,16 @@ components:
       type: Button
       layout_properties: {x: 7.291649714112282, y: 25.74652947485447, width: 200.00001525878906}
       event_bindings: {click: button_3_click}
+    - name: button_2_copy_3
+      properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
+      type: Button
+      layout_properties: {x: 400.7639244943857, y: 540.4167060852051, width: 200.00001525878906}
+      event_bindings: {click: button_2_copy_3_click}
+    - name: button_4
+      properties: {text: Subject Registration, bold: true, background: orange}
+      type: Button
+      layout_properties: {x: 411.64933098852634, y: 460.60767364501953, width: 200.00001525878906}
+      event_bindings: {click: button_4_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

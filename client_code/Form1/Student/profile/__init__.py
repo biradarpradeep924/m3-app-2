@@ -15,7 +15,9 @@ class profile(profileTemplate):
     mono=server.call('get_mono_by_name',self.arg2)
     class2=server.call('get_class2_by_name',self.arg2)
     mail=server.call('get_mail_by_name',self.arg2)
-    
+    self.label_5.text=mail
+    self.label_7.text=class2
+    self.label_10.text=mono
     self.label_3.text=role1
     
     
@@ -23,8 +25,8 @@ class profile(profileTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("Form1")
+    open_form("Form1","hii")
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("Form1.Student")
+    open_form("Form1.Student","hii")

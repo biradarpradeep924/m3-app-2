@@ -39,10 +39,6 @@ components:
           Primary'}
       type: Label
       layout_properties: {x: 211.07640160620213, y: 11.302086725831032, width: 271.7777099609375}
-    - name: label_1
-      properties: {}
-      type: Label
-      layout_properties: {x: 424.49652184545994, y: 125.85070122778416, width: 200.00001525878906}
     - name: button_2
       properties: {text: BACK, icon: 'fa:backward'}
       type: Button
@@ -68,6 +64,10 @@ components:
       properties: {text: 'Class :', bold: true}
       type: Label
       layout_properties: {x: 84.0625, y: 312.75, width: 200}
+    - name: label_1
+      properties: {align: center}
+      type: Label
+      layout_properties: {x: 207.88195122778416, y: 147.03127373754978, width: 200.00001525878906}
 - type: FlowPanel
   properties: {}
   name: navbar_links

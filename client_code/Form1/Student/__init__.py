@@ -10,6 +10,7 @@ class Student(StudentTemplate):
     # Set Form properties and Data Bindings.
     self.button_3.image = 'profile'
     self.arg1=arg1
+    
     alert("welcome "+arg1)
     self.init_components(**properties)
     super().__init__(**properties)
@@ -34,3 +35,8 @@ class Student(StudentTemplate):
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1.Student.profile",arg2=self.arg1)
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    class2=server.call('get_class2_by_name',self.arg1)
+    open_form("Form1.Student.SubjectRegistration",class2)
