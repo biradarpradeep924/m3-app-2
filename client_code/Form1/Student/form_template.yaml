@@ -18,11 +18,13 @@ components:
       type: Button
       layout_properties: {x: 350.46875, y: 166.046875, width: 294}
       data_bindings: []
+      event_bindings: {click: button_2_click}
     - name: button_2_copy
       properties: {text: Research Papers, align: center, font_size: 25, background: orange,
         icon: 'fa:file-text'}
       type: Button
       layout_properties: {x: 351.46875, y: 263.0625, width: 303}
+      event_bindings: {click: button_2_copy_click}
     - name: button_2_copy_2
       properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
       type: Button
