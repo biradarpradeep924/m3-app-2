@@ -77,3 +77,12 @@ def get_class2_by_name(username):
     else:
         return None
          
+@anvil.server.callable
+def add_data_to_table1(name,class2,sub1,sub2,sub3,sub4,sub5,sub6,sub7):
+    try:
+        # Access 'Table2' and insert data
+        table1 = app_tables.table_1
+        table1.add_row(class2=class2,name=name,sub1=sub1,sub2=sub2,sub3=sub3,sub4=sub4,sub5=sub5,sub6=sub6,sub7=sub7)
+        return "Data added successfully."
+    except Exception as e:
+        return "Error: " + str(e)

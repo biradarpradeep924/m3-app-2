@@ -46,11 +46,23 @@ components:
         font_size: 25}
       type: Button
       layout_properties: {x: 348.703125, y: 481.734375, width: 190}
+      event_bindings: {click: button_1_click}
     - name: label_1
       properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473',
         icon: 'fa:pencil-square-o'}
       type: Label
       layout_properties: {x: 312.234375, y: 45.09375, width: 285.969}
+    - name: button_2
+      properties: {text: BACK, icon: 'fa:backward', background: 'theme:Primary Container'}
+      type: Button
+      layout_properties: {x: 0, y: 11.163193598389626, width: 200.00001525878906}
+      event_bindings: {click: button_2_click}
+    - name: button_3
+      properties: {text: Profile, icon: 'fa:address-book-o', background: 'theme:Primary
+          Container'}
+      type: Button
+      layout_properties: {x: 550.0000457763672, y: 4.670136347413063, width: 200.00001525878906}
+      event_bindings: {click: button_3_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

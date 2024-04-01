@@ -8,9 +8,7 @@ from anvil.tables import app_tables
 class Student(StudentTemplate):
   def __init__(self,arg1, **properties):
     # Set Form properties and Data Bindings.
-    self.button_3.image = 'profile'
     self.arg1=arg1
-    
     alert("welcome "+arg1)
     self.init_components(**properties)
     super().__init__(**properties)
@@ -39,4 +37,4 @@ class Student(StudentTemplate):
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
     class2=server.call('get_class2_by_name',self.arg1)
-    open_form("Form1.Student.SubjectRegistration",class2)
+    open_form("Form1.Student.SubjectRegistration",class2,arg2=self.arg1)

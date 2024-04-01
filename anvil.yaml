@@ -14,8 +14,32 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: class
+    - name: class2
       admin_ui: {width: 200, order: 0}
+      type: string
+    - name: name
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: sub1
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: sub2
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: sub3
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: sub4
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: sub5
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: sub6
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: sub7
+      admin_ui: {width: 200, order: 8}
       type: string
     title: Table 1
   table_2:
