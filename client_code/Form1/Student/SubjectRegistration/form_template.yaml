@@ -52,17 +52,17 @@ components:
         icon: 'fa:pencil-square-o'}
       type: Label
       layout_properties: {x: 312.234375, y: 45.09375, width: 285.969}
-    - name: button_2
-      properties: {text: BACK, icon: 'fa:backward', background: 'theme:Primary Container'}
-      type: Button
-      layout_properties: {x: 0, y: 11.163193598389626, width: 200.00001525878906}
-      event_bindings: {click: button_2_click}
     - name: button_3
       properties: {text: Profile, icon: 'fa:address-book-o', background: 'theme:Primary
           Container'}
       type: Button
-      layout_properties: {x: 550.0000457763672, y: 4.670136347413063, width: 200.00001525878906}
+      layout_properties: {x: 709.0469360351562, y: 48.703125, width: 200}
       event_bindings: {click: button_3_click}
+    - name: button_2
+      properties: {text: BACK, icon: 'fa:backward', background: 'theme:Primary Container'}
+      type: Button
+      layout_properties: {x: 4.09375, y: 52.25, width: 200}
+      event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

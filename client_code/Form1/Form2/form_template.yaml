@@ -78,7 +78,7 @@ components:
       layout_properties: {x: 370.4375, y: 402.6405944824219, width: 200}
       event_bindings: {click: button_1_click}
     - name: text_box_5
-      properties: {}
+      properties: {visible: true}
       type: TextBox
       layout_properties: {x: 576.0469360351562, y: 347.796875, width: 200}
     - name: label_7

@@ -20,10 +20,14 @@ components:
       properties: {}
       type: Label
     - name: button_1
-      properties: {text: View}
+      properties: {text: View, align: center, border: ''}
       type: Button
       layout_properties: {}
       event_bindings: {click: button_1_click}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'QPFGRE,ALDXFY'}
   - name: linear_panel_2
     properties: {}
     type: LinearPanel
@@ -45,6 +49,9 @@ components:
     type: LinearPanel
     layout_properties: {grid_position: 'VQWDFC,JHPDUA'}
     components:
+    - name: spacer_2
+      properties: {height: 32}
+      type: Spacer
     - name: label_7
       properties: {}
       type: Label
@@ -55,6 +62,10 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
+  - name: spacer_3
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'NEPGBN,OIILEV'}
   - name: linear_panel_4
     properties: {}
     type: LinearPanel
@@ -70,6 +81,10 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
+  - name: spacer_4
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'UBYDPO,XVMGXD'}
   - name: linear_panel_5
     properties: {}
     type: LinearPanel
@@ -85,6 +100,9 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
+    - name: spacer_5
+      properties: {height: 32}
+      type: Spacer
   - name: linear_panel_6
     properties: {}
     type: LinearPanel
@@ -100,6 +118,9 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
+    - name: spacer_6
+      properties: {height: 32}
+      type: Spacer
   - name: linear_panel_7
     properties: {}
     type: LinearPanel
@@ -115,6 +136,9 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
+    - name: spacer_7
+      properties: {height: 32}
+      type: Spacer
 - type: FlowPanel
   properties: {}
   name: navbar_links

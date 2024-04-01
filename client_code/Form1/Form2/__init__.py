@@ -10,7 +10,10 @@ class Form2(Form2Template):
     # Set Form properties and Data Bindings.
     self.drop_down_1.items = ["Student", "Teacher", "CR","Alumni"]
     self.init_components(**properties)
-
+    if self.drop_down_1.selected_value == "Student" or self.drop_down_1.selected_value == "CR":
+      self.text_box_5.visible = True
+    else:
+      self.text_box_5.visible = False
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):

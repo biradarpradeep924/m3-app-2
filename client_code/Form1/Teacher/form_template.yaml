@@ -1,65 +1,62 @@
 is_package: true
 container: {type: DataRowPanel}
 components:
-- name: xy_panel_1
-  properties: {height: 595}
-  type: XYPanel
-  layout_properties: {}
-  components:
-  - name: button_1
-    properties: {text: Log Out, background: red}
-    type: Button
-    layout_properties: {x: 833.8333282470703, y: 14.133331298828125, width: 200}
-    event_bindings: {click: button_1_click}
-  - name: label_4
-    properties: {text: 'Class:', bold: true}
-    type: Label
-    layout_properties: {x: 236.25, y: 151.25, width: 200}
-  - name: text_box_1
-    properties: {}
-    type: TextBox
-    layout_properties: {x: 513.1500091552734, y: 154.15000915527344, width: 200}
-  - name: label_3
-    properties: {text: 'Upload document:', bold: true}
-    type: Label
-    layout_properties: {x: 229.26666259765625, y: 219.61666870117188, width: 200}
-  - name: file_loader_1
-    properties: {}
-    type: FileLoader
-    layout_properties: {x: 522.9500274658203, y: 227.0500030517578, width: 200}
-    event_bindings: {change: file_loader_1_change}
-  - name: date_picker_1
-    properties: {}
-    type: DatePicker
-    layout_properties: {x: 525.1499786376953, y: 295.15000915527344, width: 200}
-  - name: date_picker_2
-    properties: {}
-    type: DatePicker
-    layout_properties: {x: 541.0999908447266, y: 367.09999084472656, width: 200}
-  - name: label_6
-    properties: {text: Due -Date, bold: true}
-    type: Label
-    layout_properties: {x: 239.1999969482422, y: 376.1999969482422, width: 200}
-  - name: label_5
-    properties: {text: Upload Date, bold: true}
-    type: Label
-    layout_properties: {x: 239.15000915527344, y: 300.15000915527344, width: 200}
-  - name: button_2
-    properties: {text: Submit}
-    type: Button
-    layout_properties: {x: 402.0500030517578, y: 471.0500030517578, width: 200}
-    event_bindings: {click: button_2_click}
-  - name: label_7
-    properties: {text: Form, align: center, bold: true, italic: true, underline: true}
-    type: Label
-    layout_properties: {x: 339.0500030517578, y: 75.05000305175781, width: 200}
-  - name: label_2
-    properties: {text: Academic Resources Hub, bold: true, align: center}
-    type: Label
-    layout_properties: {x: 181.73333740234375, y: 11.400009155273438, width: 580}
-    data_bindings:
-    - {property: font_size, code: '28', writeback: false}
 - name: label_1
   properties: {}
   type: Label
   layout_properties: {column: 'null'}
+- name: xy_panel_1
+  properties: {height: 595, visible: true, background: '#d2d0d0', foreground: whit}
+  type: XYPanel
+  layout_properties: {}
+  components:
+  - name: label_3
+    properties: {text: 'Upload Document :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 229.26666259765625, y: 219.61666870117188, width: 200}
+  - name: date_picker_1
+    properties: {}
+    type: DatePicker
+    layout_properties: {x: 542.1875, y: 293.1875, width: 200}
+  - name: file_loader_1
+    properties: {}
+    type: FileLoader
+    layout_properties: {x: 537.9844360351562, y: 226.09375, width: 200}
+    event_bindings: {change: file_loader_1_change}
+  - name: label_5
+    properties: {text: 'Upload Date :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 232.1875, y: 295.1875, width: 200}
+  - name: label_4
+    properties: {text: 'Select Class :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 231.296875, y: 151.296875, width: 200}
+  - name: label_6
+    properties: {text: 'Select Subject :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 235.23439025878906, y: 367.2344055175781, width: 200}
+  - name: label_2
+    properties: {text: Share the Material Here with your class !!, bold: true, align: center,
+      font_size: 25, underline: true, italic: true, background: '#27e01a'}
+    type: Label
+    layout_properties: {x: 209.046875, y: 17.671875, width: 534.984375}
+    data_bindings: []
+  - name: button_2
+    properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white}
+    type: Button
+    layout_properties: {x: 373.3125, y: 428.296875, width: 200}
+    event_bindings: {click: button_2_click}
+  - name: drop_down_1
+    properties: {}
+    type: DropDown
+    layout_properties: {x: 539.046875, y: 145.79689025878906, width: 200}
+  - name: drop_down_2
+    properties: {}
+    type: DropDown
+    layout_properties: {x: 542.046875, y: 361.7968444824219, width: 200}
+  - name: button_1
+    properties: {text: Log Out, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
+      bold: true, foreground: '#1d1b1b'}
+    type: Button
+    layout_properties: {x: 833.015625, y: 25.31249237060547, width: 161}
+    event_bindings: {click: button_1_click}

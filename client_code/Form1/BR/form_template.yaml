@@ -7,6 +7,31 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: xy_panel_1
+    properties: {height: 599.25}
+    type: XYPanel
+    layout_properties: {grid_position: 'QLTEIA,GCLWQN'}
+    components:
+    - name: button_1
+      properties: {text: Logout, font_size: 25, background: red, foreground: black,
+        icon: 'fa:arrow-circle-right'}
+      type: Button
+      layout_properties: {x: 693.0938110351562, y: 10.84375, width: 168}
+    - name: text_area_1
+      properties: {height: 227.25, text: dlken, font_size: 25, foreground: black}
+      type: TextArea
+      layout_properties: {x: 55.09375, y: 192.84375, width: 828}
+      event_bindings: {change: text_area_1_change}
+    - name: label_1
+      properties: {text: 'Do the Announcement Here to your class :', foreground: 'theme:On
+          Secondary Container', font_size: 23, bold: false}
+      type: Label
+      layout_properties: {x: 62.140625, y: 117.89064025878906, width: 810}
+    - name: button_2
+      properties: {text: Submit, background: Yellow, foreground: '#121212', font_size: 20}
+      type: Button
+      layout_properties: {x: 357.28125, y: 477.03125, width: 184}
 - type: FlowPanel
   properties: {}
   name: navbar_links
