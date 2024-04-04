@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {border: ''}
+  properties: {border: '', background: '#d2d0d0'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -23,8 +23,9 @@ components:
       type: Label
       layout_properties: {}
     - name: button_1
-      properties: {align: center, border: '', visible: true, text: View, spacing_above: none,
-        spacing_below: small, italic: false, background: '', bold: true, underline: false}
+      properties: {align: center, border: '', visible: true, text: View, font_size: 17,
+        spacing_above: none, spacing_below: small, italic: false, background: '',
+        bold: true, underline: false, icon: ''}
       type: Button
       layout_properties: {}
       event_bindings: {click: button_1_click}
@@ -46,7 +47,8 @@ components:
       type: Label
       layout_properties: {}
     - name: button_2
-      properties: {text: View, spacing_above: none, spacing_below: none, bold: true}
+      properties: {text: View, spacing_above: none, spacing_below: none, bold: true,
+        font_size: 17}
       type: Button
       event_bindings: {click: button_2_click}
       layout_properties: {}
@@ -67,7 +69,7 @@ components:
       properties: {}
       type: Label
     - name: button_3
-      properties: {text: View, spacing_above: none, spacing_below: none}
+      properties: {text: View, spacing_above: none, spacing_below: none, font_size: 17}
       type: Button
       layout_properties: {}
   - name: spacer_3
@@ -86,7 +88,7 @@ components:
       properties: {}
       type: Label
     - name: button_4
-      properties: {text: View}
+      properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
   - name: spacer_4
@@ -105,7 +107,7 @@ components:
       properties: {}
       type: Label
     - name: button_5
-      properties: {text: View}
+      properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
   - name: spacer_5
@@ -124,7 +126,7 @@ components:
       properties: {}
       type: Label
     - name: button_6
-      properties: {text: View}
+      properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
   - name: spacer_6
@@ -143,7 +145,7 @@ components:
       properties: {}
       type: Label
     - name: button_7
-      properties: {text: View}
+      properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
   - name: spacer_7

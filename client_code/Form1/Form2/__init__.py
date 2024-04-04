@@ -4,7 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-import re
+
 
 class Form2(Form2Template):
   def __init__(self, **properties):
@@ -49,19 +49,26 @@ class Form2(Form2Template):
   #   else:
   #       alert("Incorrect format")
 
-  def text_box_3_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
+# Define event handling function for TextBox change event
+def validate_email_change(text_box_2, **event_args):
+    """This method is called when the text in the TextBox changes"""
     
-    email=self.text_box_2.text
+    # Retrieve the current text entered in the TextBox
+    form = Form2()
+    entered_email = text_box_2.text
     pattern = r'^[\w\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9\.]+$'
     
     # Check if the email matches the pattern
-    if re.match(pattern, email):
-        alert("CORRECT")
+    # Check if the entered email matches the pattern
+    if pattern == entered_email:
+        # label_error.text = ""# Clear any previous error message
+        alert("")
     else:
-        alert("Incorrect format")
-
+        alert("Invalid email format") # Show error message to the user
     
+# Bind the event handler to the TextBox component
+form = Form2()
+form.text_box_2.set_event_handler("change", validate_email_change)
 
     
     

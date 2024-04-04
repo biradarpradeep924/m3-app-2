@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 406.25}
+    properties: {height: 594.2499389648438}
     type: XYPanel
     layout_properties: {grid_position: 'TRVZXA,NRQBOU'}
 - type: FlowPanel

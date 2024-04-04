@@ -21,10 +21,10 @@ components:
     type: DropDown
     layout_properties: {x: 539.046875, y: 145.79689025878906, width: 200}
   - name: button_1
-    properties: {text: Log Out, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
+    properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
       bold: true, foreground: '#1d1b1b'}
     type: Button
-    layout_properties: {x: 833.015625, y: 25.31249237060547, width: 161}
+    layout_properties: {x: 833.015625, y: 25.31249237060547, width: 147}
     event_bindings: {click: button_1_click}
   - name: button_2
     properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white}
@@ -45,7 +45,7 @@ components:
     type: TextArea
     layout_properties: {x: 541.3906860351562, y: 387.796875, width: 377}
   - name: label_4
-    properties: {text: 'Select Class   :', bold: true, font_size: 20}
+    properties: {text: 'Select Class :', bold: true, font_size: 20}
     type: Label
     layout_properties: {x: 255.4375, y: 140.4375, width: 200}
   - name: label_6

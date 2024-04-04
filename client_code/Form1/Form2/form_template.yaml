@@ -23,48 +23,10 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'SSMXFT,YIKKGF'}
     components:
-    - name: text_box_1
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 568.5833282470703, y: 34.25, width: 200}
-    - name: text_box_2
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 574.1500091552734, y: 89.30000305175781, width: 200}
-      event_bindings: {pressed_enter: text_box_2_pressed_enter}
-    - name: text_box_3
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 576.8833160400391, y: 149.6999969482422, width: 200}
-      event_bindings: {pressed_enter: text_box_3_pressed_enter}
     - name: label_4
       properties: {text: 'Phone No :', bold: true}
       type: Label
       layout_properties: {x: 199.46669006347656, y: 150.9499969482422, width: 200}
-    - name: label_5
-      properties: {text: Password, bold: true}
-      type: Label
-      layout_properties: {x: 196.6166534423828, y: 269.4166717529297, width: 200}
-    - name: label_3
-      properties: {text: 'Email-Id :', bold: true, align: left}
-      type: Label
-      layout_properties: {x: 200.78334045410156, y: 95.83334350585938, width: 200}
-    - name: label_2
-      properties: {text: 'Name :', bold: true}
-      type: Label
-      layout_properties: {x: 199.13331604003906, y: 39.69999694824219, width: 156.2666778564453}
-    - name: drop_down_1
-      properties:
-        items: ['', '']
-        visible: true
-        enabled: true
-      type: DropDown
-      layout_properties: {x: 586.5500030517578, y: 214.0500030517578, width: 193.20001220703125}
-      event_bindings: {change: drop_down_1_change}
-    - name: text_box_4
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 579.7500152587891, y: 270.34999084472656, width: 200}
     - name: label_6
       properties: {text: 'Role :', bold: true}
       type: Label
@@ -79,14 +41,57 @@ components:
       type: Button
       layout_properties: {x: 370.4375, y: 402.6405944824219, width: 200}
       event_bindings: {click: button_1_click}
-    - name: text_box_5
-      properties: {visible: true}
-      type: TextBox
-      layout_properties: {x: 576.0469360351562, y: 347.796875, width: 200}
     - name: label_7
       properties: {text: 'Class :', bold: true}
       type: Label
       layout_properties: {x: 203.09378051757812, y: 344.828125, width: 200}
+    - name: label_5
+      properties: {text: Password, bold: true}
+      type: Label
+      layout_properties: {x: 200.65621948242188, y: 268.453125, width: 200}
+    - name: text_box_3
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 478.890625, y: 143.609375, width: 200}
+      event_bindings: {pressed_enter: text_box_3_pressed_enter}
+    - name: drop_down_1
+      properties:
+        items: ['', '']
+        visible: true
+        enabled: true
+      type: DropDown
+      layout_properties: {x: 481.671875, y: 195.78125, width: 193.1875}
+      event_bindings: {change: drop_down_1_change}
+    - name: text_box_4
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 469.515625, y: 248.515625, width: 200}
+    - name: text_box_5
+      properties: {visible: true}
+      type: TextBox
+      layout_properties: {x: 486.96875, y: 320.7187194824219, width: 200}
+    - name: label_2
+      properties: {text: 'Name :', bold: true}
+      type: Label
+      layout_properties: {x: 199.171875, y: 18.71875, width: 156.265625}
+    - name: text_box_1
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 475.03125, y: 11.578125, width: 200}
+    - name: label_3
+      properties: {text: 'Email-Id :', bold: true, align: left}
+      type: Label
+      layout_properties: {x: 201.70315551757812, y: 65.25, width: 200}
+    - name: text_box_2
+      properties: {type: text, italic: false, visible: true, enabled: true}
+      type: TextBox
+      layout_properties: {x: 473.640625, y: 54.4375, width: 200}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+      data_bindings: []
+    - name: label_error
+      properties: {}
+      type: Label
+      layout_properties: {x: 483.53125, y: 99.28125, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
