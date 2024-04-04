@@ -32,31 +32,31 @@ components:
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}
   - name: label_4
-    properties: {text: 'Select Class :', bold: true, font_size: 20}
+    properties: {text: 'Select Class   :', bold: true, font_size: 20}
     type: Label
     layout_properties: {x: 297.40000915527344, y: 145.40000915527344, width: 200}
-  - name: drop_down_2
-    properties: {}
-    type: DropDown
-    layout_properties: {x: 728.140625, y: 554, width: 200}
-  - name: label_5
-    properties: {text: 'Add Description :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 273.609375, y: 550.4375, width: 200}
-  - name: text_area_1
-    properties: {height: 112.25}
-    type: TextArea
-    layout_properties: {x: 517.265625, y: 482.75, width: 377}
-  - name: label_3
-    properties: {text: 'Upload Document :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 283.40625, y: 405.73435974121094, width: 200}
-  - name: file_loader_1
-    properties: {}
-    type: FileLoader
-    layout_properties: {x: 535.03125, y: 483.140625, width: 200}
-    event_bindings: {change: file_loader_1_change}
   - name: label_6
     properties: {text: 'Select Subject :', bold: true, font_size: 20}
     type: Label
     layout_properties: {x: 292.6875305175781, y: 231.671875, width: 200}
+  - name: drop_down_2
+    properties: {}
+    type: DropDown
+    layout_properties: {x: 536.28125, y: 226.140625, width: 200}
+  - name: label_3
+    properties: {text: 'Upload Document :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 291.5, y: 316.8125305175781, width: 200}
+  - name: file_loader_1
+    properties: {border: '2px solid '}
+    type: FileLoader
+    layout_properties: {x: 538.296875, y: 316.421875, width: 200}
+    event_bindings: {change: file_loader_1_change}
+  - name: text_area_1
+    properties: {height: 112.25}
+    type: TextArea
+    layout_properties: {x: 541.3906860351562, y: 387.796875, width: 377}
+  - name: label_5
+    properties: {text: 'Add Description :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 296.7969055175781, y: 404.5312805175781, width: 200}
