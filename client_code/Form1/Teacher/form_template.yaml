@@ -31,22 +31,10 @@ components:
     type: Button
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}
-  - name: label_4
-    properties: {text: 'Select Class   :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 297.40000915527344, y: 145.40000915527344, width: 200}
-  - name: label_6
-    properties: {text: 'Select Subject :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 292.6875305175781, y: 231.671875, width: 200}
   - name: drop_down_2
     properties: {}
     type: DropDown
     layout_properties: {x: 536.28125, y: 226.140625, width: 200}
-  - name: label_3
-    properties: {text: 'Upload Document :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 291.5, y: 316.8125305175781, width: 200}
   - name: file_loader_1
     properties: {border: '2px solid '}
     type: FileLoader
@@ -56,7 +44,19 @@ components:
     properties: {height: 112.25}
     type: TextArea
     layout_properties: {x: 541.3906860351562, y: 387.796875, width: 377}
+  - name: label_4
+    properties: {text: 'Select Class   :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 255.4375, y: 140.4375, width: 200}
+  - name: label_6
+    properties: {text: 'Select Subject :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 252.734375, y: 233.71875, width: 200}
+  - name: label_3
+    properties: {text: 'Upload Document :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 254.59375, y: 316.90625, width: 200}
   - name: label_5
     properties: {text: 'Add Description :', bold: true, font_size: 20}
     type: Label
-    layout_properties: {x: 296.7969055175781, y: 404.5312805175781, width: 200}
+    layout_properties: {x: 254.890625, y: 405.625, width: 200}
