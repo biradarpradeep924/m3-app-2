@@ -9,9 +9,10 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 274.4444274902344}
+    properties: {height: 290.7777404785156}
     type: XYPanel
     layout_properties: {grid_position: 'LEIVKE,CRXIIV'}
+    components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
