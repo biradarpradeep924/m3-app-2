@@ -31,32 +31,32 @@ components:
     type: Button
     layout_properties: {x: 833.015625, y: 25.31249237060547, width: 161}
     event_bindings: {click: button_1_click}
-  - name: text_area_1
-    properties: {height: 112.25}
-    type: TextArea
-    layout_properties: {x: 542.140625, y: 277.890625, width: 376.9998779296875}
   - name: button_2
     properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white}
     type: Button
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}
-  - name: label_6
-    properties: {text: 'Select Subject :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 164.3125, y: 444.328125, width: 200}
   - name: drop_down_2
     properties: {}
     type: DropDown
     layout_properties: {x: 531.09375, y: 423.828125, width: 200}
-  - name: label_3
-    properties: {text: 'Upload Document :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 178.31246948242188, y: 213.65625, width: 200}
+  - name: text_area_1
+    properties: {height: 112.25}
+    type: TextArea
+    layout_properties: {x: 530.1833038330078, y: 284.93333435058594, width: 377}
   - name: label_4
     properties: {text: 'Select Class :', bold: true, font_size: 20}
     type: Label
-    layout_properties: {x: 189.34375, y: 121.34375, width: 200}
+    layout_properties: {x: 297.40000915527344, y: 145.40000915527344, width: 200}
+  - name: label_3
+    properties: {text: 'Upload Document :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 283.3666687011719, y: 223.6999969482422, width: 200}
   - name: label_5
     properties: {text: 'Add Description :', bold: true, font_size: 20}
     type: Label
-    layout_properties: {x: 183.328125, y: 306.3281555175781, width: 200}
+    layout_properties: {x: 278.4833526611328, y: 325.4833526611328, width: 200}
+  - name: label_6
+    properties: {text: 'Select Subject :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 291.46669006347656, y: 425.4833526611328, width: 200}

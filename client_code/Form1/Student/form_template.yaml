@@ -36,10 +36,10 @@ components:
       layout_properties: {x: 815.28125, y: 27.296875, width: 116}
       event_bindings: {click: button_1_click}
     - name: label_1
-      properties: {text: Academic Resource Hub, bold: true, font_size: 36, border: '',
-        background: '#93def1', foreground: '#1f37ef'}
+      properties: {text: '', bold: true, font_size: 36, border: '', background: '#93def1',
+        foreground: '#1f37ef'}
       type: Label
-      layout_properties: {x: 298.546875, y: 17.921875, width: 409.765625}
+      layout_properties: {x: 298.546875, y: 17.921875, width: 440.767}
       data_bindings: []
     - name: button_3
       properties: {text: Profile, icon: 'fa:address-book-o', font_size: 22}
@@ -52,7 +52,8 @@ components:
       layout_properties: {x: 400.7639244943857, y: 540.4167060852051, width: 200.00001525878906}
       event_bindings: {click: button_2_copy_3_click}
     - name: button_4
-      properties: {text: Subject Registration, bold: false, background: orange, font_size: 25}
+      properties: {text: Join Course, bold: false, background: orange, font_size: 25,
+        icon: 'fa:building-o'}
       type: Button
       layout_properties: {x: 364.921875, y: 448.64060974121094, width: 282.3125}
       event_bindings: {click: button_4_click}

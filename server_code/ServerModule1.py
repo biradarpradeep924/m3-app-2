@@ -86,3 +86,15 @@ def add_data_to_table1(name,class2,sub1,sub2,sub3,sub4,sub5,sub6,sub7):
         return "Data added successfully."
     except Exception as e:
         return "Error: " + str(e)
+      
+
+
+@anvil.server.callable
+def add_data_to_table3(name,class2,stored_document,desc,sub,date):
+  try:
+    table1 = app_tables.table_3
+    table1.add_row(name=name,class2=class2,document=stored_document,desc=desc,sub=sub,date=date)
+    return "Data added successfully."
+  except Exception as e:
+        return "Error: " + str(e)
+ 

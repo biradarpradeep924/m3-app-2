@@ -31,10 +31,12 @@ components:
       properties: {}
       type: TextBox
       layout_properties: {x: 574.1500091552734, y: 89.30000305175781, width: 200}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
     - name: text_box_3
       properties: {}
       type: TextBox
       layout_properties: {x: 576.8833160400391, y: 149.6999969482422, width: 200}
+      event_bindings: {pressed_enter: text_box_3_pressed_enter}
     - name: label_4
       properties: {text: 'Phone No :', bold: true}
       type: Label

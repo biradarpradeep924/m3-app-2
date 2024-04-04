@@ -4,23 +4,27 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {border: ''}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - name: linear_panel_1
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'XWSUHY,FVUUZB'}
     components:
     - name: label_1
-      properties: {}
+      properties: {border: '', background: '', spacing_below: none, spacing_above: none}
       type: Label
+      layout_properties: {}
+      data_bindings: []
     - name: label_2
-      properties: {}
+      properties: {background: '', spacing_below: none, spacing_above: none, text: ''}
       type: Label
+      layout_properties: {}
     - name: button_1
-      properties: {text: View, align: center, border: ''}
+      properties: {align: center, border: '', visible: true, text: View, spacing_above: none,
+        spacing_below: small, italic: false, background: '', bold: true, underline: false}
       type: Button
       layout_properties: {}
       event_bindings: {click: button_1_click}
@@ -29,37 +33,41 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'QPFGRE,ALDXFY'}
   - name: linear_panel_2
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'LXUDME,DWJZGX'}
     components:
     - name: label_4
-      properties: {}
+      properties: {spacing_above: none, spacing_below: none}
       type: Label
+      layout_properties: {}
     - name: label_5
-      properties: {}
+      properties: {spacing_above: none, spacing_below: none}
       type: Label
+      layout_properties: {}
     - name: button_2
-      properties: {text: View}
+      properties: {text: View, spacing_above: none, spacing_below: none, bold: true}
       type: Button
       event_bindings: {click: button_2_click}
       layout_properties: {}
+  - name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'DZHHMG,AZCZNG'}
   - name: linear_panel_3
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'VQWDFC,JHPDUA'}
     components:
-    - name: spacer_2
-      properties: {height: 32}
-      type: Spacer
     - name: label_7
-      properties: {}
+      properties: {spacing_above: none, spacing_below: none}
       type: Label
+      layout_properties: {}
     - name: label_8
       properties: {}
       type: Label
     - name: button_3
-      properties: {text: View}
+      properties: {text: View, spacing_above: none, spacing_below: none}
       type: Button
       layout_properties: {}
   - name: spacer_3
@@ -67,7 +75,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'NEPGBN,OIILEV'}
   - name: linear_panel_4
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'IQXEHB,TXLCEG'}
     components:
@@ -86,7 +94,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'UBYDPO,XVMGXD'}
   - name: linear_panel_5
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'CWZQBA,GDWMVI'}
     components:
@@ -100,11 +108,12 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
-    - name: spacer_5
-      properties: {height: 32}
-      type: Spacer
+  - name: spacer_5
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LFYZGL,FWRTAN'}
   - name: linear_panel_6
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'NPONZE,NKUOYH'}
     components:
@@ -118,11 +127,12 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
-    - name: spacer_6
-      properties: {height: 32}
-      type: Spacer
+  - name: spacer_6
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'EOVXUY,IGMFPT'}
   - name: linear_panel_7
-    properties: {}
+    properties: {border: 2px solid black, background: '#59e6e9'}
     type: LinearPanel
     layout_properties: {grid_position: 'EMQLPX,DWYXCR'}
     components:
@@ -136,9 +146,10 @@ components:
       properties: {text: View}
       type: Button
       layout_properties: {}
-    - name: spacer_7
-      properties: {height: 32}
-      type: Spacer
+  - name: spacer_7
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'HHTJMA,TJTODC'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

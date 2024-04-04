@@ -19,7 +19,7 @@ components:
       type: Button
       layout_properties: {x: 693.0938110351562, y: 10.84375, width: 168}
     - name: text_area_1
-      properties: {height: 227.25, text: dlken, font_size: 25, foreground: black}
+      properties: {height: 150, text: dlken, font_size: 25, foreground: black}
       type: TextArea
       layout_properties: {x: 55.09375, y: 192.84375, width: 828}
       event_bindings: {change: text_area_1_change}
@@ -31,7 +31,15 @@ components:
     - name: button_2
       properties: {text: Submit, background: Yellow, foreground: '#121212', font_size: 20}
       type: Button
-      layout_properties: {x: 357.28125, y: 477.03125, width: 184}
+      layout_properties: {x: 377.3333282470703, y: 550.6833343505859, width: 184}
+    - name: label_2
+      properties: {text: 'Upload Document :', visible: true}
+      type: Label
+      layout_properties: {x: 61.55000305175781, y: 448.0500030517578, width: 200}
+    - name: file_loader_1
+      properties: {bold: true, border: 2px solid black}
+      type: FileLoader
+      layout_properties: {x: 284.75001525878906, y: 447.25001525878906, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links

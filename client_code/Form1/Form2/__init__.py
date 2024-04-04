@@ -4,6 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import re
 
 class Form2(Form2Template):
   def __init__(self, **properties):
@@ -36,6 +37,30 @@ class Form2(Form2Template):
     """This method is called when an item is selected"""
     selected_item = self.drop_down_1.selected_value
     print("Selected item:", selected_item)
+
+  # def text_box_2_pressed_enter(self, **event_args):
+  #   """This method is called when the user presses Enter in this text box"""
+  #   email=self.text_box_2.text
+  #   pattern = r'^[\w\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9\.]+$'
+    
+  #   # Check if the email matches the pattern
+  #   if re.match(pattern, email):
+  #       alert("CORRECT")
+  #   else:
+  #       alert("Incorrect format")
+
+  def text_box_3_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    
+    email=self.text_box_2.text
+    pattern = r'^[\w\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9\.]+$'
+    
+    # Check if the email matches the pattern
+    if re.match(pattern, email):
+        alert("CORRECT")
+    else:
+        alert("Incorrect format")
+
     
 
     
