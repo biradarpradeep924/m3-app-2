@@ -87,6 +87,15 @@ def add_data_to_table1(name,class2,sub1,sub2,sub3,sub4,sub5,sub6,sub7):
     except Exception as e:
         return "Error: " + str(e)
       
+@anvil.server.callable    
+def get_sub_by_name(name,sub):
+    user = app_tables.table_1.get(name=name)
+    if user is not None:
+        # Access the password column directly
+        password = user[sub]
+        return password
+    else:
+        return None
 
 
 @anvil.server.callable
