@@ -8,7 +8,7 @@ from anvil.tables import app_tables
 class subject(subjectTemplate):
   def __init__(self,arg1, **properties):
     # Set Form properties and Data Bindings.
-    self.
+    self.arg1=arg1
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
