@@ -10,11 +10,6 @@ components:
   type: XYPanel
   layout_properties: {}
   components:
-  - name: file_loader_1
-    properties: {}
-    type: FileLoader
-    layout_properties: {x: 537.9844360351562, y: 226.09375, width: 200}
-    event_bindings: {change: file_loader_1_change}
   - name: label_2
     properties: {text: Share the Material Here with your class !!, bold: true, align: center,
       font_size: 25, underline: true, italic: true, background: '#27e01a'}
@@ -36,27 +31,32 @@ components:
     type: Button
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}
-  - name: drop_down_2
-    properties: {}
-    type: DropDown
-    layout_properties: {x: 531.09375, y: 423.828125, width: 200}
-  - name: text_area_1
-    properties: {height: 112.25}
-    type: TextArea
-    layout_properties: {x: 530.1833038330078, y: 284.93333435058594, width: 377}
   - name: label_4
     properties: {text: 'Select Class :', bold: true, font_size: 20}
     type: Label
     layout_properties: {x: 297.40000915527344, y: 145.40000915527344, width: 200}
-  - name: label_3
-    properties: {text: 'Upload Document :', bold: true, font_size: 20}
-    type: Label
-    layout_properties: {x: 283.3666687011719, y: 223.6999969482422, width: 200}
+  - name: drop_down_2
+    properties: {}
+    type: DropDown
+    layout_properties: {x: 728.140625, y: 554, width: 200}
   - name: label_5
     properties: {text: 'Add Description :', bold: true, font_size: 20}
     type: Label
-    layout_properties: {x: 278.4833526611328, y: 325.4833526611328, width: 200}
+    layout_properties: {x: 273.609375, y: 550.4375, width: 200}
+  - name: text_area_1
+    properties: {height: 112.25}
+    type: TextArea
+    layout_properties: {x: 517.265625, y: 482.75, width: 377}
+  - name: label_3
+    properties: {text: 'Upload Document :', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {x: 283.40625, y: 405.73435974121094, width: 200}
+  - name: file_loader_1
+    properties: {}
+    type: FileLoader
+    layout_properties: {x: 535.03125, y: 483.140625, width: 200}
+    event_bindings: {change: file_loader_1_change}
   - name: label_6
     properties: {text: 'Select Subject :', bold: true, font_size: 20}
     type: Label
-    layout_properties: {x: 291.46669006347656, y: 425.4833526611328, width: 200}
+    layout_properties: {x: 292.6875305175781, y: 231.671875, width: 200}
