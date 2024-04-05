@@ -9,9 +9,38 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 594.2499389648438}
+    properties: {height: 594.2499389648438, background: '#d2d0d0'}
     type: XYPanel
     layout_properties: {grid_position: 'TRVZXA,NRQBOU'}
+    components:
+    - name: button_1
+      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
+        bold: true, foreground: '#1d1b1b'}
+      type: Button
+      layout_properties: {x: 703.0938110351562, y: 13.093742370605469, width: 200}
+      event_bindings: {click: button_1_click}
+    - name: label_2
+      properties: {text: Share the Material Here with your class !!, bold: true, align: center,
+        font_size: 25, underline: true, italic: true, background: '#27e01a'}
+      type: Label
+      layout_properties: {x: 160.21875, y: 9.1875, width: 502}
+      data_bindings: []
+    - name: label_4
+      properties: {text: 'Select Class :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 175.046875, y: 133.046875, width: 200}
+    - name: label_6
+      properties: {text: 'Select Subject :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 175.09375, y: 206.09375, width: 200}
+    - name: label_3
+      properties: {text: 'Upload Document :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 177.28125, y: 285.28125, width: 200}
+    - name: label_5
+      properties: {text: 'Add Description :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 182.140625, y: 374.1405944824219, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links

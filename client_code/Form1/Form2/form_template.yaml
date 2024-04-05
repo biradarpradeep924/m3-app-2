@@ -14,84 +14,81 @@ components:
     layout_properties: {grid_position: 'LRAAVB,XWDNFM'}
     components:
     - name: label_1
-      properties: {text: Sign-up, bold: true, align: center, background: 'theme:Primary
-          Container'}
+      properties: {text: Register New Account, bold: true, align: center, background: '#d2d0d0',
+        foreground: blue, font_size: 22, icon: 'fa:registered'}
       type: Label
-      layout_properties: {}
   - name: xy_panel_1
     properties: {height: 532.25, border: '', background: '#d2d0d0'}
     type: XYPanel
-    layout_properties: {grid_position: 'SSMXFT,YIKKGF'}
+    layout_properties: {grid_position: 'CIGYWH,ACTZIB'}
     components:
+    - name: label_3
+      properties: {text: 'Email-Id :', bold: true, align: left, font_size: 20}
+      type: Label
+      layout_properties: {x: 208.796875, y: 81.34375, width: 200}
+    - name: label_2
+      properties: {text: 'Name :', bold: true, font_size: 21}
+      type: Label
+      layout_properties: {x: 207.265625, y: 22.796875, width: 156.265625}
     - name: label_4
-      properties: {text: 'Phone No :', bold: true}
+      properties: {text: 'Phone No :', bold: true, font_size: 20}
       type: Label
-      layout_properties: {x: 199.46669006347656, y: 150.9499969482422, width: 200}
+      layout_properties: {x: 206.71875, y: 136.21875, width: 200}
     - name: label_6
-      properties: {text: 'Role :', bold: true}
+      properties: {text: 'Role :', bold: true, font_size: 20}
       type: Label
-      layout_properties: {x: 204.59999084472656, y: 203.09999084472656, width: 200}
-    - name: button_2
-      properties: {text: Log-In, bold: true}
-      type: Button
-      layout_properties: {x: 368.71875, y: 467.6875, width: 200}
-      event_bindings: {click: button_2_click}
-    - name: button_1
-      properties: {text: Sign-Up, bold: true}
-      type: Button
-      layout_properties: {x: 370.4375, y: 402.6405944824219, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: label_7
-      properties: {text: 'Class :', bold: true}
-      type: Label
-      layout_properties: {x: 203.09378051757812, y: 344.828125, width: 200}
+      layout_properties: {x: 209.90625, y: 194.40625, width: 200}
     - name: label_5
-      properties: {text: Password, bold: true}
+      properties: {text: 'Password :', bold: true, font_size: 20}
       type: Label
-      layout_properties: {x: 200.65621948242188, y: 268.453125, width: 200}
+      layout_properties: {x: 209.765625, y: 252.59375, width: 200}
+    - name: text_box_1
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 533.125, y: 20.671859741210938, width: 200}
+    - name: label_7
+      properties: {text: 'Class :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 212.28125, y: 311.015625, width: 200}
     - name: text_box_3
       properties: {}
       type: TextBox
-      layout_properties: {x: 478.890625, y: 143.609375, width: 200}
+      layout_properties: {x: 533.984375, y: 128.703125, width: 200}
       event_bindings: {pressed_enter: text_box_3_pressed_enter}
+    - name: text_box_2
+      properties: {type: text, italic: false, visible: true, enabled: true}
+      type: TextBox
+      layout_properties: {x: 530.8749389648438, y: 74.671875, width: 200}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+      data_bindings: []
+    - name: text_box_4
+      properties: {}
+      type: TextBox
+      layout_properties: {x: 536.8125, y: 249.84375, width: 200}
+    - name: text_box_5
+      properties: {visible: true}
+      type: TextBox
+      layout_properties: {x: 535.46875, y: 310.1875, width: 200}
     - name: drop_down_1
       properties:
         items: ['', '']
         visible: true
         enabled: true
       type: DropDown
-      layout_properties: {x: 481.671875, y: 195.78125, width: 193.1875}
+      layout_properties: {x: 533.8125, y: 187.921875, width: 202.99999999999997}
       event_bindings: {change: drop_down_1_change}
-    - name: text_box_4
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 469.515625, y: 248.515625, width: 200}
-    - name: text_box_5
-      properties: {visible: true}
-      type: TextBox
-      layout_properties: {x: 486.96875, y: 320.7187194824219, width: 200}
-    - name: label_2
-      properties: {text: 'Name :', bold: true}
-      type: Label
-      layout_properties: {x: 199.171875, y: 18.71875, width: 156.265625}
-    - name: text_box_1
-      properties: {}
-      type: TextBox
-      layout_properties: {x: 475.03125, y: 11.578125, width: 200}
-    - name: label_3
-      properties: {text: 'Email-Id :', bold: true, align: left}
-      type: Label
-      layout_properties: {x: 201.70315551757812, y: 65.25, width: 200}
-    - name: text_box_2
-      properties: {type: text, italic: false, visible: true, enabled: true}
-      type: TextBox
-      layout_properties: {x: 473.640625, y: 54.4375, width: 200}
-      event_bindings: {pressed_enter: text_box_2_pressed_enter}
-      data_bindings: []
-    - name: label_error
-      properties: {}
-      type: Label
-      layout_properties: {x: 483.53125, y: 99.28125, width: 200}
+    - name: button_1
+      properties: {text: Sign-Up, bold: true, background: orange, foreground: white,
+        icon_align: right, icon: 'fa:arrow-right', font_size: 20}
+      type: Button
+      layout_properties: {x: 350.671875, y: 382.859375, width: 200}
+      event_bindings: {click: button_1_click}
+    - name: button_2
+      properties: {text: Log-In, bold: true, background: blue, foreground: white,
+        icon: 'fa:unlock-alt', font_size: 20}
+      type: Button
+      layout_properties: {x: 353.28125, y: 443.25, width: 200}
+      event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
