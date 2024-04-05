@@ -24,7 +24,7 @@ components:
     properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
       bold: true, foreground: '#1d1b1b'}
     type: Button
-    layout_properties: {x: 833.015625, y: 25.31249237060547, width: 147}
+    layout_properties: {x: 833.015625, y: 25.31249237060547, width: 148.9998779296875}
     event_bindings: {click: button_1_click}
   - name: button_2
     properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white}
