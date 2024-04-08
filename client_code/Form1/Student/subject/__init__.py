@@ -17,28 +17,28 @@ class subject(subjectTemplate):
     self.label_14.text=self.arg1
     self.label_17.text=self.arg1
     self.label_19.text=self.arg1
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub1")
-    self.label_2.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub2")
-    self.label_5.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub3")
-    self.label_8.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub4")
-    self.label_11.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub5")
-    self.label_15.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub6")
-    self.label_18.text=subj
-    subj=server.call('get_sub_by_name',self.arg2,sub="sub6")
-    self.label_19.text=subj
+    self.subj1=server.call('get_sub_by_name',self.arg2,sub="sub1")
+    self.label_2.text=self.subj1
+    subj2=server.call('get_sub_by_name',self.arg2,sub="sub2")
+    self.label_5.text=subj2
+    subj3=server.call('get_sub_by_name',self.arg2,sub="sub3")
+    self.label_8.text=subj3
+    subj4=server.call('get_sub_by_name',self.arg2,sub="sub4")
+    self.label_11.text=subj4
+    subj5=server.call('get_sub_by_name',self.arg2,sub="sub5")
+    self.label_15.text=subj5
+    subj6=server.call('get_sub_by_name',self.arg2,sub="sub6")
+    self.label_18.text=subj6
+    subj7=server.call('get_sub_by_name',self.arg2,sub="sub6")
+    self.label_19.text=subj7
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    open_form('Form1.Student.frame',self.subj2)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    open_form('Form1.Student.frame',self.subj1)

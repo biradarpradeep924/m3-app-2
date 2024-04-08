@@ -106,4 +106,16 @@ def add_data_to_table3(name,class2,stored_document,desc,sub,date):
     return "Data added successfully."
   except Exception as e:
         return "Error: " + str(e)
- 
+
+@anvil.server.callable
+def get_media_by_name(sub1):
+    media_records = app_tables.table_3.search(sub=sub1)
+
+    # List to store fetched media files
+    media_files = []
+
+    # Iterate through each record and retrieve the media file
+    for record in media_records:
+        media_files.append(record['document'])
+
+    return media_files
