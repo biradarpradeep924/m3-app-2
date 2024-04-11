@@ -29,12 +29,6 @@ components:
       properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
       type: Button
       layout_properties: {x: 402.96875, y: 361.546875, width: 200}
-    - name: button_1
-      properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary',
-        font_size: 18}
-      type: Button
-      layout_properties: {x: 815.28125, y: 27.296875, width: 116}
-      event_bindings: {click: button_1_click}
     - name: label_1
       properties: {text: '', bold: true, font_size: 36, border: '', background: '#93def1',
         foreground: '#1f37ef'}
@@ -57,6 +51,12 @@ components:
       type: Button
       layout_properties: {x: 364.921875, y: 448.64060974121094, width: 282.3125}
       event_bindings: {click: button_4_click}
+    - name: button_1
+      properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary',
+        font_size: 18}
+      type: Button
+      layout_properties: {x: 786.3280639648438, y: 29.34375762939453, width: 116}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

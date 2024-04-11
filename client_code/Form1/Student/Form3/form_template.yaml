@@ -3,12 +3,18 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
-  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: xy_panel_1
+  properties: {height: 610.25, background: '#d2d0d0', foreground: ''}
+  type: XYPanel
+  layout_properties: {slot: default}
+  components:
+  - name: button_2
+    properties: {text: BACK, icon: 'fa:arrow-circle-left', background: '#171617',
+      font_size: 21, foreground: white}
+    type: Button
+    layout_properties: {x: 0, y: 2.09375, width: 200}
+    event_bindings: {click: button_2_click}

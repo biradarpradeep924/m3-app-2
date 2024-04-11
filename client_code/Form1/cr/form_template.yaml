@@ -9,12 +9,12 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 599.25}
+    properties: {height: 599.25, background: '#d2d0d0', foreground: '#faf5f5'}
     type: XYPanel
     layout_properties: {grid_position: 'QLTEIA,GCLWQN'}
     components:
     - name: button_1
-      properties: {text: Logout, font_size: 25, background: red, foreground: black,
+      properties: {text: Logout, font_size: 20, background: red, foreground: black,
         icon: 'fa:arrow-circle-right'}
       type: Button
       layout_properties: {x: 693.0938110351562, y: 10.84375, width: 168}
@@ -25,21 +25,23 @@ components:
       event_bindings: {change: text_area_1_change}
     - name: label_1
       properties: {text: 'Do the Announcement Here to your class :', foreground: 'theme:On
-          Secondary Container', font_size: 23, bold: false}
+          Secondary Container', font_size: 23, bold: true, icon: 'fa:bullhorn'}
       type: Label
       layout_properties: {x: 62.140625, y: 117.89064025878906, width: 810}
-    - name: button_2
-      properties: {text: Submit, background: Yellow, foreground: '#121212', font_size: 20}
-      type: Button
-      layout_properties: {x: 377.3333282470703, y: 550.6833343505859, width: 184}
-    - name: label_2
-      properties: {text: 'Upload Document :', visible: true}
-      type: Label
-      layout_properties: {x: 61.55000305175781, y: 448.0500030517578, width: 200}
     - name: file_loader_1
-      properties: {bold: true, border: 2px solid black}
+      properties: {bold: true, border: 2px solid black, font_size: 18}
       type: FileLoader
-      layout_properties: {x: 284.75001525878906, y: 447.25001525878906, width: 200}
+      layout_properties: {x: 527.8905639648438, y: 373.390625, width: 200}
+    - name: button_2
+      properties: {text: Submit, background: '#7512d9', foreground: 'theme:On Secondary',
+        font_size: 22, icon: 'fa:check', bold: true}
+      type: Button
+      layout_properties: {x: 342.5625, y: 470.90625, width: 184}
+    - name: label_2
+      properties: {text: 'Upload Document :', visible: true, bold: true, font_size: 22,
+        foreground: black, icon: 'fa:file'}
+      type: Label
+      layout_properties: {x: 72.78125, y: 372.265625, width: 240}
 - type: FlowPanel
   properties: {}
   name: navbar_links
