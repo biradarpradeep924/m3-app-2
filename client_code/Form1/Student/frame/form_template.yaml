@@ -17,31 +17,31 @@ components:
       properties: {height: 32}
       type: Spacer
       layout_properties: {x: 0, y: 256.8576439768076, width: 906.5}
-    - name: button_1
-      properties: {text: button_1}
-      type: Button
-      layout_properties: {x: 0, y: 92.41320122778416, width: 200.00001525878906}
-      event_bindings: {click: button_1_click}
-    - name: button_3
-      properties: {text: button_3}
-      type: Button
-      layout_properties: {x: 481.6493157297373, y: 92.4131859689951, width: 200.00001525878906}
     - name: label_1
       properties: {align: center}
       type: Label
       layout_properties: {x: 8.9375, y: 185.484375, width: 200}
+    - name: button_3
+      properties: {text: button_3}
+      type: Button
+      layout_properties: {x: 712.7000274658203, y: 99.4666748046875, width: 200}
     - name: button_2
       properties: {text: button_2}
       type: Button
-      layout_properties: {x: 226.79684448242188, y: 95.5625, width: 200}
-    - name: label_3
-      properties: {align: center}
-      type: Label
-      layout_properties: {x: 537.65625, y: 186.890625, width: 200}
+      layout_properties: {x: 390.84999084472656, y: 100.61666870117188, width: 200}
     - name: label_2
       properties: {align: center}
       type: Label
-      layout_properties: {x: 256.546875, y: 194.078125, width: 200}
+      layout_properties: {x: 398.59999084472656, y: 181.13331604003906, width: 200}
+    - name: label_3
+      properties: {align: center}
+      type: Label
+      layout_properties: {x: 718.7500152587891, y: 188.98333740234375, width: 200}
+    - name: button_1
+      properties: {text: button_1}
+      type: Button
+      layout_properties: {x: 63.05000305175781, y: 102.4666748046875, width: 200}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
