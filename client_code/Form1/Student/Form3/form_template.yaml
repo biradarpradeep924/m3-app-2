@@ -18,8 +18,13 @@ components:
     type: Button
     layout_properties: {x: 0, y: 2.09375, width: 200}
     event_bindings: {click: button_2_click}
-  - name: repeating_panel_1
-    properties: {item_template: Form1.Student.Form3.ItemTemplate1, visible: true,
-      border: 1px solid}
-    type: RepeatingPanel
-    layout_properties: {x: 104.09375, y: 89.84376525878906, width: 775}
+  - name: text_area_1
+    properties: {height: 180.99996948242188, enabled: false, visible: true, border: 2px solid black,
+      spacing_above: medium, spacing_below: medium, font: '', font_size: 30}
+    type: TextArea
+    layout_properties: {x: 181.94446648657322, y: 155.39931572973728, width: 700.3298950195312}
+  - name: label_1
+    properties: {text: ' Announcement  :', foreground: 'theme:On Secondary Container',
+      font_size: 23, bold: true, icon: 'fa:bullhorn'}
+    type: Label
+    layout_properties: {x: 457.2222680002451, y: 0, width: 226.77084350585938}

@@ -132,3 +132,23 @@ def get_desc1(sub1,class2):
    except Exception as e:
         print("Error retrieving data:", e)
         return None
+     
+@anvil.server.callable
+def get_description(class2):
+    try:
+        # Query the Anvil Data Table to retrieve all rows matching the given condition
+        rows = app_tables.table_4.search(Class3=class2)
+        
+        # Initialize an empty list to store the descriptions
+        desc_values = " "
+        
+        # Iterate over all matched rows
+        for i, row in enumerate(rows):
+            desc_values+=row['Announcement']+'\n'
+            
+            # Check if it's not the last row
+           
+        return desc_values
+    except Exception as e:
+        print("Error retrieving data:", e)
+        return None

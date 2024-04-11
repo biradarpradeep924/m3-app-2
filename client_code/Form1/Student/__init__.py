@@ -25,7 +25,8 @@ class Student(StudentTemplate):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("Form1.Student.Form3")
+    class3=server.call('get_class2_by_name',self.arg1)
+    open_form("Form1.Student.Form3",class3)
 
   def button_2_copy_click(self, **event_args):
     """This method is called when the button is clicked"""

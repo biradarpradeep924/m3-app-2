@@ -98,9 +98,6 @@ db_schema:
     - name: Document
       admin_ui: {width: 200, order: 1}
       type: media
-    - name: Column3
-      admin_ui: {width: 200, order: 2}
-      type: datetime
     - name: Class3
       admin_ui: {width: 200, order: 3}
       type: string
