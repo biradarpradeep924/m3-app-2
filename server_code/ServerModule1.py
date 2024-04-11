@@ -89,9 +89,9 @@ def add_data_to_table1(name,class2,sub1,sub2,sub3,sub4,sub5,sub6,sub7):
       
 @anvil.server.callable    
 def get_sub_by_name(name,sub):
-    user = app_tables.table_1.get(name=name)
-    if user is not None:
-        subject = user[sub]
+    user1= app_tables.table_1.get(name=name)
+    if user1 is not None:
+        subject = user1[sub]
         return subject
     else:
         return None

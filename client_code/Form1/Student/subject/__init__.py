@@ -42,3 +42,24 @@ class subject(subjectTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Form1.Student.frame',self.subj1)
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Student.frame',self.subj3)
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Student.frame',self.subj4)
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Student.frame',self.subj5)
+
+  def button_6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Student.frame',self.subj6)
+
+  def button_7_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Student.frame',self.subj7)
+    

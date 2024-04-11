@@ -72,6 +72,7 @@ components:
       properties: {text: View, spacing_above: none, spacing_below: none, font_size: 17}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_3_click}
   - name: spacer_3
     properties: {height: 32}
     type: Spacer
@@ -91,6 +92,7 @@ components:
       properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_4_click}
   - name: spacer_4
     properties: {height: 32}
     type: Spacer
@@ -110,6 +112,7 @@ components:
       properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_5_click}
   - name: spacer_5
     properties: {height: 32}
     type: Spacer
@@ -129,6 +132,7 @@ components:
       properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_6_click}
   - name: spacer_6
     properties: {height: 32}
     type: Spacer
@@ -148,6 +152,7 @@ components:
       properties: {text: View, font_size: 17}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_7_click}
   - name: spacer_7
     properties: {height: 32}
     type: Spacer
