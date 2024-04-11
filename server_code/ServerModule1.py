@@ -91,31 +91,30 @@ def add_data_to_table1(name,class2,sub1,sub2,sub3,sub4,sub5,sub6,sub7):
 def get_sub_by_name(name,sub):
     user = app_tables.table_1.get(name=name)
     if user is not None:
-        # Access the password column directly
-        password = user[sub]
-        return password
+        subject = user[sub]
+        return subject
     else:
         return None
 
 
-@anvil.server.callable
-def add_data_to_table3(name,class2,stored_document,desc,sub,date):
-  try:
-    table1 = app_tables.table_3
-    table1.add_row(name=name,class2=class2,document=stored_document,desc=desc,sub=sub,date=date)
-    return "Data added successfully."
-  except Exception as e:
-        return "Error: " + str(e)
+# @anvil.server.callable
+# def add_data_to_table3(name,class2,stored_document,desc,sub,date):
+#   try:
+#     table1 = app_tables.table_3
+#     table1.add_row(name=name,class2=class2,document=stored_document,desc=desc,sub=sub,date=date)
+#     return "Data added successfully."
+#   except Exception as e:
+#         return "Error: " + str(e)
 
-@anvil.server.callable
-def get_media_by_name(sub1):
-    media_records = app_tables.table_3.search(sub=sub1)
+# @anvil.server.callable
+# def get_media_by_name(sub1):
+#     media_records = app_tables.table_3.search(sub=sub1)
 
-    # List to store fetched media files
-    media_files = []
+#     # List to store fetched media files
+#     media_files = []
 
-    # Iterate through each record and retrieve the media file
-    for record in media_records:
-        media_files.append(record['document'])
+#     # Iterate through each record and retrieve the media file
+#     for record in media_records:
+#         media_files.append(record['document'])
 
-    return media_files
+#     return media_files

@@ -41,6 +41,29 @@ components:
       properties: {text: 'Add Description :', bold: true, font_size: 20}
       type: Label
       layout_properties: {x: 182.140625, y: 374.1405944824219, width: 200}
+    - name: drop_down_1
+      properties: {}
+      type: DropDown
+      layout_properties: {x: 480.046875, y: 130.046875, width: 200}
+    - name: drop_down_2
+      properties: {}
+      type: DropDown
+      layout_properties: {x: 481.046875, y: 204.04686737060547, width: 200}
+    - name: file_loader_1
+      properties: {border: '2px solid '}
+      type: FileLoader
+      layout_properties: {x: 480.046875, y: 293.0469055175781, width: 200}
+      event_bindings: {change: file_loader_1_change}
+    - name: text_area_1
+      properties: {height: 112.25}
+      type: TextArea
+      layout_properties: {x: 481.046875, y: 369.046875, width: 340}
+    - name: button_2
+      properties: {text: Submit, font_size: 25, background: '#480de7', bold: true,
+        foreground: white}
+      type: Button
+      layout_properties: {x: 315.125, y: 513.140625, width: 200}
+      event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

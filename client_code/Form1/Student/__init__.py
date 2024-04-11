@@ -6,7 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class Student(StudentTemplate):
-  def __init__(self,arg1, **properties):
+  def __init__(self,arg1,**properties):
     # Set Form properties and Data Bindings.
     self.arg1=arg1
     alert("welcome "+arg1)
@@ -21,7 +21,7 @@ class Student(StudentTemplate):
   def button_2_copy_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     class2=server.call('get_class2_by_name',self.arg1)
-    open_form("Form1.Student.subject",self.class2,self.arg1)
+    open_form("Form1.Student.subject",class2,self.arg1)
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
