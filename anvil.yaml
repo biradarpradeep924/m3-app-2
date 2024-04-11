@@ -88,4 +88,18 @@ db_schema:
       admin_ui: {width: 200, order: 5}
       type: date
     title: Table 3
+  table_4:
+    client: none
+    server: full
+    columns:
+    - name: Announcement
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: Document
+      admin_ui: {width: 200, order: 1}
+      type: media
+    - name: Column3
+      admin_ui: {width: 200, order: 2}
+      type: datetime
+    title: Table 4
 renamed: true

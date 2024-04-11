@@ -18,3 +18,8 @@ components:
     type: Button
     layout_properties: {x: 0, y: 2.09375, width: 200}
     event_bindings: {click: button_2_click}
+  - name: repeating_panel_1
+    properties: {item_template: Form1.Student.Form3.ItemTemplate1, visible: true,
+      border: 1px solid}
+    type: RepeatingPanel
+    layout_properties: {x: 104.09375, y: 89.84376525878906, width: 775}
