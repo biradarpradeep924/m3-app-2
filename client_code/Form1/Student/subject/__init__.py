@@ -37,29 +37,36 @@ class subject(subjectTemplate):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj2)
+    subj2=server.call('get_sub_by_name',self.arg2,sub="sub2")
+    open_form('Form1.Student.frame',subj2,self.arg1)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj1)
+    subj1=server.call('get_sub_by_name',self.arg2,sub="sub1")
+    open_form('Form1.Student.frame',subj1,self.arg1)
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj3)
+    subj3=server.call('get_sub_by_name',self.arg2,sub="sub3")
+    open_form('Form1.Student.frame',subj3,self.arg1)
 
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj4)
+    subj4=server.call('get_sub_by_name',self.arg2,sub="sub4")
+    open_form('Form1.Student.frame',subj4,self.arg1)
 
   def button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj5)
+    subj5=server.call('get_sub_by_name',self.arg2,sub="sub5")
+    open_form('Form1.Student.frame',subj5,self.arg1)
 
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj6)
+    subj6=server.call('get_sub_by_name',self.arg2,sub="sub6")
+    open_form('Form1.Student.frame',subj6,self.arg1)
 
   def button_7_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Form1.Student.frame',self.subj7)
+    subj7=server.call('get_sub_by_name',self.arg2,sub="sub7")
+    open_form('Form1.Student.frame',subj7,self.arg1)
     

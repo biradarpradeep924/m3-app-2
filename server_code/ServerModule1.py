@@ -107,14 +107,28 @@ def add_data_to_table3(name,class2,stored_document,desc,sub,date):
         return "Error: " + str(e)
 
 @anvil.server.callable
-def get_media_by_name(sub1):
-    media_records = app_tables.table_3.search(sub=sub1)
+def retrieve_media_from_database(sub1,class2):
+  try:
+    row = app_tables.table_3.get(sub=sub1,class2=class2)
+    if row is None:
+        return None
+    media=row['document']
+    return media
+  except Exception as e:
+        print("Error retrieving data:", e)
+        return None
 
-    # List to store fetched media files
-    media_files = []
-
-    # Iterate through each record and retrieve the media file
-    for record in media_records:
-        media_files.append(record['document'])
-
-    return media_files
+    
+@anvil.server.callable
+def get_desc1(sub1,class2):
+   try:
+    row = app_tables.table_3.get(sub=sub1,class2=class2)
+    if row is None:
+        return None
+      
+        # Append the media file (stored in the 'document' column) to the list
+    desc1_values=row['desc']
+    return desc1_values
+   except Exception as e:
+        print("Error retrieving data:", e)
+        return None
