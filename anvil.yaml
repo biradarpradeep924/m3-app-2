@@ -101,5 +101,8 @@ db_schema:
     - name: Column3
       admin_ui: {width: 200, order: 2}
       type: datetime
+    - name: Class3
+      admin_ui: {width: 200, order: 3}
+      type: string
     title: Table 4
 renamed: true
