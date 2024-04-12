@@ -29,12 +29,6 @@ components:
       properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
       type: Button
       layout_properties: {x: 402.96875, y: 361.546875, width: 200}
-    - name: label_1
-      properties: {text: '', bold: true, font_size: 36, border: '', background: '#93def1',
-        foreground: '#1f37ef'}
-      type: Label
-      layout_properties: {x: 298.546875, y: 17.921875, width: 440.767}
-      data_bindings: []
     - name: button_3
       properties: {text: Profile, icon: 'fa:address-book-o', font_size: 22}
       type: Button
