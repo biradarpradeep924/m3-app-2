@@ -144,8 +144,7 @@ def get_description(class2):
         
         # Iterate over all matched rows
         for i, row in enumerate(rows):
-            desc_values+=row['Announcement']+'\n'
-            
+            desc_values += "Announcement NO " + str(i+1)+" = " + row['Announcement'] + '\n'
             # Check if it's not the last row
            
         return desc_values
