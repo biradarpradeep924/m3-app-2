@@ -107,31 +107,53 @@ def add_data_to_table3(name,class2,stored_document,desc,sub,date):
         return "Error: " + str(e)
 
 @anvil.server.callable
-def retrieve_media_from_database(sub1,class2):
-  try:
-    row = app_tables.table_3.get(sub=sub1,class2=class2)
-    if row is None:
+def retrieve_media_from_database(sub1, class2):
+    try:
+        # Sanitize inputs
+        sub1 = sanitize_input(sub1)
+        class2 = sanitize_input(class2)
+        
+        # Perform the database query
+        rows = app_tables.table_3.search(sub=sub1, class2=class2)
+        
+        media_list = []
+        for row in rows:
+            media_list.append(row['document'])
+        
+        return media_list
+    except Exception as e:
+        # Log the error for debugging purposes
+        print("Error retrieving media list:", e)
         return None
-    media=row['document']
-    return media
-  except Exception as e:
-        print("Error retrieving data:", e)
-        return None
+
+def sanitize_input(input_str):
+    # Implement input sanitization logic here
+    # For example, you might want to use Anvil's utilities or regular expressions
+    # to ensure that input_str doesn't contain any malicious characters
+    sanitized_str = input_str.strip()  # Example: Remove leading and trailing whitespace
+    return sanitized_str
+
 
     
 @anvil.server.callable
-def get_desc1(sub1,class2):
-   try:
-    row = app_tables.table_3.get(sub=sub1,class2=class2)
-    if row is None:
-        return None
-      
-        # Append the media file (stored in the 'document' column) to the list
-    desc1_values=row['desc']
-    return desc1_values
-   except Exception as e:
+def get_desc1(sub1, class2):
+    try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_3.search(sub=sub1, class2=class2)
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['desc'])
+          
+        return desc_list  # Return the list of descriptions
+    except Exception as e:
+        # Log any errors that occur
         print("Error retrieving data:", e)
         return None
+
      
 @anvil.server.callable
 def get_description(class2):
