@@ -69,4 +69,7 @@ class subject(subjectTemplate):
     """This method is called when the button is clicked"""
     subj7=server.call('get_sub_by_name',self.arg2,sub="sub7")
     open_form('Form1.Student.frame',subj7,self.arg1)
-    
+
+  def button_10_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Form1.Student")
