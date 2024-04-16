@@ -59,7 +59,7 @@ components:
     - name: label_6
       properties: {text: None, align: center, border: 1px solid black}
       type: Label
-      layout_properties: {x: 508.046875, y: 295.046875, width: 200}
+      layout_properties: {x: 470.140625, y: 290.140625, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
