@@ -4,59 +4,59 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 597.25, background: '#dad7d7'}
+    properties: {height: 567.25, background: '#dad7d7'}
     type: XYPanel
     layout_properties: {grid_position: 'FAGWRV,NFDDHV'}
     components:
-    - name: button_2
-      properties: {text: Announcements, font_size: 25, background: orange, icon: 'fa:bullhorn'}
-      type: Button
-      layout_properties: {x: 350.46875, y: 166.046875, width: 294}
-      data_bindings: []
-      event_bindings: {click: button_2_click}
-    - name: button_2_copy
-      properties: {text: Research Papers, align: center, font_size: 25, background: orange,
-        icon: 'fa:file-text'}
-      type: Button
-      layout_properties: {x: 351.46875, y: 263.0625, width: 303}
-      event_bindings: {click: button_2_copy_click}
-    - name: button_2_copy_2
-      properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
-      type: Button
-      layout_properties: {x: 402.96875, y: 361.546875, width: 200}
     - name: button_3
       properties: {text: Profile, icon: 'fa:address-book-o', font_size: 22}
       type: Button
       layout_properties: {x: 7.291649714112282, y: 25.74652947485447, width: 200.00001525878906}
       event_bindings: {click: button_3_click}
-    - name: button_2_copy_3
-      properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
-      type: Button
-      layout_properties: {x: 400.7639244943857, y: 540.4167060852051, width: 200.00001525878906}
-      event_bindings: {click: button_2_copy_3_click}
-    - name: button_4
-      properties: {text: Join Course, bold: false, background: orange, font_size: 25,
-        icon: 'fa:building-o'}
-      type: Button
-      layout_properties: {x: 364.921875, y: 448.64060974121094, width: 282.3125}
-      event_bindings: {click: button_4_click}
     - name: button_1
       properties: {text: Log-Out, background: '#dd2c2c', foreground: 'theme:On Primary',
         font_size: 18}
       type: Button
       layout_properties: {x: 786.3280639648438, y: 29.34375762939453, width: 116}
       event_bindings: {click: button_1_click}
+    - name: button_2_copy
+      properties: {text: Research Papers, align: center, font_size: 25, background: orange,
+        icon: 'fa:file-text'}
+      type: Button
+      layout_properties: {x: 342.609375, y: 191.203125, width: 303}
+      event_bindings: {click: button_2_copy_click}
+    - name: button_4
+      properties: {text: Join Course, bold: false, background: orange, font_size: 25,
+        icon: 'fa:building-o'}
+      type: Button
+      layout_properties: {x: 350.140625, y: 374.84375, width: 282.3125}
+      event_bindings: {click: button_4_click}
+    - name: button_2_copy_2
+      properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
+      type: Button
+      layout_properties: {x: 389.140625, y: 283.734375, width: 200}
+    - name: button_2
+      properties: {text: Announcements, font_size: 25, background: orange, icon: 'fa:bullhorn'}
+      type: Button
+      layout_properties: {x: 350.75, y: 97.328125, width: 294}
+      data_bindings: []
+      event_bindings: {click: button_2_click}
+    - name: button_2_copy_3
+      properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
+      type: Button
+      layout_properties: {x: 389.03125, y: 466.6875, width: 200}
+      event_bindings: {click: button_2_copy_3_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
 - name: label_2
-  properties: {text: Academic Resource Hub, background: 'theme:Primary Container',
-    foreground: Blue}
+  properties: {text: Academic Resource Hub, background: '', foreground: Blue, bold: true,
+    font_size: 25}
   type: Label
   layout_properties: {slot: title}

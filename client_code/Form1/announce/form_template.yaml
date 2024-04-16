@@ -13,12 +13,6 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'OVGHMX,IBNBOS'}
     components:
-    - name: label_1
-      properties: {text: Academic Resource Hub, bold: true, font_size: 36, border: '',
-        background: '#93def1', foreground: '#1f37ef'}
-      type: Label
-      layout_properties: {x: 106.70137871801853, y: 3.3680581003427505, width: 492.54516796875}
-      data_bindings: []
     - name: label_2
       properties: {align: center}
       type: Label

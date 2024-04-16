@@ -48,10 +48,6 @@ components:
       properties: {text: View Document}
       type: Button
       layout_properties: {x: 69.546875, y: 248.046875, width: 200}
-    - name: label_5
-      properties: {text: None, align: center, border: 1px solid blac}
-      type: Label
-      layout_properties: {x: 75.546875, y: 302.046875, width: 200}
     - name: button_5
       properties: {text: View Document}
       type: Button
@@ -60,6 +56,10 @@ components:
       properties: {text: None, align: center, border: 1px solid black}
       type: Label
       layout_properties: {x: 470.140625, y: 290.140625, width: 200}
+    - name: label_5
+      properties: {text: None, align: center, border: 1px solid blac}
+      type: Label
+      layout_properties: {x: 55.59375, y: 302.09375, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
