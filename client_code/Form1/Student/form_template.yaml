@@ -9,9 +9,9 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 567.25, background: '#dad7d7'}
+    properties: {height: 560.25, background: '#dad7d7'}
     type: XYPanel
-    layout_properties: {grid_position: 'FAGWRV,NFDDHV'}
+    layout_properties: {grid_position: 'LFIWGO,WBIYTK'}
     components:
     - name: button_3
       properties: {text: Profile, icon: 'fa:address-book-o', font_size: 22}
