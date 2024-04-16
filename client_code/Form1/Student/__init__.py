@@ -9,7 +9,7 @@ class Student(StudentTemplate):
   def __init__(self,arg1,**properties):
     # Set Form properties and Data Bindings.
     self.arg1=arg1
-    alert("welcome "+arg1)
+    
     self.init_components(**properties)
     super().__init__(**properties)
     # Any code you write here will run before the form opens.

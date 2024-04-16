@@ -21,9 +21,19 @@ class frame(frameTemplate):
             alert("No media found")
        
         descriptions=server.call('get_desc1',self.sub,self.class2)
-        self.label_1.text=descriptions[0]
-        self.label_2.text=descriptions[1]
-      
+        i= enumerate(descriptions)
+          
+        for i, description in enumerate(descriptions):
+    # Add 1 to i because enumerate starts from 0
+           i += 1
+           if i == 1:
+              self.label_1.text = description
+           elif i == 2:
+              self.label_2.text = description
+           elif i == 3:
+              self.label_3.text = description
+           elif i == 4:
+             self.label_4.text = description
         
         
 
@@ -50,3 +60,27 @@ class frame(frameTemplate):
     def button_4_click(self, **event_args):
       """This method is called when the button is clicked"""
       open_form("Form1.Student","c")
+
+    def button_3_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      media = anvil.server.call('retrieve_media_from_database', self.sub, self.class2)
+      try:
+       self.media_link = anvil.media.download(media[2])
+       self.button_3.text = "Open Document"
+       self.button_3.set_event_handler("click", self.open_media)
+      except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+
+    def button_5_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      media = anvil.server.call('retrieve_media_from_database', self.sub, self.class2)
+      try:
+       self.media_link = anvil.media.download(media[3])
+       self.button_3.text = "Open Document"
+       self.button_3.set_event_handler("click", self.open_media)
+      except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+      
+      

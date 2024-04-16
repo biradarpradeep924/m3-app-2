@@ -11,7 +11,7 @@ components:
   - name: xy_panel_1
     properties: {height: 433.44439697265625, background: '#d2d0d0'}
     type: XYPanel
-    layout_properties: {grid_position: 'CXKSFB,CIORSR'}
+    layout_properties: {grid_position: 'LIEKLC,OKQZTD'}
     components:
     - name: label_3
       properties: {align: center}
@@ -27,10 +27,6 @@ components:
       type: Button
       layout_properties: {x: 468.140625, y: 82.140625, width: 200}
       event_bindings: {click: button_2_click}
-    - name: label_2
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
-      type: Label
-      layout_properties: {x: 480.828125, y: 140.359375, width: 200}
     - name: button_1
       properties: {text: View Document}
       type: Button
@@ -40,6 +36,30 @@ components:
       properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
       type: Label
       layout_properties: {x: 74.078125, y: 155.625, width: 200}
+    - name: label_2
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      type: Label
+      layout_properties: {x: 470.96875, y: 149.5, width: 200}
+    - name: label_4
+      properties: {text: Resources, bold: true, align: center}
+      type: Label
+      layout_properties: {x: 284.546875, y: 17.046875, width: 200}
+    - name: button_3
+      properties: {text: View Document}
+      type: Button
+      layout_properties: {x: 69.546875, y: 248.046875, width: 200}
+    - name: label_5
+      properties: {text: None, align: center, border: 1px solid blac}
+      type: Label
+      layout_properties: {x: 75.546875, y: 302.046875, width: 200}
+    - name: button_5
+      properties: {text: View Document}
+      type: Button
+      layout_properties: {x: 479.046875, y: 241.046875, width: 200}
+    - name: label_6
+      properties: {text: None, align: center, border: 1px solid black}
+      type: Label
+      layout_properties: {x: 508.046875, y: 295.046875, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
