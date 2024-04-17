@@ -173,3 +173,27 @@ def get_description(class2):
     except Exception as e:
         print("Error retrieving data:", e)
         return None
+
+#Announcement Desc
+@anvil.server.callable
+def get_desc4(class2):
+    try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_4.search(class2=class2)
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['desc'])
+          
+        return desc_list  # Return the list of descriptions
+    except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+        return None
+#Announcement add
+@anvil.server.callable
+def add_data_to_table5(desc1,desc2,document):
+  

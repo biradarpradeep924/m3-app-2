@@ -6,6 +6,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -45,7 +46,7 @@ class Form1(Form1Template):
            open_form("Form1.Alumni")
       elif role1=="CR":
            alert("successfully login") 
-           open_form("Form1.cr")
+           open_form("Form1.CR")
       else:alert("Role is not selected please sign-up!!!")  
     else: alert("Invalid username or password. Please try again.")
        

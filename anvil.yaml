@@ -101,5 +101,11 @@ db_schema:
     - name: Class3
       admin_ui: {width: 200, order: 3}
       type: string
+    - name: document
+      admin_ui: {width: 200, order: 4}
+      type: media
+    - name: desc
+      admin_ui: {width: 200, order: 5}
+      type: string
     title: Table 4
 renamed: true

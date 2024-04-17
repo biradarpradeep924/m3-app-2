@@ -18,6 +18,7 @@ components:
         icon: 'fa:arrow-circle-right'}
       type: Button
       layout_properties: {x: 693.0938110351562, y: 10.84375, width: 168}
+      event_bindings: {click: button_1_click}
     - name: text_area_1
       properties: {height: 150, text: dlken, font_size: 25, foreground: black}
       type: TextArea
@@ -32,16 +33,25 @@ components:
       properties: {bold: true, border: 2px solid black, font_size: 18}
       type: FileLoader
       layout_properties: {x: 527.8905639648438, y: 373.390625, width: 200}
-    - name: button_2
-      properties: {text: Submit, background: '#7512d9', foreground: 'theme:On Secondary',
-        font_size: 22, icon: 'fa:check', bold: true}
-      type: Button
-      layout_properties: {x: 342.5625, y: 470.90625, width: 184}
     - name: label_2
       properties: {text: 'Upload Document :', visible: true, bold: true, font_size: 22,
         foreground: black, icon: 'fa:file'}
       type: Label
       layout_properties: {x: 72.78125, y: 372.265625, width: 240}
+    - name: button_2
+      properties: {text: Submit, background: '#7512d9', foreground: 'theme:On Secondary',
+        font_size: 22, icon: 'fa:check', bold: true}
+      type: Button
+      layout_properties: {x: 363.609375, y: 547.828125, width: 184}
+      event_bindings: {click: button_2_click}
+    - name: text_area_2
+      properties: {}
+      type: TextArea
+      layout_properties: {x: 382.046875, y: 444.046875, width: 358}
+    - name: label_3
+      properties: {text: 'Description :', foreground: '#0d0c0c', bold: true, font_size: 24}
+      type: Label
+      layout_properties: {x: 75.546875, y: 460.046875, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
