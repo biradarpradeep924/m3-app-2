@@ -95,11 +95,8 @@ db_schema:
     - name: Announcement
       admin_ui: {width: 200, order: 0}
       type: string
-    - name: Document
-      admin_ui: {width: 200, order: 1}
-      type: media
-    - name: Class3
-      admin_ui: {width: 200, order: 3}
+    - name: class3
+      admin_ui: {order: 3, width: 200}
       type: string
     - name: document
       admin_ui: {width: 200, order: 4}

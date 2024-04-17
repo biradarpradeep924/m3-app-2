@@ -9,7 +9,7 @@ from anvil.tables import app_tables
 class Form2(Form2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.drop_down_1.items = ["Student", "Teacher", "CR","Alumni"]
+    self.drop_down_1.items = ["Student", "Teacher", "CR","Alumni","Admin"]
     self.init_components(**properties)
     if self.drop_down_1.selected_value == "Student" or self.drop_down_1.selected_value == "CR":
       self.text_box_5.visible = True
@@ -53,23 +53,18 @@ class Form2(Form2Template):
 def validate_email_change(text_box_2, **event_args):
     """This method is called when the text in the TextBox changes"""
     
-    # Retrieve the current text entered in the TextBox
-    form = Form2()
-    entered_email = text_box_2.text
+    entered_email = text_box.text
     pattern = r'^[\w\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9\.]+$'
     
     # Check if the email matches the pattern
-    # Check if the entered email matches the pattern
-    if pattern == entered_email:
-        # label_error.text = ""# Clear any previous error message
-        alert("")
+    if re.match(pattern, entered_email):
+        alert("")  # Clear any previous error message
     else:
-        alert("Invalid email format") # Show error message to the user
-    
+        alert("Invalid email format")  # Show error message to the user
+
 # Bind the event handler to the TextBox component
 form = Form2()
 form.text_box_2.set_event_handler("change", validate_email_change)
-
     
     
     

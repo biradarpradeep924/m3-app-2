@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#f7f7f7'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -37,14 +37,17 @@ components:
       properties: {text: Manage Courses, background: orange, foreground: white, font_size: 20}
       type: Button
       layout_properties: {x: 353.1875, y: 146.9375, width: 214}
+      event_bindings: {click: button_2_click}
     - name: button_4_copy
       properties: {text: View Users, background: orange, foreground: white, font_size: 20}
       type: Button
       layout_properties: {x: 363.234375, y: 333.21875, width: 200}
+      event_bindings: {click: button_4_copy_click}
     - name: button_4
       properties: {text: Manage Users, background: orange, foreground: white, font_size: 20}
       type: Button
       layout_properties: {x: 363.46875, y: 240.21875, width: 200}
+      event_bindings: {click: button_4_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

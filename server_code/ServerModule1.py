@@ -159,7 +159,7 @@ def get_desc1(sub1, class2):
 def get_description(class2):
     try:
         # Query the Anvil Data Table to retrieve all rows matching the given condition
-        rows = app_tables.table_4.search(Class3=class2)
+        rows = app_tables.table_4.search(class3=class2)
         
         # Initialize an empty list to store the descriptions
         desc_values = " "
@@ -179,7 +179,7 @@ def get_description(class2):
 def get_desc4(class2):
     try:
         # Retrieve rows from the table based on the provided parameters
-        rows = app_tables.table_4.search(class2=class2)
+        rows = app_tables.table_4.search(class3=class2)
         
         if not rows:
             return None
@@ -195,5 +195,76 @@ def get_desc4(class2):
         return None
 #Announcement add
 @anvil.server.callable
-def add_data_to_table5(desc1,desc2,document):
-  
+def add_data_to_table5(class3,desc,desc2,document):
+    try:
+        # Access 'Table2' and insert data
+        table4 = app_tables.table_4
+        table4.add_row(Announcement=desc,desc=desc2,document=document,class3=class3)
+        return "Data added successfully."
+    except Exception as e:
+        return "Error: " + str(e)
+      
+@anvil.server.callable
+def get_class_by_name_(name):
+    user = app_tables.table_2.get(name=name)
+    if user is not None:
+        # Access the password column directly
+        password = user['sclass']
+        return password
+    else:
+        return None
+      
+@anvil.server.callable
+def retrieve_media_from_database2(class3):
+    try:
+        # Sanitize inputs
+        class2 = sanitize_input(class3)
+        
+        # Perform the database query
+        rows = app_tables.table_4.search(class3=class3)
+        
+        media_list = []
+        for row in rows:
+            media_list.append(row['document'])
+        
+        return media_list
+    except Exception as e:
+        # Log the error for debugging purposes
+        print("Error retrieving media list:", e)
+        return None
+
+def sanitize_input(input_str):
+    # Implement input sanitization logic here
+    # For example, you might want to use Anvil's utilities or regular expressions
+    # to ensure that input_str doesn't contain any malicious characters
+    sanitized_str = input_str.strip()  # Example: Remove leading and trailing whitespace
+    return sanitized_str
+
+@anvil.server.callable
+def get_class(name):
+    user = app_tables.table_2.get(name=name)
+    if user is not None:
+        # Access the password column directly
+        password = user['sclass']
+        return password
+    else:
+        return None
+
+@anvil.server.callable
+def get_user(class3):
+   try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_2.search(sclass=class3,role="Student")
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['name'])
+          
+        return desc_list  # Return the list of descriptions
+   except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+        return None
