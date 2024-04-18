@@ -12,15 +12,30 @@ class viewuser(viewuserTemplate):
     self.name=name
     class4=server.call("get_class",self.name)
     users=server.call("get_user",class4)
-    # Iterate over the users
-  
+    
+
+# Iterate over the users
+    x_position = 40
+    y_position = 10
+
+# Iterate over the users
     for user in users:
-            if isinstance(user, dict):  # Check if user is a dictionary
-                # Create a label for each user
-                label = Label(text=user.get('name', ''))  # Get user's name from dictionary
-            
-                # Add the label to the panel in your Anvil app
-                self.xy_panel_1.add_component(label)
-            else:
-                print("User data is not in expected format:", user)
+     print("x_position:", x_position, "y_position:", y_position)
+     label = Label(text=user)
+     label.x = x_position
+     label.y = y_position
+     self.xy_panel_1.add_component(label)
+     y_position += 30 
+     x_position += 100
+
+
+
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1.Admin',"")
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Form1")
  

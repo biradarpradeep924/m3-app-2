@@ -12,6 +12,17 @@ components:
     properties: {height: 430.33331298828125}
     type: XYPanel
     layout_properties: {grid_position: 'XPSEAP,UQDGAN'}
+    components:
+    - name: button_1
+      properties: {text: Back}
+      type: Button
+      layout_properties: {x: 13.263901606202126, y: 13.52430810034275, width: 200.00001525878906}
+      event_bindings: {click: button_1_click}
+    - name: button_2
+      properties: {text: Logout}
+      type: Button
+      layout_properties: {x: 532.2569741159678, y: 12.413201227784157, width: 200.00001525878906}
+      event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
