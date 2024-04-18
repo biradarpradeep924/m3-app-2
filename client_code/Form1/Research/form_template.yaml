@@ -51,41 +51,6 @@ components:
       properties: {border: 2px solid}
       type: Label
       layout_properties: {x: 127.421875, y: 99.15625, width: 200}
-    - name: button_1_copy
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 650.3125, y: 93.3125, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy_5
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 652.4686889648438, y: 416.46875, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy_6
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 652.46875, y: 480.46875, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy_4
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 653.390625, y: 350.4062194824219, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy_3
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 649.421875, y: 284.390625, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy_2
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 652.328125, y: 217.375, width: 200}
-      event_bindings: {click: button_1_click}
-    - name: button_1_copy_copy
-      properties: {text: View, font_size: 18, foreground: white, background: '#12e200'}
-      type: Button
-      layout_properties: {x: 652.296875, y: 153.328125, width: 200}
-      event_bindings: {click: button_1_click}
     - name: button_1
       properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
         bold: true, foreground: '#1d1b1b'}
@@ -98,6 +63,35 @@ components:
       type: Button
       layout_properties: {x: 16.046875, y: 3.140625, width: 200}
       event_bindings: {click: button_2_click}
+    - name: button_3
+      properties: {text: View, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 547.8125161081553, y: 91.30207146704197, width: 200.00001525878906}
+      event_bindings: {click: button_3_click}
+    - name: button_4
+      properties: {text: button_4, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 550.0000457763672, y: 146.8576439768076, width: 200.00001525878906}
+    - name: button_5
+      properties: {text: button_5, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 550.0000457763672, y: 220.19098748266697, width: 200.00001525878906}
+    - name: button_6
+      properties: {text: button_6, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 550.0000457763672, y: 286.8576744943857, width: 200.00001525878906}
+    - name: button_7
+      properties: {text: button_7, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 548.9236611276865, y: 347.96878899633884, width: 200.00001525878906}
+    - name: button_8
+      properties: {text: button_8, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 548.9236000925303, y: 415.93750762939453, width: 200.00001525878906}
+    - name: button_9
+      properties: {text: button_9, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 550.0000457763672, y: 486.85767364501953, width: 200.00001525878906}
 - type: FlowPanel
   properties: {}
   name: navbar_links

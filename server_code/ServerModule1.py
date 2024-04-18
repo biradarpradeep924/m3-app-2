@@ -298,11 +298,11 @@ def retrieve_media_from_database4(class4):
         class2 = sanitize_input(class4)
         
         # Perform the database query
-        rows = app_tables.table_4.search(class3=class3,type="Magzine")
+        rows = app_tables.table_5.search(class4=class4,type="Magzine")
         
         media_list = []
         for row in rows:
-            media_list.append(row['document'])
+            media_list.append(row['doc'])
         
         return media_list
    except Exception as e:
@@ -316,3 +316,62 @@ def sanitize_input(input_str):
     # to ensure that input_str doesn't contain any malicious characters
     sanitized_str = input_str.strip()  # Example: Remove leading and trailing whitespace
     return sanitized_str
+
+@anvil.server.callable
+def get_desc12(class2):
+    try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_5.search(class4=class2,type="Magzine")
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['desc'])
+          
+        return desc_list  # Return the list of descriptions
+    except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+        return None
+
+
+@anvil.server.callable
+def retrieve_media_from_database45(class4):
+   try:
+        # Sanitize inputs
+        class2 = sanitize_input(class4)
+        
+        # Perform the database query
+        rows = app_tables.table_5.search(class4=class4,type="Research Paper")
+        
+        media_list = []
+        for row in rows:
+            media_list.append(row['doc'])
+        
+        return media_list
+   except Exception as e:
+        # Log the error for debugging purposes
+        print("Error retrieving media list:", e)
+        return None
+
+
+@anvil.server.callable
+def get_desc18(class2):
+    try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_5.search(class4=class2,type="Research Paper")
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['desc'])
+          
+        return desc_list  # Return the list of descriptions
+    except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+        return None
