@@ -7,6 +7,28 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: xy_panel_1
+    properties: {height: 599.25}
+    type: XYPanel
+    layout_properties: {grid_position: 'IRYMET,YWQCUT'}
+    components:
+    - name: label_1
+      properties: {background: '#6a76d2', text: '', bold: false, foreground: 'theme:Tertiary
+          Container', font_size: 25, icon: '', icon_align: right}
+      type: Label
+      layout_properties: {x: 1.0468902587890625, y: 3.09375, width: 897}
+    - name: button_1
+      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
+        bold: true, foreground: '#1d1b1b'}
+      type: Button
+      layout_properties: {x: 702, y: 3.046875, width: 200}
+      event_bindings: {click: button_1_click}
+    - name: label_2
+      properties: {text: Research Papers, icon: 'fa:file-text-o', font_size: 25, bold: true,
+        foreground: '#5df10e'}
+      type: Label
+      layout_properties: {x: 340.09375, y: 1.84375, width: 229}
 - type: FlowPanel
   properties: {}
   name: navbar_links
