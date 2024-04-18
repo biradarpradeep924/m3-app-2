@@ -18,7 +18,8 @@ components:
       type: Label
       layout_properties: {x: 718.7500152587891, y: 188.98333740234375, width: 200}
     - name: button_4
-      properties: {text: Back, background: black, foreground: white, icon: 'fa:backward'}
+      properties: {text: BACK, background: black, foreground: white, icon: 'fa:arrow-circle-left',
+        font_size: 20}
       type: Button
       layout_properties: {x: 18.546875, y: 10.046875, width: 200}
       event_bindings: {click: button_4_click}
@@ -60,7 +61,7 @@ components:
       type: Label
       layout_properties: {x: 261.34375, y: 156.859375, width: 200}
     - name: label_4
-      properties: {text: Explore with your study Resources, bold: true, align: center,
+      properties: {text: Explore with your Study Resources, bold: true, align: center,
         font_size: 23, foreground: blue}
       type: Label
       layout_properties: {x: 284.59375, y: 7.09375, width: 424.203125}

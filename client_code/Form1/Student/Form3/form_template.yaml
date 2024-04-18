@@ -15,7 +15,7 @@ components:
   components:
   - name: button_2
     properties: {text: BACK, icon: 'fa:arrow-circle-left', background: '#171617',
-      font_size: 21, foreground: white}
+      font_size: 20, foreground: white}
     type: Button
     layout_properties: {x: 0, y: 2.09375, width: 200}
     event_bindings: {click: button_2_click}

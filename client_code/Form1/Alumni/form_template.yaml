@@ -33,14 +33,6 @@ components:
       properties: {text: 'Select Subject :', bold: true, font_size: 20}
       type: Label
       layout_properties: {x: 175.09375, y: 206.09375, width: 200}
-    - name: label_3
-      properties: {text: 'Upload Document :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 177.28125, y: 285.28125, width: 200}
-    - name: label_5
-      properties: {text: 'Add Description :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 182.140625, y: 374.1405944824219, width: 200}
     - name: drop_down_1
       properties: {}
       type: DropDown
@@ -52,17 +44,37 @@ components:
     - name: file_loader_1
       properties: {border: '2px solid '}
       type: FileLoader
-      layout_properties: {x: 480.046875, y: 293.0469055175781, width: 200}
+      layout_properties: {x: 480.140625, y: 328.1406555175781, width: 200}
       event_bindings: {change: file_loader_1_change}
+    - name: label_1
+      properties: {text: 'Document Type :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 173.09375, y: 271.84375, width: 200}
+    - name: radio_button_1
+      properties: {text: Magzine, bold: true, font_size: 20}
+      type: RadioButton
+      layout_properties: {x: 484.046875, y: 262.796875, width: 178.171875}
+    - name: radio_button_2
+      properties: {text: Research Paper, selected: false, bold: true, font_size: 20}
+      type: RadioButton
+      layout_properties: {x: 674.140625, y: 259.8906555175781, width: 181}
+    - name: label_3
+      properties: {text: 'Upload Document :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 174.375, y: 336.359375, width: 200}
+    - name: label_5
+      properties: {text: 'Add Description :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 177.234375, y: 404.2187194824219, width: 200}
     - name: text_area_1
-      properties: {height: 112.25}
+      properties: {height: 92.24993896484375}
       type: TextArea
-      layout_properties: {x: 481.046875, y: 369.046875, width: 340}
+      layout_properties: {x: 487.140625, y: 410.1406555175781, width: 340}
     - name: button_2
       properties: {text: Submit, font_size: 25, background: '#480de7', bold: true,
         foreground: white}
       type: Button
-      layout_properties: {x: 315.125, y: 513.140625, width: 200}
+      layout_properties: {x: 335.203125, y: 530.578125, width: 200}
       event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}

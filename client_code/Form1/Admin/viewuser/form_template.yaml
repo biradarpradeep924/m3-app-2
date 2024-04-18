@@ -23,6 +23,17 @@ components:
       type: Button
       layout_properties: {x: 532.2569741159678, y: 12.413201227784157, width: 200.00001525878906}
       event_bindings: {click: button_2_click}
+    - name: data_grid_1
+      properties:
+        columns:
+        - {id: JKSDUP, title: Column 1, data_key: column_1}
+        - {id: VJQQOR, title: Column 2, data_key: column_2}
+      type: DataGrid
+      components:
+      - name: repeating_panel_1
+        properties: {item_template: Form1.Admin.viewuser.RowTemplate2}
+        type: RepeatingPanel
+      layout_properties: {x: 266.5798873901367, y: 161.26736450195312, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links

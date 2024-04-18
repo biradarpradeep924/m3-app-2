@@ -44,14 +44,15 @@ components:
       type: Button
       layout_properties: {x: 363.609375, y: 547.828125, width: 184}
       event_bindings: {click: button_2_click}
+    - name: label_3
+      properties: {text: 'Description :', foreground: '#0d0c0c', bold: true, font_size: 24,
+        icon: 'fa:edit'}
+      type: Label
+      layout_properties: {x: 75.546875, y: 460.046875, width: 200}
     - name: text_area_2
       properties: {}
       type: TextArea
-      layout_properties: {x: 382.046875, y: 444.046875, width: 358}
-    - name: label_3
-      properties: {text: 'Description :', foreground: '#0d0c0c', bold: true, font_size: 24}
-      type: Label
-      layout_properties: {x: 75.546875, y: 460.046875, width: 200}
+      layout_properties: {x: 410.14056396484375, y: 459.140625, width: 462.015625}
 - type: FlowPanel
   properties: {}
   name: navbar_links
