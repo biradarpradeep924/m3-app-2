@@ -40,6 +40,7 @@ components:
       properties: {text: Magzines, font_size: 25, background: orange, icon: 'fa:file'}
       type: Button
       layout_properties: {x: 389.140625, y: 283.734375, width: 200}
+      event_bindings: {click: button_2_copy_2_click}
     - name: button_2
       properties: {text: Announcements, font_size: 25, background: orange, icon: 'fa:bullhorn'}
       type: Button

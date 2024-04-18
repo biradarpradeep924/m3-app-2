@@ -19,11 +19,10 @@ class Alumni(AlumniTemplate):
     content_type = self.file_loader_1.file.get_content_type()  # Get the content type of the uploaded file
     document=anvil.BlobMedia(content_type, document_bytes) 
     desc=self.text_area_1.text
-    selected_value = self.radio_buttons_1.selected_value
-        if selected_value is not None:
-            type=self.radio_buttons_1.selected_value
-        else:
-           type=self.radio_buttons_2.selected_value
+    if self.radio_button_1.selected:
+      type= self.radio_button_1.text  # Use the text property or value property to get the value
+    elif self.radio_button_2.selected:
+      type= self.radio_button_2.text
             
     response = server.call('add_data_to_table31',class2,document,desc,type)
     print(response)

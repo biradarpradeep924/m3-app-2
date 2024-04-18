@@ -279,3 +279,40 @@ def add_data_to_table31(class3,docu,desc,type):
         return "Data added successfully."
    except Exception as e:
         return "Error: " + str(e)
+
+
+@anvil.server.callable
+def find_class(name):
+    user = app_tables.table_2.get(name=name)
+    if user is not None:
+        # Access the password column directly
+        password = user['sclass']
+        return password
+    else:
+        return None
+
+@anvil.server.callable
+def retrieve_media_from_database4(class4):
+   try:
+        # Sanitize inputs
+        class2 = sanitize_input(class4)
+        
+        # Perform the database query
+        rows = app_tables.table_4.search(class3=class3,type="Magzine")
+        
+        media_list = []
+        for row in rows:
+            media_list.append(row['document'])
+        
+        return media_list
+   except Exception as e:
+        # Log the error for debugging purposes
+        print("Error retrieving media list:", e)
+        return None
+
+def sanitize_input(input_str):
+    # Implement input sanitization logic here
+    # For example, you might want to use Anvil's utilities or regular expressions
+    # to ensure that input_str doesn't contain any malicious characters
+    sanitized_str = input_str.strip()  # Example: Remove leading and trailing whitespace
+    return sanitized_str
