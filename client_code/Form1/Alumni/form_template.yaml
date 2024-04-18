@@ -29,39 +29,15 @@ components:
       properties: {text: 'Select Class :', bold: true, font_size: 20}
       type: Label
       layout_properties: {x: 175.046875, y: 133.046875, width: 200}
-    - name: label_6
-      properties: {text: 'Select Subject :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 175.09375, y: 206.09375, width: 200}
     - name: drop_down_1
       properties: {}
       type: DropDown
       layout_properties: {x: 480.046875, y: 130.046875, width: 200}
-    - name: drop_down_2
-      properties: {}
-      type: DropDown
-      layout_properties: {x: 481.046875, y: 204.04686737060547, width: 200}
     - name: file_loader_1
       properties: {border: '2px solid '}
       type: FileLoader
       layout_properties: {x: 480.140625, y: 328.1406555175781, width: 200}
       event_bindings: {change: file_loader_1_change}
-    - name: label_1
-      properties: {text: 'Document Type :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 173.09375, y: 271.84375, width: 200}
-    - name: radio_button_1
-      properties: {text: Magzine, bold: true, font_size: 20}
-      type: RadioButton
-      layout_properties: {x: 484.046875, y: 262.796875, width: 178.171875}
-    - name: radio_button_2
-      properties: {text: Research Paper, selected: false, bold: true, font_size: 20}
-      type: RadioButton
-      layout_properties: {x: 674.140625, y: 259.8906555175781, width: 181}
-    - name: label_3
-      properties: {text: 'Upload Document :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 174.375, y: 336.359375, width: 200}
     - name: label_5
       properties: {text: 'Add Description :', bold: true, font_size: 20}
       type: Label
@@ -76,6 +52,22 @@ components:
       type: Button
       layout_properties: {x: 335.203125, y: 530.578125, width: 200}
       event_bindings: {click: button_2_click}
+    - name: label_3
+      properties: {text: 'Upload Document :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 163.29863061010838, y: 315.27777947485447, width: 200.00001525878906}
+    - name: radio_button_1
+      properties: {text: Magzine, bold: true, font_size: 20}
+      type: RadioButton
+      layout_properties: {x: 444.0798806101084, y: 212.82987298071384, width: 178.15972900390625}
+    - name: label_1
+      properties: {text: 'Document Type :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 168.7500008493662, y: 216.3715599924326, width: 200.00001525878906}
+    - name: radio_button_2
+      properties: {text: Research Paper, selected: false, bold: true, font_size: 20}
+      type: RadioButton
+      layout_properties: {x: 569.0104675292969, y: 212.1701439768076, width: 180.98959350585938}
 - type: FlowPanel
   properties: {}
   name: navbar_links

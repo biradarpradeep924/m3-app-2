@@ -268,3 +268,14 @@ def get_user(class3):
         # Log any errors that occur
         print("Error retrieving data:", e)
         return None
+
+#alumni
+@anvil.server.callable
+def add_data_to_table31(class3,docu,desc,type):
+   try:
+        # Access 'Table2' and insert data
+        table4 = app_tables.table_5
+        table4.add_row(class4=class3,doc=docu,desc=desc,type=type)
+        return "Data added successfully."
+   except Exception as e:
+        return "Error: " + str(e)
