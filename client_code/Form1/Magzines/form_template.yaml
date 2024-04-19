@@ -63,36 +63,36 @@ components:
       properties: {border: 2px solid}
       type: Label
       layout_properties: {x: 165.140625, y: 464.140625, width: 200}
+    - name: button_7
+      properties: {text: View, foreground: white, background: green}
+      type: Button
+      layout_properties: {x: 645.703125, y: 262.328125, width: 200}
+    - name: button_5
+      properties: {text: View, foreground: white, background: green}
+      type: Button
+      layout_properties: {x: 644.7968139648438, y: 322.65625, width: 200}
+    - name: button_8
+      properties: {text: View, foreground: white, background: green}
+      type: Button
+      layout_properties: {x: 648.140625, y: 386.328125, width: 200}
+    - name: button_6
+      properties: {text: View, foreground: white, background: green}
+      type: Button
+      layout_properties: {x: 642.671875, y: 193.3125, width: 200}
+    - name: button_4
+      properties: {text: View, background: green, foreground: white}
+      type: Button
+      layout_properties: {x: 638.0469360351562, y: 121.53125, width: 200}
+      event_bindings: {click: button_4_click}
     - name: button_3
       properties: {text: View, background: green, foreground: white}
       type: Button
-      layout_properties: {x: 550.0000457763672, y: 75.78125847876072, width: 200.00001525878906}
+      layout_properties: {x: 640.09375, y: 64.875, width: 200}
       event_bindings: {click: button_3_click}
-    - name: button_8
-      properties: {text: button_8, foreground: white, background: green}
-      type: Button
-      layout_properties: {x: 550.0000457763672, y: 390.19098748266697, width: 200.00001525878906}
-    - name: button_7
-      properties: {text: button_7, foreground: white, background: green}
-      type: Button
-      layout_properties: {x: 545.5903481394053, y: 270.19095696508884, width: 200.00001525878906}
-    - name: button_5
-      properties: {text: button_5, foreground: white, background: green}
-      type: Button
-      layout_properties: {x: 546.7014321237803, y: 333.52433098852634, width: 200.00001525878906}
-    - name: button_6
-      properties: {text: button_6, foreground: white, background: green}
-      type: Button
-      layout_properties: {x: 545.607621088624, y: 200.22571648657322, width: 200.00001525878906}
-    - name: button_4
-      properties: {text: button_4, background: green, foreground: white}
-      type: Button
-      layout_properties: {x: 538.9236611276865, y: 142.41320122778416, width: 200.00001525878906}
-      event_bindings: {click: button_4_click}
     - name: button_9
-      properties: {text: button_9, background: green, foreground: white}
+      properties: {text: View, background: green, foreground: white}
       type: Button
-      layout_properties: {x: 550.0000457763672, y: 464.8263931274414, width: 200.00001525878906}
+      layout_properties: {x: 646.1406860351562, y: 451.953125, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links

@@ -30,7 +30,7 @@ class subject(subjectTemplate):
     subj6=server.call('get_sub_by_name',self.arg2,sub="sub6")
     self.label_18.text=subj6
     subj7=server.call('get_sub_by_name',self.arg2,sub="sub7")
-    self.label_19.text=subj7
+    self.label_20.text=subj7
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
