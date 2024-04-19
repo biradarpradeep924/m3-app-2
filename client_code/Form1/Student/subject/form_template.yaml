@@ -174,11 +174,13 @@ components:
         layout_properties: {grid_position: 'PCUAUU,OLIXTJ'}
         components:
         - name: label_21
-          properties: {}
+          properties: {text: SY-IT}
           type: Label
+          layout_properties: {}
         - name: label_22
-          properties: {}
+          properties: {text: Audit Course}
           type: Label
+          layout_properties: {}
         - name: button_8
           properties: {text: View, font_size: 17}
           type: Button
@@ -190,11 +192,13 @@ components:
         layout_properties: {grid_position: 'PCUAUU,ZIGIAI'}
         components:
         - name: label_23
-          properties: {}
+          properties: {text: SY-IT}
           type: Label
+          layout_properties: {}
         - name: label_24
-          properties: {}
+          properties: {text: Internships_Placement}
           type: Label
+          layout_properties: {}
         - name: button_9
           properties: {text: View, font_size: 17}
           type: Button
