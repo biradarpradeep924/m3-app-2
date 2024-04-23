@@ -14,31 +14,31 @@ components:
     layout_properties: {grid_position: 'JFJSES,UQZLCX'}
     components:
     - name: label_9
-      properties: {border: '2px solid ', align: center}
+      properties: {border: '2px solid ', align: center, visible: false}
       type: Label
       layout_properties: {x: 132.21875, y: 491.984375, width: 200}
     - name: label_8
-      properties: {background: 2px solid, border: 2px solid, align: center}
+      properties: {background: 2px solid, border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 132.375, y: 423.109375, width: 200}
     - name: label_6
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 132.23439025878906, y: 292.9844055175781, width: 200}
     - name: label_7
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 131.35934448242188, y: 359.1093444824219, width: 200}
     - name: label_5
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 129.32815551757812, y: 224.078125, width: 200}
     - name: label_4
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 127.328125, y: 161.078125, width: 200}
     - name: label_3
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 127.421875, y: 99.15625, width: 200}
     - name: button_3
@@ -50,18 +50,22 @@ components:
       properties: {text: View, background: green, foreground: white}
       type: Button
       layout_properties: {x: 653.140625, y: 146.96875, width: 200}
+      event_bindings: {click: button_4_click}
     - name: button_5
       properties: {text: View, background: green, foreground: white}
       type: Button
       layout_properties: {x: 648.1499786376953, y: 210.3333282470703, width: 200}
+      event_bindings: {click: button_5_click}
     - name: button_6
       properties: {text: View, background: green, foreground: white}
       type: Button
       layout_properties: {x: 645.2500152587891, y: 270.06666564941406, width: 200}
+      event_bindings: {click: button_6_click}
     - name: button_7
       properties: {text: View, background: green, foreground: white}
       type: Button
       layout_properties: {x: 649.2666778564453, y: 333.31666564941406, width: 200}
+      event_bindings: {click: button_7_click}
     - name: button_9
       properties: {text: View, background: green, foreground: white}
       type: Button

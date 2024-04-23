@@ -13,10 +13,6 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'LIEKLC,KPHIMU'}
     components:
-    - name: label_3
-      properties: {align: center}
-      type: Label
-      layout_properties: {x: 718.7500152587891, y: 188.98333740234375, width: 200}
     - name: button_4
       properties: {text: BACK, background: black, foreground: white, icon: 'fa:arrow-circle-left',
         font_size: 20}
@@ -24,40 +20,46 @@ components:
       layout_properties: {x: 18.546875, y: 10.046875, width: 200}
       event_bindings: {click: button_4_click}
     - name: label_1
-      properties: {align: center, text: DESC, foreground: '', border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: '', border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 37.125, y: 159.671875, width: 200}
     - name: label_1_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 711.0468139648438, y: 157.09375, width: 200}
     - name: label_2_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 482.21875, y: 158.21875, width: 200}
     - name: button_1_copy
-      properties: {text: View Document, font_size: 20, foreground: white, background: '#12e200'}
+      properties: {text: View Document, font_size: 20, foreground: white, background: '#12e200',
+        visible: true}
       type: Button
       layout_properties: {x: 486.328125, y: 88.328125, width: 200}
       event_bindings: {click: button_1_click}
     - name: button_1_copy_copy
       properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20}
+        font_size: 20, visible: true}
       type: Button
       layout_properties: {x: 713.09375, y: 87.09375, width: 200}
       event_bindings: {click: button_1_click}
     - name: button_3
-      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white}
+      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white,
+        visible: true}
       type: Button
       layout_properties: {x: 38.62498474121094, y: 258.140625, width: 200}
     - name: button_2
       properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20}
+        font_size: 20, visible: true}
       type: Button
       layout_properties: {x: 261.609375, y: 89.609375, width: 200}
       event_bindings: {click: button_2_click}
     - name: label_2
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 261.34375, y: 156.859375, width: 200}
     - name: label_4
@@ -66,39 +68,42 @@ components:
       type: Label
       layout_properties: {x: 284.59375, y: 7.09375, width: 424.203125}
     - name: label_5
-      properties: {text: None, align: center, border: 1px solid black}
+      properties: {text: None, align: center, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 40.734375, y: 326.2187194824219, width: 200}
     - name: button_5
       properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20}
+        font_size: 20, visible: true}
       type: Button
       layout_properties: {x: 258.1875, y: 260.1875, width: 200}
     - name: button_5_copy
-      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white}
+      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white,
+        visible: true}
       type: Button
       layout_properties: {x: 487.04693603515625, y: 253.04690551757812, width: 200}
     - name: button_3_copy
       properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20}
+        font_size: 20, visible: true}
       type: Button
       layout_properties: {x: 704.0469360351562, y: 246.04686737060547, width: 200}
     - name: button_1
       properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20}
+        font_size: 20, visible: true}
       type: Button
       layout_properties: {x: 31.28125, y: 87.671875, width: 200}
       event_bindings: {click: button_1_click}
     - name: label_1_copy_2
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 485.234375, y: 325.234375, width: 200}
     - name: label_6
-      properties: {text: None, align: center, border: 1px solid black}
+      properties: {text: None, align: center, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 264.46875, y: 328.46875, width: 200}
     - name: label_1_copy_2_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
+        visible: false}
       type: Label
       layout_properties: {x: 710.3125, y: 325.34375, width: 200}
 - type: FlowPanel

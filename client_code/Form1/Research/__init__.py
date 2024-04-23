@@ -18,7 +18,65 @@ class Research(ResearchTemplate):
             alert(media_count + " Media Uploaded")
     else:
             alert("No media found")
+      
+    if len(media)==1:
+          self.label_3.visible = True
+          self.button_4.visible=False
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled= True
+    if len(media)==2:
+          self.label_3.visible = True
+          self.label_4.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
 
+    if len(media)==3:
+          self.label_3.visible = True
+          self.label_4.visible=True
+          self.label_5.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=True
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
+
+    if len(media)==4:
+          self.label_3.visible = True
+          self.label_4.visible=True
+          self.label_5.visible=True
+          self.label_6.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=True
+          self.button_6.visible=True
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
+
+    if len(media)==5:
+          self.label_3.visible = True
+          self.label_4.visible=True
+          self.label_5.visible=True
+          self.label_6.visible=True
+          self.label_7.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=True
+          self.button_6.visible=True
+          self.button_7.visible=True
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
     descriptions=server.call('get_desc18',class4)
     i= enumerate(descriptions)
           
@@ -63,3 +121,28 @@ class Research(ResearchTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1")
+
+  def button_7_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[4])
+      self.button_3.text = "Open Document"
+      self.button_3.set_event_handler("click", self.open_media)
+
+  def button_5_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[2])
+      self.button_3.text = "Open Document"
+      self.button_3.set_event_handler("click", self.open_media)
+
+  def button_6_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[3])
+      self.button_3.text = "Open Document"
+      self.button_3.set_event_handler("click", self.open_media)
+    

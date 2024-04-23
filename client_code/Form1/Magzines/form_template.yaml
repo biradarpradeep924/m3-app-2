@@ -14,31 +14,31 @@ components:
     layout_properties: {grid_position: 'NNXTYG,PYLKBS'}
     components:
     - name: label_3
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 150.18746948242188, y: 84.171875, width: 200}
     - name: label_3_copy
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 153.23434448242188, y: 144.234375, width: 200}
     - name: label_3_copy_2
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 154.140625, y: 211.140625, width: 200}
     - name: label_3_copy_3
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 158.140625, y: 272.140625, width: 200}
     - name: label_3_copy_4
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 159.140625, y: 336.1405944824219, width: 200}
     - name: label_3_copy_5
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 164.140625, y: 402.140625, width: 200}
     - name: label_3_copy_6
-      properties: {border: 2px solid, align: center}
+      properties: {border: 2px solid, align: center, visible: false}
       type: Label
       layout_properties: {x: 165.140625, y: 464.140625, width: 200}
     - name: button_7

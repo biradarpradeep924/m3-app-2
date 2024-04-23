@@ -19,7 +19,59 @@ class frame(frameTemplate):
             alert(media_count + " Media Uploaded")
         else:
             alert("No media found")
-       
+        if len(media)==1:
+          self.label_1.visible = True
+          self.button_1_copy.visible=False
+          self.button_1_copy_copy.visible=False
+          self.button_2.visible=False
+          self.button_3.visible=False
+          self.button_3_copy.visible=False
+          self.button_5_copy.visible=False
+          self.button_5.visible=False
+          self.button_1.enabled=True
+
+        if len(media)==2:
+          self.label_1.visible = True
+          self.label_2.visible=True
+          self.button_1_copy.enabled=False
+          self.button_1_copy.visible=False
+          self.button_1_copy_copy.visible=False
+          self.button_2.visible=True
+          self.button_3.visible=False
+          self.button_3_copy.visible=False
+          self.button_5_copy.visible=False
+          self.button_5.visible=False
+          self.button_1.visible=True
+
+        if len(media)==3:
+          self.label_1.visible = True
+          self.label_2.visible=True
+          self.label_2_copy.visible=True
+          self.button_1_copy.enabled=True
+          self.button_1_copy_copy.visible=False
+          self.button_2.enabled=True
+          self.button_3.visible=False
+          self.button_3_copy.visible=False
+          self.button_5_copy.visible=False
+          self.button_5.visible=False
+          self.button_1.enabled=True
+
+        if len(media)==4:
+          self.label_1.visible = True
+          self.label_2.visible=True
+          self.label_1_copy.visible=True
+          self.label_2_copy.visible=True
+          self.button_1_copy.enabled=True
+          self.button_1_copy_copy.enabled=True
+          self.button_2.enabled=True
+          self.button_3.visible=False
+          self.button_3_copy.visible=False
+          self.button_5_copy.visible=False
+          self.button_5.visible=False
+          self.button_1.enabled=True
+
+        
+          
         descriptions=server.call('get_desc1',self.sub,self.class2)
         i= enumerate(descriptions)
           
@@ -40,7 +92,7 @@ class frame(frameTemplate):
     def open_media(self, **event_args):
         # Use JavaScript to open the media link in a new window/tab
         js_code = f"window.open('{self.media_link}')"
-        anvil.js.call(js_code)
+        open_form("Form1.Student.blank")
 
     def button_1_click(self, **event_args):
       """This method is called when the button is clicked"""
@@ -59,7 +111,7 @@ class frame(frameTemplate):
 
     def button_4_click(self, **event_args):
       """This method is called when the button is clicked"""
-      open_form("Form1.Student","c")
+      open_form("Form1.Student","E")
 
     def button_3_click(self, **event_args):
       """This method is called when the button is clicked"""

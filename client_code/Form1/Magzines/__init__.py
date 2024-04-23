@@ -18,6 +18,53 @@ class Magzines(MagzinesTemplate):
             alert(media_count + " Media Uploaded")
     else:
             alert("No media found")
+
+    if len(media)==1:
+          self.label_3.visible = True
+          self.button_4.visible=False
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled= True
+
+    if len(media)==2:
+          self.label_3.visible = True
+          self.label_3_copy.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
+
+    if len(media)==3:
+          self.label_3.visible = True
+          self.label_3_copy.visible=True
+          self.label_3_copy_2.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=False
+          self.button_6.visible=True
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
+
+    if len(media)==4:
+          self.label_3.visible = True
+          self.label_3_copy.visible=True
+          self.label_3_copy_2.visible=True
+          self.label_3_copy_3.visible=True
+          self.button_4.visible=True
+          self.button_5.visible=False
+          self.button_6.visible=True
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.enabled=True
+      
     # Any code you write here will run before the form opens.
     descriptions=server.call('get_desc12',class4)
     i= enumerate(descriptions)
