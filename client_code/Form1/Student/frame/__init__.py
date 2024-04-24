@@ -15,8 +15,7 @@ class frame(frameTemplate):
         media =server.call('retrieve_media_from_database', self.sub, self.class2)
         if media is not None:
            # Convert the length of the media list to a string
-            media_count = str(len(media))
-            alert(media_count + " Media Uploaded")
+          h=4
         else:
             alert("No media found")
         if len(media)==1:

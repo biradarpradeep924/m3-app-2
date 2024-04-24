@@ -14,8 +14,7 @@ class Research(ResearchTemplate):
     media =server.call('retrieve_media_from_database45',class4)
     if media is not None:
            # Convert the length of the media list to a string
-            media_count = str(len(media))
-            alert(media_count + " Media Uploaded")
+           h=6
     else:
             alert("No media found")
       
