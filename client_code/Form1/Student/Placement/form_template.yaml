@@ -35,6 +35,7 @@ components:
         visible: true}
       type: Button
       layout_properties: {x: 531.1458672434092, y: 84.47917260229588, width: 200.00001525878906}
+      event_bindings: {click: button_3_click}
     - name: outlined_button_1
       properties: {text: Logout, role: outlined-button}
       type: Button

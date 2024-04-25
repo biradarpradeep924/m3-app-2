@@ -17,11 +17,17 @@ class Placement(PlacementTemplate):
           h=4
     else:
             alert("No media found")
+    if len(media)==0:
+      self.button_2.visible=False
+      self.button_3.visible=False
+      self.button_1.visible=False
+      
     if len(media)==1:
           self.label_4.visible = True
           self.button_2.visible=False
           self.button_3.visible=False
           self.button_1.enabled=True
+      
     descriptions=server.call('get_desc178',self.arg1)
     i=enumerate(descriptions)   
     for i, description in enumerate(descriptions):
@@ -51,3 +57,18 @@ class Placement(PlacementTemplate):
   def outlined_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1")
+
+  def button_2_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      media =server.call('retrieve_media_from_database56',self.arg1)
+      self.media_link = anvil.media.download(media[1])
+      self.button_1.text = "Open Document"
+      self.button_1.set_event_handler("click", self.open_media)
+
+  def button_3_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      media =server.call('retrieve_media_from_database56',self.arg1)
+      self.media_link = anvil.media.download(media[2])
+      self.button_1.text = "Open Document"
+      self.button_1.set_event_handler("click", self.open_media)
+    
