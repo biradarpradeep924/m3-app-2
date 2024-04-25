@@ -4,57 +4,62 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 414.88885498046875}
+    properties: {height: 414.88885498046875, background: '#d2d0d0'}
     type: XYPanel
     layout_properties: {grid_position: 'BPUFOP,UMEPFU'}
     components:
-    - name: drop_down_1
-      properties: {}
-      type: DropDown
-      layout_properties: {x: 424.09725274145603, y: 112.41320122778416, width: 200.00001525878906}
-    - name: file_loader_1
-      properties: {}
-      type: FileLoader
-      layout_properties: {x: 418.5416497141123, y: 180.1910180002451, width: 200.00001525878906}
-    - name: label_1
-      properties: {text: 'Class :', align: center, bold: true}
-      type: Label
-      layout_properties: {x: 97.50002373754978, y: 114.70487298071384, width: 200.00001525878906}
-    - name: label_4
-      properties: {text: 'Description :', bold: true, align: center}
-      type: Label
-      layout_properties: {x: 117.4652642160654, y: 250.22571648657322, width: 200.00001525878906}
-    - name: label_3
-      properties: {text: 'Document :', align: center, bold: true}
-      type: Label
-      layout_properties: {x: 114.14930047094822, y: 171.37154473364353, width: 200.00001525878906}
-    - name: text_area_1
-      properties: {}
-      type: TextArea
-      layout_properties: {x: 434.0971917062998, y: 244.63541497290134, width: 200.00001525878906}
-    - name: button_3
-      properties: {text: Logout, bold: true, background: red, align: right}
-      type: Button
-      layout_properties: {x: 730.0468139648438, y: 12.828125, width: 200}
-      event_bindings: {click: button_3_click}
     - name: label_2
-      properties: {text: 'Share the Opportunities ', bold: true, align: center, font_size: 25,
-        underline: true, italic: true, background: '#27e01a'}
+      properties: {text: 'Share the Opportunities !! ', bold: true, align: center,
+        font_size: 25, underline: true, italic: true, background: '#27e01a'}
       type: Label
       layout_properties: {x: 165.6875, y: 12.796875, width: 565.984375}
       data_bindings: []
+    - name: drop_down_1
+      properties: {}
+      type: DropDown
+      layout_properties: {x: 532.1875610351562, y: 103.5, width: 200}
+    - name: file_loader_1
+      properties: {border: 1px solidn}
+      type: FileLoader
+      layout_properties: {x: 531.5781860351562, y: 174.234375, width: 200}
+    - name: text_area_1
+      properties: {}
+      type: TextArea
+      layout_properties: {x: 544.140625, y: 242.671875, width: 200}
+    - name: label_4
+      properties: {text: 'Description :', bold: true, align: center, font_size: 20}
+      type: Label
+      layout_properties: {x: 140.546875, y: 242.31253051757812, width: 200}
+    - name: label_3
+      properties: {text: 'Document :', align: center, bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 139.40625, y: 164.640625, width: 200}
+    - name: label_1
+      properties: {text: 'Class :', align: center, bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 118.640625, y: 101.84375, width: 200}
     - name: button_1
-      properties: {text: Submit, bold: true, background: 'theme:Primary Container',
-        align: center}
+      properties: {text: Submit, bold: true, background: blue, align: center, foreground: white,
+        font_size: 22}
       type: Button
-      layout_properties: {x: 251.796875, y: 357.7812805175781, width: 200}
+      layout_properties: {x: 313.8437194824219, y: 334.828125, width: 200}
       event_bindings: {click: button_1_click}
+    - name: button_3
+      properties: {text: Logout, bold: true, background: red, align: right, foreground: Black,
+        icon: 'fa:arrow-circle-o-right', font_size: 20}
+      type: Button
+      layout_properties: {x: 708.0781860351562, y: 12.875, width: 200}
+      event_bindings: {click: button_3_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_5
+  properties: {text: Academic Resource Hub, foreground: blue, bold: true, font_size: 25}
+  type: Label
+  layout_properties: {slot: title}

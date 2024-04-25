@@ -74,4 +74,8 @@ components:
     layout_properties: {grid_position: 'FSKANQ,NXNFFR'}
     components: []
   data_bindings: []
+- name: label_4
+  properties: {text: Academic Resource Hub, bold: true, font_size: 25, foreground: blue}
+  type: Label
+  layout_properties: {slot: title}
 custom_component: true

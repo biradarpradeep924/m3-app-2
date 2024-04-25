@@ -2,7 +2,7 @@ is_package: true
 container: {type: DataRowPanel}
 components:
 - name: label_1
-  properties: {}
+  properties: {text: Academic Resource Hub, bold: true, font_size: 25, foreground: blue}
   type: Label
   layout_properties: {column: 'null'}
 - name: xy_panel_1
@@ -27,7 +27,8 @@ components:
     layout_properties: {x: 833.015625, y: 25.31249237060547, width: 148.9998779296875}
     event_bindings: {click: button_1_click}
   - name: button_2
-    properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white}
+    properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white,
+      icon: 'fa:check'}
     type: Button
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}

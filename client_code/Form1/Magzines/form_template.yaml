@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -42,32 +42,32 @@ components:
       type: Label
       layout_properties: {x: 165.140625, y: 464.140625, width: 200}
     - name: button_7
-      properties: {text: View, foreground: white, background: green}
+      properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 645.703125, y: 262.328125, width: 200}
     - name: button_5
-      properties: {text: View, foreground: white, background: green}
+      properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 644.7968139648438, y: 322.65625, width: 200}
     - name: button_8
-      properties: {text: View, foreground: white, background: green}
+      properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 648.140625, y: 386.328125, width: 200}
     - name: button_6
-      properties: {text: View, foreground: white, background: green}
+      properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 642.671875, y: 193.3125, width: 200}
     - name: button_9
-      properties: {text: View, background: green, foreground: white}
+      properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 646.1406860351562, y: 451.953125, width: 200}
     - name: button_3
-      properties: {text: View, background: green, foreground: white}
+      properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 644.1499786376953, y: 61.93333435058594, width: 200}
       event_bindings: {click: button_3_click}
     - name: button_4
-      properties: {text: View, background: green, foreground: white}
+      properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 641.1499786376953, y: 123.63333129882812, width: 200}
       event_bindings: {click: button_4_click}
@@ -93,3 +93,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_1
+  properties: {text: Academic Resource Hub, foreground: blue, bold: true, font_size: 25}
+  type: Label
+  layout_properties: {slot: title}

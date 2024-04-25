@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -38,17 +38,13 @@ components:
       type: FileLoader
       layout_properties: {x: 480.140625, y: 328.1406555175781, width: 200}
       event_bindings: {change: file_loader_1_change}
-    - name: label_5
-      properties: {text: 'Add Description :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 177.234375, y: 404.2187194824219, width: 200}
     - name: text_area_1
       properties: {height: 92.24993896484375}
       type: TextArea
       layout_properties: {x: 487.140625, y: 410.1406555175781, width: 340}
     - name: button_2
       properties: {text: Submit, font_size: 25, background: '#480de7', bold: true,
-        foreground: white}
+        foreground: white, icon: 'fa:check'}
       type: Button
       layout_properties: {x: 335.203125, y: 530.578125, width: 200}
       event_bindings: {click: button_2_click}
@@ -68,7 +64,15 @@ components:
       properties: {text: Magzine, bold: true, font_size: 20}
       type: RadioButton
       layout_properties: {x: 486.171875, y: 202.921875, width: 178.15625}
+    - name: label_5
+      properties: {text: 'Add Description :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 162.28125, y: 403.2500305175781, width: 200}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_6
+  properties: {text: Academic Resource Hub, font_size: 25, bold: true, foreground: blue}
+  type: Label
+  layout_properties: {slot: title}

@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -16,3 +16,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_1
+  properties: {text: Academic Resource Hub, foreground: blue, bold: true, font_size: 25}
+  type: Label
+  layout_properties: {slot: title}

@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -54,8 +54,8 @@ components:
       type: Label
       layout_properties: {x: 207.88195122778416, y: 147.03127373754978, width: 200.00001525878906}
     - name: label_8
-      properties: {text: PROFILE, align: center, bold: true, background: 'theme:Surface
-          Variant'}
+      properties: {text: PROFILE, align: center, bold: true, background: '#a144e4',
+        font_size: 20}
       type: Label
       layout_properties: {x: 236.15625, y: 11.390625, width: 153.40625}
     - name: label_5
@@ -74,3 +74,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_11
+  properties: {text: Academic Resource Hub, foreground: blue, bold: true, font_size: 25}
+  type: Label
+  layout_properties: {slot: title}

@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {background: '#c0b9b9'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -39,7 +39,7 @@ components:
       type: Label
       layout_properties: {x: 72.78125, y: 372.265625, width: 240}
     - name: button_2
-      properties: {text: Submit, background: '#7512d9', foreground: 'theme:On Secondary',
+      properties: {text: Submit, background: blue, foreground: 'theme:On Secondary',
         font_size: 22, icon: 'fa:check', bold: true}
       type: Button
       layout_properties: {x: 363.609375, y: 547.828125, width: 184}
@@ -57,3 +57,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_4
+  properties: {text: Academic Resource Hub, foreground: blue, font_size: 25, bold: true}
+  type: Label
+  layout_properties: {slot: title}
