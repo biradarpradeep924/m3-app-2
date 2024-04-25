@@ -48,9 +48,10 @@ components:
       data_bindings: []
       event_bindings: {click: button_2_click}
     - name: button_2_copy_3
-      properties: {text: Class, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
+      properties: {text: Classroom, font_size: 25, bold: false, background: orange,
+        icon: 'fa:book'}
       type: Button
-      layout_properties: {x: 389.03125, y: 466.6875, width: 200}
+      layout_properties: {x: 389.03125, y: 466.6875, width: 220.5555419921875}
       event_bindings: {click: button_2_copy_3_click}
 - type: FlowPanel
   properties: {}

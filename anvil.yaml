@@ -122,4 +122,18 @@ db_schema:
       admin_ui: {width: 200, order: 3}
       type: media
     title: Table 5
+  table_6:
+    client: none
+    server: full
+    columns:
+    - name: Class5
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: Desc
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: Doc
+      admin_ui: {width: 200, order: 2}
+      type: media
+    title: Table 6
 renamed: true

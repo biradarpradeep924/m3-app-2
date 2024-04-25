@@ -375,3 +375,14 @@ def get_desc18(class2):
         # Log any errors that occur
         print("Error retrieving data:", e)
         return None
+
+#senior file but alumni
+@anvil.server.callable
+def add_data_to_table32(class3,desc,doc):
+   try:
+        # Access 'Table2' and insert data
+        table4 = app_tables.table_5
+        table4.add_row(Class5=class3,Doc=doc,Desc=desc)
+        return "Data added successfully."
+   except Exception as e:
+        return "Error: " + str(e)

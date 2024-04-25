@@ -9,7 +9,7 @@ from anvil.tables import app_tables
 class Form2(Form2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.drop_down_1.items = ["Student", "Teacher", "CR","Alumni","Admin"]
+    self.drop_down_1.items = ["Student", "Teacher", "CR","Senior","Alumni","Admin"]
     self.init_components(**properties)
     if self.drop_down_1.selected_value == "Student" or self.drop_down_1.selected_value == "CR":
       self.text_box_5.visible = True
