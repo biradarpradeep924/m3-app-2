@@ -158,11 +158,13 @@ components:
           layout_properties: {}
           components:
           - name: label_19
-            properties: {}
+            properties: {align: center}
             type: Label
+            layout_properties: {}
           - name: label_20
-            properties: {}
+            properties: {align: center}
             type: Label
+            layout_properties: {}
           - name: button_7
             properties: {text: View, font_size: 17}
             type: Button

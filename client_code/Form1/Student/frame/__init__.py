@@ -92,9 +92,13 @@ class frame(frameTemplate):
            elif i == 2:
               self.label_2.text = description
            elif i == 3:
-              self.label_3.text = description
+              self.label_2_copy.text = description
            elif i == 4:
-             self.label_4.text = description
+             self.label_1_copy.text = description
+           elif i==5:
+              self.label_5.text = description
+           elif i==6:
+              self.label_6.text = description
         
         
 

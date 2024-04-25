@@ -24,5 +24,9 @@ class Senior(SeniorTemplate):
     document=anvil.BlobMedia(content_type, document_bytes)
     response = server.call('add_data_to_table32',item1,desc,document)
     print(response)
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Form1")
     
     

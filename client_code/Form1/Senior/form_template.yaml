@@ -37,25 +37,23 @@ components:
       properties: {}
       type: TextArea
       layout_properties: {x: 434.0971917062998, y: 244.63541497290134, width: 200.00001525878906}
-    - name: button_1
-      properties: {text: Submit, bold: true, background: 'theme:Primary Container'}
-      type: Button
-      layout_properties: {x: 240.76390923559666, y: 355.74652947485447, width: 200.00001525878906}
-      event_bindings: {click: button_1_click}
-    - name: label_2
-      properties: {text: Share the Opportunities Here with your class !!, bold: true,
-        align: center, font_size: 25, underline: true, italic: true, background: '#27e01a'}
-      type: Label
-      layout_properties: {x: 5.642388239502907, y: 6.753472223877907, width: 565.9896240234375}
-      data_bindings: []
-    - name: button_2
-      properties: {text: Logout, bold: true, background: '#f22121'}
-      type: Button
-      layout_properties: {x: 706.1111840158701, y: 9.114586725831032, width: 200.00001525878906}
     - name: button_3
       properties: {text: Logout, bold: true, background: red, align: right}
       type: Button
-      layout_properties: {x: 550.0000457763672, y: 5.781250849366188, width: 200.00001525878906}
+      layout_properties: {x: 730.0468139648438, y: 12.828125, width: 200}
+      event_bindings: {click: button_3_click}
+    - name: label_2
+      properties: {text: 'Share the Opportunities ', bold: true, align: center, font_size: 25,
+        underline: true, italic: true, background: '#27e01a'}
+      type: Label
+      layout_properties: {x: 165.6875, y: 12.796875, width: 565.984375}
+      data_bindings: []
+    - name: button_1
+      properties: {text: Submit, bold: true, background: 'theme:Primary Container',
+        align: center}
+      type: Button
+      layout_properties: {x: 251.796875, y: 357.7812805175781, width: 200}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
