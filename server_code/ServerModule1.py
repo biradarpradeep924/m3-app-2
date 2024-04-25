@@ -381,8 +381,46 @@ def get_desc18(class2):
 def add_data_to_table32(class3,desc,doc):
    try:
         # Access 'Table2' and insert data
-        table4 = app_tables.table_5
+        table4 = app_tables.table_6
         table4.add_row(Class5=class3,Doc=doc,Desc=desc)
         return "Data added successfully."
    except Exception as e:
         return "Error: " + str(e)
+
+@anvil.server.callable
+def retrieve_media_from_database56(class4):
+   try:
+        # Sanitize inputs
+        class2 = sanitize_input(class4)
+        
+        # Perform the database query
+        rows = app_tables.table_6.search(Class5=class4)
+        
+        media_list = []
+        for row in rows:
+            media_list.append(row['Doc'])
+        
+        return media_list
+   except Exception as e:
+        # Log the error for debugging purposes
+        print("Error retrieving media list:", e)
+        return None
+
+@anvil.server.callable
+def get_desc178(class2):
+    try:
+        # Retrieve rows from the table based on the provided parameters
+        rows = app_tables.table_6.search(Class5=class2)
+        
+        if not rows:
+            return None
+        
+        desc_list = []  # Initialize an empty list to store descriptions
+        for row in rows:
+            desc_list.append(row['Desc'])
+          
+        return desc_list  # Return the list of descriptions
+    except Exception as e:
+        # Log any errors that occur
+        print("Error retrieving data:", e)
+        return None

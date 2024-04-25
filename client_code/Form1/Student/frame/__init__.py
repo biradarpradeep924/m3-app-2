@@ -18,6 +18,16 @@ class frame(frameTemplate):
           h=4
         else:
             alert("No media found")
+
+        if len(media)==0:
+          self.button_1.visible=False
+          self.button_1_copy.visible=False
+          self.button_1_copy_copy.visible=False
+          self.button_2.visible=False
+          self.button_3.visible=False
+          self.button_3_copy.visible=False
+          self.button_5.visible=False
+          self.button_5_copy.visible=False
         if len(media)==1:
           self.label_1.visible = True
           self.button_1_copy.visible=False
@@ -91,7 +101,8 @@ class frame(frameTemplate):
     def open_media(self, **event_args):
         # Use JavaScript to open the media link in a new window/tab
         js_code = f"window.open('{self.media_link}')"
-        open_form("Form1.Student.blank")
+        anvil.js.call(js_code)
+        
 
     def button_1_click(self, **event_args):
       """This method is called when the button is clicked"""
