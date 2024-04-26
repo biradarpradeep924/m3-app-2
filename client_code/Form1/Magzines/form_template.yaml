@@ -45,22 +45,27 @@ components:
       properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 645.703125, y: 262.328125, width: 200}
+      event_bindings: {click: button_7_click}
     - name: button_5
       properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 644.7968139648438, y: 322.65625, width: 200}
+      event_bindings: {click: button_5_click}
     - name: button_8
       properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 648.140625, y: 386.328125, width: 200}
+      event_bindings: {click: button_8_click}
     - name: button_6
       properties: {text: View, foreground: white, background: green, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 642.671875, y: 193.3125, width: 200}
+      event_bindings: {click: button_6_click}
     - name: button_9
       properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 646.1406860351562, y: 451.953125, width: 200}
+      event_bindings: {click: button_9_click}
     - name: button_3
       properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button

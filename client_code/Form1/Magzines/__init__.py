@@ -16,7 +16,15 @@ class Magzines(MagzinesTemplate):
           h=6
     else:
             alert("No media found")
-
+    if len(media)==0:
+          self.button_4.visible=False
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.visible=False
+      
     if len(media)==1:
           self.label_3.visible = True
           self.button_4.visible=False
@@ -77,7 +85,13 @@ class Magzines(MagzinesTemplate):
            elif i == 3:
               self.label_3_copy_2.text = description
            elif i == 4:
-             self.label_3_copy_4.text = description
+             self.label_3_copy_3.text = description
+           elif i==5:
+             self.label_3_copy_4.text=description
+           elif i == 6:
+             self.label_3_copy_5.text = description
+           elif i==7:
+             self.label_3_copy_6.text=description
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1.Student",self.arg1)
@@ -111,6 +125,39 @@ class Magzines(MagzinesTemplate):
       """This method is called when the button is clicked"""
       class4=server.call('find_class',self.arg1)
       media =server.call('retrieve_media_from_database4',class4)
-      self.media_link = anvil.media.download(media[2])
+      self.media_link = anvil.media.download(media[4])
       self.button_5.text = "Open Document"
       self.button_5.set_event_handler("click", self.open_media)   
+
+  def button_6_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[2])
+      self.button_5.text = "Open Document"
+      self.button_5.set_event_handler("click", self.open_media)
+
+  def button_7_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[3])
+      self.button_5.text = "Open Document"
+      self.button_5.set_event_handler("click", self.open_media)
+
+  def button_8_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[4])
+      self.button_5.text = "Open Document"
+      self.button_5.set_event_handler("click", self.open_media)
+
+  def button_9_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[5])
+      self.button_5.text = "Open Document"
+      self.button_5.set_event_handler("click", self.open_media)
+    

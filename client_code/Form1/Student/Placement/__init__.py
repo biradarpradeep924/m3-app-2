@@ -71,4 +71,8 @@ class Placement(PlacementTemplate):
       self.media_link = anvil.media.download(media[2])
       self.button_1.text = "Open Document"
       self.button_1.set_event_handler("click", self.open_media)
+
+  def outlined_button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("Form1.Student","E")
     

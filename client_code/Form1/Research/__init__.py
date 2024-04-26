@@ -17,6 +17,15 @@ class Research(ResearchTemplate):
            h=6
     else:
             alert("No media found")
+
+    if len(media)==0:
+          self.button_4.visible=False
+          self.button_5.visible=False
+          self.button_6.visible=False
+          self.button_7.visible=False
+          self.button_8.visible=False
+          self.button_9.visible=False
+          self.button_3.visible= False
       
     if len(media)==1:
           self.label_3.visible = True
@@ -90,6 +99,12 @@ class Research(ResearchTemplate):
               self.label_5.text = description
            elif i == 4:
              self.label_6.text = description
+           elif i==5:
+             self.label_7.text=description
+           elif i == 6:
+             self.label_8.text = description
+           elif i==7:
+             self.label_9.text=description
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
@@ -144,4 +159,21 @@ class Research(ResearchTemplate):
       self.media_link = anvil.media.download(media[3])
       self.button_3.text = "Open Document"
       self.button_3.set_event_handler("click", self.open_media)
+
+  def button_8_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[5])
+      self.button_3.text = "Open Document"
+      self.button_3.set_event_handler("click", self.open_media)
+
+  def button_9_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      class4=server.call('find_class',self.arg1)
+      media =server.call('retrieve_media_from_database4',class4)
+      self.media_link = anvil.media.download(media[6])
+      self.button_3.text = "Open Document"
+      self.button_3.set_event_handler("click", self.open_media)
+    
     

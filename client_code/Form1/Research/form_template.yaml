@@ -71,10 +71,12 @@ components:
       properties: {text: View, background: green, foreground: white, icon: ey}
       type: Button
       layout_properties: {x: 645.234375, y: 478.078125, width: 200}
+      event_bindings: {click: button_9_click}
     - name: button_8
       properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 648.1875, y: 407.171875, width: 200}
+      event_bindings: {click: button_8_click}
     - name: button_7
       properties: {text: View, background: green, foreground: white, icon: 'fa:bullseye'}
       type: Button
