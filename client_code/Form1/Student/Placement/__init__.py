@@ -27,6 +27,21 @@ class Placement(PlacementTemplate):
           self.button_2.visible=False
           self.button_3.visible=False
           self.button_1.enabled=True
+    if len(media)==2:
+          self.label_4.visible = True
+          self.label_2.visible=True
+          self.button_2.visible=True
+          self.button_3.visible=False
+          self.button_1.enabled=True
+      
+    if len(media)==3:
+          self.label_4.visible = True
+          self.label_2.visible=True
+          self.label_3.visible=True
+          self.button_2.visible=True
+          self.button_3.visible=True
+          self.button_1.enabled=True
+      
       
     descriptions=server.call('get_desc178',self.arg1)
     i=enumerate(descriptions)   

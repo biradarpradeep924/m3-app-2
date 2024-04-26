@@ -13,63 +13,63 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'OBYLRB,TICTSO'}
     components:
-    - name: button_1
-      properties: {text: Logout, background: red, foreground: 'theme:On Surface',
-        icon: 'fa:arrow-circle-right', font_size: 20, bold: true}
-      type: Button
-      layout_properties: {x: 550.0000457763672, y: 7.968743219971657, width: 147.18775000000005}
-      event_bindings: {click: button_1_click}
-    - name: label_3
-      properties: {}
-      type: Label
-      layout_properties: {x: 366.6666726022959, y: 201.33681572973728, width: 200.00001525878906}
-    - name: image_1
-      properties: {height: 106.22219848632812, source: _/theme/profile.png}
-      type: Image
-      layout_properties: {x: 227.777787104249, y: 55.763893976807594, width: 167.7604217529297}
     - name: button_2
       properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white,
         background: black}
       type: Button
       layout_properties: {x: 0, y: 10.190979853272438, width: 200.00001525878906}
       event_bindings: {click: button_2_click}
-    - name: label_9
-      properties: {text: 'Mo No. :', bold: true}
-      type: Label
-      layout_properties: {x: 81.671875, y: 370.40625, width: 200}
-    - name: label_4
-      properties: {text: 'Email :', bold: true}
-      type: Label
-      layout_properties: {x: 83.96875, y: 260.328125, width: 200}
-    - name: label_2
-      properties: {text: 'ROLE :', bold: true}
-      type: Label
-      layout_properties: {x: 82.0625, y: 206.953125, width: 200}
-    - name: label_6
-      properties: {text: 'Class :', bold: true}
-      type: Label
-      layout_properties: {x: 84.0625, y: 312.75, width: 200}
-    - name: label_1
-      properties: {align: center}
-      type: Label
-      layout_properties: {x: 207.88195122778416, y: 147.03127373754978, width: 200.00001525878906}
+    - name: button_1
+      properties: {text: Logout, background: red, foreground: 'theme:On Surface',
+        icon: 'fa:arrow-circle-right', font_size: 20, bold: true}
+      type: Button
+      layout_properties: {x: 784.716656498611, y: 31.483334355056286, width: 147.18333435058594}
+      event_bindings: {click: button_1_click}
     - name: label_8
       properties: {text: PROFILE, align: center, bold: true, background: '#a144e4',
         font_size: 20}
       type: Label
-      layout_properties: {x: 236.15625, y: 11.390625, width: 153.40625}
+      layout_properties: {x: 427.1333435103297, y: 21.0333374068141, width: 153.40000915527344}
+    - name: image_1
+      properties: {height: 106.22219848632812, source: _/theme/profile.png}
+      type: Image
+      layout_properties: {x: 414.4833801314235, y: 65.39996796101332, width: 167.75001525878906}
+    - name: label_1
+      properties: {align: center}
+      type: Label
+      layout_properties: {x: 400.9833190962672, y: 161.999989323318, width: 200.00001525878906}
     - name: label_5
       properties: {}
       type: Label
-      layout_properties: {x: 367.21875, y: 253.109375, width: 329.96875}
+      layout_properties: {x: 606.1999939009547, y: 251.01666717976332, width: 329.9666748046875}
     - name: label_7
       properties: {}
       type: Label
-      layout_properties: {x: 364.515625, y: 309.0625, width: 200}
+      layout_properties: {x: 605.6166198775172, y: 304.83334808796644, width: 200.00001525878906}
+    - name: label_9
+      properties: {text: 'Mo No. :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 228.9166381880641, y: 361.9166610762477, width: 200.00001525878906}
+    - name: label_2
+      properties: {text: 'ROLE :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 232.54996948689222, y: 192.11667328327894, width: 200.00001525878906}
+    - name: label_4
+      properties: {text: 'Email :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 232.33335571736097, y: 241.21667938679457, width: 200.00001525878906}
+    - name: label_6
+      properties: {text: 'Class :', bold: true, font_size: 20}
+      type: Label
+      layout_properties: {x: 229.36668091267347, y: 297.03332977741957, width: 200.00001525878906}
     - name: label_10
       properties: {}
       type: Label
-      layout_properties: {x: 361.7812805175781, y: 360.78125, width: 200}
+      layout_properties: {x: 605.1167419478297, y: 352.3833358809352, width: 200.00001525878906}
+    - name: label_3
+      properties: {}
+      type: Label
+      layout_properties: {x: 611.0832946822047, y: 191.8500106856227, width: 200.00001525878906}
 - type: FlowPanel
   properties: {}
   name: navbar_links

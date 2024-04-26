@@ -80,7 +80,7 @@ components:
       properties: {text: Magzines, icon: 'fa:file-text-o', font_size: 25, bold: true,
         foreground: '#5df10e', align: center, background: '#729fcf'}
       type: Label
-      layout_properties: {x: 4.0500030517578125, y: 0, width: 962}
+      layout_properties: {x: 4.0500030517578125, y: 0, width: 965.9501037597656}
       data_bindings: []
     - name: button_2
       properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white,

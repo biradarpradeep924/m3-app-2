@@ -43,7 +43,7 @@ class Form1(Form1Template):
            open_form("Form1.Teacher",arg1=username)
       elif role1=="Senior":
            alert("successfully login") 
-           open_form("Form1.Alumni",arg1=username)
+           open_form("Form1.Senior",arg1=username)
       elif role1=="CR":
            alert("successfully login") 
            open_form("Form1.CR",username)
@@ -52,7 +52,7 @@ class Form1(Form1Template):
         open_form('Form1.Admin',username)
       elif role1=="Alumni":
          alert("Successfully login")
-         open_form('Form1.Senior',username)
+         open_form('Form1.Alumni',username)
       else:alert("Role is not selected please sign-up!!!")  
     else: alert("Invalid username or password. Please try again.")
        

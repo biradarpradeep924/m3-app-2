@@ -9,70 +9,57 @@ components:
   layout_properties: {slot: default}
   components:
   - name: xy_panel_1
-    properties: {height: 594.2499389648438, background: '#d2d0d0'}
+    properties: {height: 414.88885498046875, background: '#d2d0d0'}
     type: XYPanel
-    layout_properties: {grid_position: 'TRVZXA,NRQBOU'}
+    layout_properties: {grid_position: 'BPUFOP,UMEPFU'}
     components:
-    - name: button_1
-      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
-        bold: true, foreground: '#1d1b1b'}
-      type: Button
-      layout_properties: {x: 703.0938110351562, y: 13.093742370605469, width: 200}
-      event_bindings: {click: button_1_click}
     - name: label_2
-      properties: {text: Share the Material Here with your class !!, bold: true, align: center,
+      properties: {text: 'Share the Opportunities !! ', bold: true, align: center,
         font_size: 25, underline: true, italic: true, background: '#27e01a'}
       type: Label
-      layout_properties: {x: 160.21875, y: 9.1875, width: 502}
+      layout_properties: {x: 165.6875, y: 12.796875, width: 565.984375}
       data_bindings: []
-    - name: label_4
-      properties: {text: 'Select Class :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 175.046875, y: 133.046875, width: 200}
     - name: drop_down_1
       properties: {}
       type: DropDown
-      layout_properties: {x: 480.046875, y: 130.046875, width: 200}
+      layout_properties: {x: 532.1875610351562, y: 103.5, width: 200}
     - name: file_loader_1
-      properties: {border: '2px solid '}
+      properties: {border: 1px solidn}
       type: FileLoader
-      layout_properties: {x: 480.140625, y: 328.1406555175781, width: 200}
-      event_bindings: {change: file_loader_1_change}
+      layout_properties: {x: 531.5781860351562, y: 174.234375, width: 200}
     - name: text_area_1
-      properties: {height: 92.24993896484375}
+      properties: {}
       type: TextArea
-      layout_properties: {x: 487.140625, y: 410.1406555175781, width: 340}
-    - name: button_2
-      properties: {text: Submit, font_size: 25, background: '#480de7', bold: true,
-        foreground: white, icon: 'fa:check'}
-      type: Button
-      layout_properties: {x: 335.203125, y: 530.578125, width: 200}
-      event_bindings: {click: button_2_click}
+      layout_properties: {x: 544.140625, y: 242.671875, width: 200}
+    - name: label_4
+      properties: {text: 'Description :', bold: true, align: center, font_size: 20}
+      type: Label
+      layout_properties: {x: 140.546875, y: 242.31253051757812, width: 200}
     - name: label_3
-      properties: {text: 'Upload Document :', bold: true, font_size: 20}
+      properties: {text: 'Document :', align: center, bold: true, font_size: 20}
       type: Label
-      layout_properties: {x: 163.29863061010838, y: 315.27777947485447, width: 200.00001525878906}
+      layout_properties: {x: 139.40625, y: 164.640625, width: 200}
     - name: label_1
-      properties: {text: 'Document Type :', bold: true, font_size: 20}
+      properties: {text: 'Class :', align: center, bold: true, font_size: 20}
       type: Label
-      layout_properties: {x: 168.7500008493662, y: 216.3715599924326, width: 200.00001525878906}
-    - name: radio_button_2
-      properties: {text: Research Paper, selected: false, bold: true, font_size: 20}
-      type: RadioButton
-      layout_properties: {x: 682.09375, y: 202.25, width: 180.984375}
-    - name: radio_button_1
-      properties: {text: Magzine, bold: true, font_size: 20}
-      type: RadioButton
-      layout_properties: {x: 486.171875, y: 202.921875, width: 178.15625}
-    - name: label_5
-      properties: {text: 'Add Description :', bold: true, font_size: 20}
-      type: Label
-      layout_properties: {x: 162.28125, y: 403.2500305175781, width: 200}
+      layout_properties: {x: 118.640625, y: 101.84375, width: 200}
+    - name: button_1
+      properties: {text: Submit, bold: true, background: blue, align: center, foreground: white,
+        font_size: 22}
+      type: Button
+      layout_properties: {x: 313.8437194824219, y: 334.828125, width: 200}
+      event_bindings: {click: button_1_click}
+    - name: button_3
+      properties: {text: Logout, bold: true, background: red, align: right, foreground: Black,
+        icon: 'fa:arrow-circle-o-right', font_size: 20}
+      type: Button
+      layout_properties: {x: 708.0781860351562, y: 12.875, width: 200}
+      event_bindings: {click: button_3_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- name: label_6
-  properties: {text: Academic Resource Hub, font_size: 25, bold: true, foreground: blue}
+- name: label_5
+  properties: {text: Academic Resource Hub, foreground: blue, bold: true, font_size: 25}
   type: Label
   layout_properties: {slot: title}

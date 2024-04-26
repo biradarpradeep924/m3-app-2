@@ -19,17 +19,6 @@ components:
       type: Button
       layout_properties: {x: 18.923622980713844, y: 78.92361535131931, width: 225}
       event_bindings: {click: button_1_click}
-    - name: label_1
-      properties: {text: OPPORTUNITIES FOR STUDENTS, bold: true, background: '#ad16e3',
-        font_size: 20, icon: 'fa:gears'}
-      type: Label
-      layout_properties: {x: 206.8125, y: 11.4375, width: 343.188}
-    - name: outlined_button_1
-      properties: {text: Logout, role: outlined-button, background: red, foreground: black,
-        icon: 'fa:arrow-circle-o-right', font_size: 20, bold: true}
-      type: Button
-      layout_properties: {x: 687.1875, y: 9.453132629394531, width: 200}
-      event_bindings: {click: outlined_button_1_click}
     - name: button_3
       properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white,
         visible: true, icon: 'fa:bullseye'}
@@ -56,11 +45,22 @@ components:
       type: Label
       layout_properties: {x: 533.828125, y: 140.34375, width: 200}
     - name: outlined_button_2
-      properties: {text: Back, role: outlined-button, icon: 'fa:backward', background: 'theme:Disabled
-          Container'}
+      properties: {text: BACK, role: outlined-button, icon: 'fa:arrow-left', background: black,
+        foreground: White, font_size: 20}
       type: Button
       layout_properties: {x: 0, y: 6.857643976807594, width: 200.00001525878906}
       event_bindings: {click: outlined_button_2_click}
+    - name: outlined_button_1
+      properties: {text: Logout, role: outlined-button, background: red, foreground: black,
+        icon: 'fa:arrow-circle-o-right', font_size: 20, bold: true}
+      type: Button
+      layout_properties: {x: 758.7499206587672, y: 3.149990849196911, width: 200.00001525878906}
+      event_bindings: {click: outlined_button_1_click}
+    - name: label_1
+      properties: {text: OPPORTUNITIES FOR STUDENTS, bold: true, background: '#ad16e3',
+        font_size: 20, icon: 'fa:gears'}
+      type: Label
+      layout_properties: {x: 312.533306889236, y: 11.56667023152113, width: 343.183349609375}
 - type: FlowPanel
   properties: {}
   name: navbar_links
