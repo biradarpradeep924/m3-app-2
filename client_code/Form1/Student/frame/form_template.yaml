@@ -14,73 +14,60 @@ components:
     layout_properties: {grid_position: 'LIEKLC,KPHIMU'}
     components:
     - name: button_4
-      properties: {text: BACK, background: black, foreground: white, icon: 'fa:arrow-circle-left',
-        font_size: 20}
+      properties: {text: BACK, background: black, foreground: white, icon: 'fa:arrow-circle-left', font_size: 20}
       type: Button
       layout_properties: {x: 18.546875, y: 10.046875, width: 200}
       event_bindings: {click: button_4_click}
     - name: label_1_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 711.0468139648438, y: 157.09375, width: 200}
     - name: label_2_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 482.21875, y: 158.21875, width: 200}
     - name: label_4
-      properties: {text: Explore with your Study Resources, bold: true, align: center,
-        font_size: 23, foreground: blue, icon: 'fa:line-chart'}
+      properties: {text: Explore with your Study Resources, bold: true, align: center, font_size: 23, foreground: blue, icon: 'fa:line-chart'}
       type: Label
       layout_properties: {x: 284.59375, y: 7.09375, width: 424.203125}
     - name: label_1_copy_2
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 485.234375, y: 325.234375, width: 200}
     - name: label_1_copy_2_copy
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 710.3125, y: 325.34375, width: 200}
     - name: label_1
-      properties: {align: center, text: DESC, foreground: '', border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: '', border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 26.21875, y: 156.76560974121094, width: 200}
     - name: label_2
-      properties: {align: center, text: DESC, foreground: black, border: 1px solid black,
-        visible: false}
+      properties: {align: center, text: DESC, foreground: black, border: 1px solid black, visible: false}
       type: Label
       layout_properties: {x: 261.4375305175781, y: 153.953125, width: 200}
     - name: button_2
-      properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20, visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', foreground: white, font_size: 20, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 249.703125, y: 71.703125, width: 223}
       event_bindings: {click: button_2_click}
     - name: button_1
-      properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20, visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', foreground: white, font_size: 20, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 22.46875, y: 68.84375, width: 220.328125}
       event_bindings: {click: button_1_click}
     - name: button_1_copy_copy
-      properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20, visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', foreground: white, font_size: 20, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 698.0469360351562, y: 65.375, width: 222}
       event_bindings: {click: button_1_click}
     - name: button_1_copy
-      properties: {text: View Document, font_size: 20, foreground: white, background: '#12e200',
-        visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, font_size: 20, foreground: white, background: '#12e200', visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 474.734375, y: 67.75, width: 222.453125}
       event_bindings: {click: button_1_click}
     - name: button_3
-      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white,
-        visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 15.703125, y: 238.234375, width: 227.53125}
     - name: label_5
@@ -92,18 +79,15 @@ components:
       type: Label
       layout_properties: {x: 252.515625, y: 316.515625, width: 200}
     - name: button_5
-      properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20, visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', foreground: white, font_size: 20, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 242.28125, y: 239.265625, width: 228}
     - name: button_5_copy
-      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white,
-        visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', font_size: 20, foreground: white, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 471.234375, y: 238.21875, width: 229}
     - name: button_3_copy
-      properties: {text: View Document, background: '#12e246', foreground: white,
-        font_size: 20, visible: true, icon: 'fa:bullseye'}
+      properties: {text: View Document, background: '#12e246', foreground: white, font_size: 20, visible: true, icon: 'fa:bullseye'}
       type: Button
       layout_properties: {x: 693, y: 237.296875, width: 231}
 - type: FlowPanel

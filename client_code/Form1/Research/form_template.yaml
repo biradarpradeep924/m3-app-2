@@ -52,13 +52,11 @@ components:
       layout_properties: {x: 645.2500152587891, y: 270.06666564941406, width: 200}
       event_bindings: {click: button_6_click}
     - name: label_1
-      properties: {text: Research Papers, bold: true, align: center, font_size: 25,
-        background: '#729fcf', foreground: '#5df10e', icon: 'fa:file'}
+      properties: {text: Research Papers, bold: true, align: center, font_size: 25, background: '#729fcf', foreground: '#5df10e', icon: 'fa:file'}
       type: Label
       layout_properties: {x: 5.0500030517578125, y: 0.0500030517578125, width: 964.9499969482422}
     - name: button_2
-      properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white,
-        background: black}
+      properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white, background: black}
       type: Button
       layout_properties: {x: 0, y: 0.23333740234375, width: 200}
       event_bindings: {click: button_2_click}
@@ -88,8 +86,7 @@ components:
       layout_properties: {x: 644.953125, y: 86.42185974121094, width: 200}
       event_bindings: {click: button_3_click}
     - name: button_1
-      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
-        bold: true, foreground: '#1d1b1b'}
+      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right', bold: true, foreground: '#1d1b1b'}
       type: Button
       layout_properties: {x: 770, y: 0, width: 200}
       event_bindings: {click: button_1_click}

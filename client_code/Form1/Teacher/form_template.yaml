@@ -11,8 +11,7 @@ components:
   layout_properties: {}
   components:
   - name: label_2
-    properties: {text: Share the Material Here with your class !!, bold: true, align: center,
-      font_size: 25, underline: true, italic: true, background: '#27e01a'}
+    properties: {text: Share the Material Here with your class !!, bold: true, align: center, font_size: 25, underline: true, italic: true, background: '#27e01a'}
     type: Label
     layout_properties: {x: 209.046875, y: 17.671875, width: 534.984375}
     data_bindings: []
@@ -21,14 +20,12 @@ components:
     type: DropDown
     layout_properties: {x: 539.046875, y: 145.79689025878906, width: 200}
   - name: button_1
-    properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
-      bold: true, foreground: '#1d1b1b'}
+    properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right', bold: true, foreground: '#1d1b1b'}
     type: Button
     layout_properties: {x: 833.015625, y: 25.31249237060547, width: 148.9998779296875}
     event_bindings: {click: button_1_click}
   - name: button_2
-    properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white,
-      icon: 'fa:check'}
+    properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white, icon: 'fa:check'}
     type: Button
     layout_properties: {x: 355.359375, y: 524.34375, width: 200}
     event_bindings: {click: button_2_click}

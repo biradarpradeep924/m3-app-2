@@ -18,8 +18,7 @@ components:
     layout_properties: {grid_position: 'GEEWTS,ENJMHB'}
     components:
     - name: label_2
-      properties: {text: Login To The System, align: center, bold: true, icon: 'fa:500px',
-        background: 'theme:Primary Container', border: '', font_size: 22}
+      properties: {text: Login To The System, align: center, bold: true, icon: 'fa:500px', background: 'theme:Primary Container', border: '', font_size: 22}
       type: Label
       layout_properties: {}
   - name: grid_panel_1
@@ -50,21 +49,18 @@ components:
       type: TextBox
       layout_properties: {row: IKYNEE, width_xs: 3, col_xs: 8}
   - name: button_2
-    properties: {text: 'Forgot Password ?', bold: true, background: '#d2d0d0', font_size: 17,
-      foreground: '#143599'}
+    properties: {text: 'Forgot Password ?', bold: true, background: '#d2d0d0', font_size: 17, foreground: '#143599'}
     type: Button
     layout_properties: {grid_position: 'AAULLF,WBBDNN'}
     event_bindings: {click: button_2_click}
   - name: button_1
-    properties: {text: Log In, bold: true, background: '#1136ee', foreground: white,
-      icon: 'fa:unlock-alt', font_size: 20}
+    properties: {text: Log In, bold: true, background: '#1136ee', foreground: white, icon: 'fa:unlock-alt', font_size: 20}
     type: Button
     layout_properties: {grid_position: 'QRCDSA,VJOXBA'}
     data_bindings: []
     event_bindings: {click: button_1_click}
   - name: button_3
-    properties: {text: Sign-Up, bold: true, background: orange, foreground: white,
-      icon: 'fa:arrow-right', icon_align: right, font_size: 20}
+    properties: {text: Sign-Up, bold: true, background: orange, foreground: white, icon: 'fa:arrow-right', icon_align: right, font_size: 20}
     type: Button
     layout_properties: {grid_position: 'MXTTOR,CXJARG', row_background: orang}
     event_bindings: {click: button_3_click}

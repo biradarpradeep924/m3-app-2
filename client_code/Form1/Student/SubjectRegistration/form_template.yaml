@@ -42,25 +42,21 @@ components:
       type: CheckBox
       layout_properties: {x: 375.546875, y: 183.03125, width: 319}
     - name: button_1
-      properties: {text: Submit, background: '#280df2', foreground: 'theme:On Primary',
-        font_size: 25, icon: 'fa:check'}
+      properties: {text: Submit, background: '#280df2', foreground: 'theme:On Primary', font_size: 25, icon: 'fa:check'}
       type: Button
       layout_properties: {x: 348.703125, y: 481.734375, width: 190}
       event_bindings: {click: button_1_click}
     - name: label_1
-      properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473',
-        icon: 'fa:pencil-square-o'}
+      properties: {text: Subject Registration, bold: true, font_size: 26, background: '#4ee473', icon: 'fa:pencil-square-o'}
       type: Label
       layout_properties: {x: 312.234375, y: 45.09375, width: 285.969}
     - name: button_3
-      properties: {text: Profile, icon: 'fa:address-book-o', background: '#5bde2b',
-        font_size: 20}
+      properties: {text: Profile, icon: 'fa:address-book-o', background: '#5bde2b', font_size: 20}
       type: Button
       layout_properties: {x: 709.0469360351562, y: 48.703125, width: 200}
       event_bindings: {click: button_3_click}
     - name: button_2
-      properties: {text: BACK, icon: 'fa:arrow-circle-left', background: black, foreground: white,
-        font_size: 20}
+      properties: {text: BACK, icon: 'fa:arrow-circle-left', background: black, foreground: white, font_size: 20}
       type: Button
       layout_properties: {x: 4.09375, y: 52.25, width: 200}
       event_bindings: {click: button_2_click}

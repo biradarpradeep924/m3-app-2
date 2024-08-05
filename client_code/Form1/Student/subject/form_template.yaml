@@ -14,8 +14,7 @@ components:
     layout_properties: {grid_position: 'ZOOMBB,MNMABR'}
     components:
     - name: button_10
-      properties: {text: BACK, enabled: true, font_size: 18, background: Black, foreground: 'theme:On
-          Primary', icon: 'fa:arrow-circle-left'}
+      properties: {text: BACK, enabled: true, font_size: 18, background: Black, foreground: 'theme:On Primary', icon: 'fa:arrow-circle-left'}
       type: Button
       layout_properties: {}
       event_bindings: {click: button_10_click}
@@ -39,9 +38,7 @@ components:
         type: Label
         layout_properties: {}
       - name: button_1
-        properties: {align: center, border: '', foreground: '#0b27f4', visible: true,
-          text: View, font_size: 18, spacing_above: none, spacing_below: small, italic: false,
-          background: '#68f40b', bold: true, underline: false, icon: 'fa:bullseye'}
+        properties: {align: center, border: '', foreground: '#0b27f4', visible: true, text: View, font_size: 18, spacing_above: none, spacing_below: small, italic: false, background: '#68f40b', bold: true, underline: false, icon: 'fa:bullseye'}
         type: Button
         layout_properties: {}
         event_bindings: {click: button_1_click}
@@ -58,8 +55,7 @@ components:
         properties: {}
         type: Label
       - name: button_2
-        properties: {text: View, background: '#68f40b', border: '', foreground: '#0b27f4',
-          bold: true, font_size: 18, icon: 'fa:bullseye'}
+        properties: {text: View, background: '#68f40b', border: '', foreground: '#0b27f4', bold: true, font_size: 18, icon: 'fa:bullseye'}
         type: Button
         layout_properties: {}
         event_bindings: {click: button_2_click}
@@ -76,8 +72,7 @@ components:
         properties: {}
         type: Label
       - name: button_3
-        properties: {text: View, spacing_above: none, spacing_below: none, font_size: 18,
-          background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
+        properties: {text: View, spacing_above: none, spacing_below: none, font_size: 18, background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
         type: Button
         layout_properties: {}
         event_bindings: {click: button_3_click}
@@ -103,8 +98,7 @@ components:
           properties: {}
           type: Label
         - name: button_4
-          properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4',
-            bold: true, icon: 'fa:bullseye'}
+          properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
           type: Button
           layout_properties: {}
           event_bindings: {click: button_4_click}
@@ -125,8 +119,7 @@ components:
             properties: {}
             type: Label
           - name: button_5
-            properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4',
-              bold: true, icon: 'fa:bullseye'}
+            properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
             type: Button
             layout_properties: {}
             event_bindings: {click: button_5_click}
@@ -142,8 +135,7 @@ components:
           properties: {}
           type: Label
         - name: button_6
-          properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4',
-            bold: true, icon: 'fa:bullseye'}
+          properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
           type: Button
           layout_properties: {}
           event_bindings: {click: button_6_click}
@@ -171,8 +163,7 @@ components:
             type: Label
             layout_properties: {}
           - name: button_7
-            properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4',
-              bold: true, icon: 'fa:bullseye'}
+            properties: {text: View, font_size: 18, background: '#68f40b', foreground: '#0b27f4', bold: true, icon: 'fa:bullseye'}
             type: Button
             layout_properties: {}
             event_bindings: {click: button_7_click}

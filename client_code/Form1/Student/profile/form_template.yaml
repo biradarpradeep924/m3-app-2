@@ -14,20 +14,17 @@ components:
     layout_properties: {grid_position: 'OBYLRB,TICTSO'}
     components:
     - name: button_2
-      properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white,
-        background: black}
+      properties: {text: BACK, icon: 'fa:arrow-circle-left', font_size: 20, foreground: white, background: black}
       type: Button
       layout_properties: {x: 0, y: 10.190979853272438, width: 200.00001525878906}
       event_bindings: {click: button_2_click}
     - name: button_1
-      properties: {text: Logout, background: red, foreground: 'theme:On Surface',
-        icon: 'fa:arrow-circle-right', font_size: 20, bold: true}
+      properties: {text: Logout, background: red, foreground: 'theme:On Surface', icon: 'fa:arrow-circle-right', font_size: 20, bold: true}
       type: Button
       layout_properties: {x: 784.716656498611, y: 31.483334355056286, width: 147.18333435058594}
       event_bindings: {click: button_1_click}
     - name: label_8
-      properties: {text: PROFILE, align: center, bold: true, background: '#a144e4',
-        font_size: 20}
+      properties: {text: PROFILE, align: center, bold: true, background: '#a144e4', font_size: 20}
       type: Label
       layout_properties: {x: 427.1333435103297, y: 21.0333374068141, width: 153.40000915527344}
     - name: image_1

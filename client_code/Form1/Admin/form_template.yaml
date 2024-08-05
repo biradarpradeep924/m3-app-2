@@ -18,14 +18,12 @@ components:
       type: Label
       layout_properties: {x: 4.359375, y: 0, width: 896.984}
     - name: button_1
-      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
-        bold: true, foreground: '#1d1b1b'}
+      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right', bold: true, foreground: '#1d1b1b'}
       type: Button
       layout_properties: {x: 702, y: 0, width: 200}
       event_bindings: {click: button_1_click}
     - name: button_3
-      properties: {text: Profile, icon: 'fa:address-book-o', background: 'theme:Primary
-          Container', bold: true, font_size: 18}
+      properties: {text: Profile, icon: 'fa:address-book-o', background: 'theme:Primary Container', bold: true, font_size: 18}
       type: Button
       layout_properties: {x: 0, y: 1.0781173706054688, width: 200}
       event_bindings: {click: button_3_click}

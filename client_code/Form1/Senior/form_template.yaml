@@ -14,14 +14,12 @@ components:
     layout_properties: {grid_position: 'TRVZXA,NRQBOU'}
     components:
     - name: button_1
-      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right',
-        bold: true, foreground: '#1d1b1b'}
+      properties: {text: Logout, background: red, font_size: 20, icon: 'fa:arrow-circle-right', bold: true, foreground: '#1d1b1b'}
       type: Button
       layout_properties: {x: 703.0938110351562, y: 13.093742370605469, width: 200}
       event_bindings: {click: button_1_click}
     - name: label_2
-      properties: {text: Share the Material Here with your class !!, bold: true, align: center,
-        font_size: 25, underline: true, italic: true, background: '#27e01a'}
+      properties: {text: Share the Material Here with your class !!, bold: true, align: center, font_size: 25, underline: true, italic: true, background: '#27e01a'}
       type: Label
       layout_properties: {x: 160.21875, y: 9.1875, width: 502}
       data_bindings: []
@@ -43,8 +41,7 @@ components:
       type: TextArea
       layout_properties: {x: 487.140625, y: 410.1406555175781, width: 340}
     - name: button_2
-      properties: {text: Submit, font_size: 25, background: '#480de7', bold: true,
-        foreground: white, icon: 'fa:check'}
+      properties: {text: Submit, font_size: 25, background: '#480de7', bold: true, foreground: white, icon: 'fa:check'}
       type: Button
       layout_properties: {x: 335.203125, y: 530.578125, width: 200}
       event_bindings: {click: button_2_click}

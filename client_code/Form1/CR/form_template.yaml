@@ -14,8 +14,7 @@ components:
     layout_properties: {grid_position: 'QLTEIA,GCLWQN'}
     components:
     - name: button_1
-      properties: {text: Logout, font_size: 20, background: red, foreground: black,
-        icon: 'fa:arrow-circle-right'}
+      properties: {text: Logout, font_size: 20, background: red, foreground: black, icon: 'fa:arrow-circle-right'}
       type: Button
       layout_properties: {x: 693.0938110351562, y: 10.84375, width: 168}
       event_bindings: {click: button_1_click}
@@ -25,8 +24,7 @@ components:
       layout_properties: {x: 55.09375, y: 192.84375, width: 828}
       event_bindings: {change: text_area_1_change}
     - name: label_1
-      properties: {text: 'Do the Announcement Here to your class :', foreground: 'theme:On
-          Secondary Container', font_size: 23, bold: true, icon: 'fa:bullhorn'}
+      properties: {text: 'Do the Announcement Here to your class :', foreground: 'theme:On Secondary Container', font_size: 23, bold: true, icon: 'fa:bullhorn'}
       type: Label
       layout_properties: {x: 62.140625, y: 117.89064025878906, width: 810}
     - name: file_loader_1
@@ -34,19 +32,16 @@ components:
       type: FileLoader
       layout_properties: {x: 527.8905639648438, y: 373.390625, width: 200}
     - name: label_2
-      properties: {text: 'Upload Document :', visible: true, bold: true, font_size: 22,
-        foreground: black, icon: 'fa:file'}
+      properties: {text: 'Upload Document :', visible: true, bold: true, font_size: 22, foreground: black, icon: 'fa:file'}
       type: Label
       layout_properties: {x: 72.78125, y: 372.265625, width: 240}
     - name: button_2
-      properties: {text: Submit, background: blue, foreground: 'theme:On Secondary',
-        font_size: 22, icon: 'fa:check', bold: true}
+      properties: {text: Submit, background: blue, foreground: 'theme:On Secondary', font_size: 22, icon: 'fa:check', bold: true}
       type: Button
       layout_properties: {x: 363.609375, y: 547.828125, width: 184}
       event_bindings: {click: button_2_click}
     - name: label_3
-      properties: {text: 'Description :', foreground: '#0d0c0c', bold: true, font_size: 24,
-        icon: 'fa:edit'}
+      properties: {text: 'Description :', foreground: '#0d0c0c', bold: true, font_size: 24, icon: 'fa:edit'}
       type: Label
       layout_properties: {x: 75.546875, y: 460.046875, width: 200}
     - name: text_area_2

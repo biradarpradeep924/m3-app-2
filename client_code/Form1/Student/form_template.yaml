@@ -19,27 +19,23 @@ components:
       layout_properties: {x: 7.291649714112282, y: 25.74652947485447, width: 200.00001525878906}
       event_bindings: {click: button_3_click}
     - name: button_1
-      properties: {text: Log-Out, background: red, foreground: black, font_size: 20,
-        bold: true, icon: 'fa:arrow-circle-right'}
+      properties: {text: Log-Out, background: red, foreground: black, font_size: 20, bold: true, icon: 'fa:arrow-circle-right'}
       type: Button
       layout_properties: {x: 786.3280639648438, y: 29.34375762939453, width: 153.9998779296875}
       event_bindings: {click: button_1_click}
     - name: button_2_copy_3
-      properties: {text: Classroom, font_size: 25, bold: false, background: orange,
-        icon: 'fa:book'}
+      properties: {text: Classroom, font_size: 25, bold: false, background: orange, icon: 'fa:book'}
       type: Button
       layout_properties: {x: 572.2969360351562, y: 119.96875, width: 220.53125}
       event_bindings: {click: button_2_copy_3_click}
     - name: button_2
-      properties: {text: Announcements, font_size: 25, background: orange, icon: 'fa:bullhorn',
-        border: 1px sol}
+      properties: {text: Announcements, font_size: 25, background: orange, icon: 'fa:bullhorn', border: 1px sol}
       type: Button
       layout_properties: {x: 122.609375, y: 122, width: 293.984375}
       data_bindings: []
       event_bindings: {click: button_2_click}
     - name: button_2_copy
-      properties: {text: Research Papers, align: center, font_size: 25, background: orange,
-        icon: 'fa:file-text'}
+      properties: {text: Research Papers, align: center, font_size: 25, background: orange, icon: 'fa:file-text'}
       type: Button
       layout_properties: {x: 120.234375, y: 248.84375, width: 302.984375}
       event_bindings: {click: button_2_copy_click}
@@ -49,14 +45,12 @@ components:
       layout_properties: {x: 586.1875, y: 246.234375, width: 200}
       event_bindings: {click: button_2_copy_2_click}
     - name: button_4
-      properties: {text: Join Course, bold: false, background: orange, font_size: 25,
-        icon: 'fa:building-o'}
+      properties: {text: Join Course, bold: false, background: orange, font_size: 25, icon: 'fa:building-o'}
       type: Button
       layout_properties: {x: 543.125, y: 376.0781555175781, width: 282.296875}
       event_bindings: {click: button_4_click}
     - name: outlined_button_1
-      properties: {text: Opportunities, role: outlined-button, bold: false, font: '',
-        font_size: 24, icon: 'fa:bank', background: orange}
+      properties: {text: Opportunities, role: outlined-button, bold: false, font: '', font_size: 24, icon: 'fa:bank', background: orange}
       type: Button
       layout_properties: {x: 143.921875, y: 364.71875, width: 249.53125}
       event_bindings: {click: outlined_button_1_click}
@@ -65,7 +59,6 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
 - name: label_2
-  properties: {text: Academic Resource Hub, background: '', foreground: Blue, bold: true,
-    font_size: 25}
+  properties: {text: Academic Resource Hub, background: '', foreground: Blue, bold: true, font_size: 25}
   type: Label
   layout_properties: {slot: title}

@@ -14,14 +14,12 @@ components:
   layout_properties: {slot: default}
   components:
   - name: button_2
-    properties: {text: BACK, icon: 'fa:arrow-circle-left', background: '#171617',
-      font_size: 20, foreground: white}
+    properties: {text: BACK, icon: 'fa:arrow-circle-left', background: '#171617', font_size: 20, foreground: white}
     type: Button
     layout_properties: {x: 0, y: 2.09375, width: 200}
     event_bindings: {click: button_2_click}
   - name: text_area_1
-    properties: {height: 180.99996948242188, enabled: false, visible: true, border: 2px solid black,
-      spacing_above: medium, spacing_below: medium, font: '', font_size: 30}
+    properties: {height: 180.99996948242188, enabled: false, visible: true, border: 2px solid black, spacing_above: medium, spacing_below: medium, font: '', font_size: 30}
     type: TextArea
     layout_properties: {x: 181.94446648657322, y: 155.39931572973728, width: 700.3298950195312}
   - name: label_2
@@ -29,13 +27,11 @@ components:
     type: Label
     layout_properties: {x: 5.623268127441406, y: 383.5833511352539, width: 200}
   - name: label_1
-    properties: {text: ' Announcement  :', foreground: 'theme:On Secondary Container',
-      font_size: 23, bold: true, icon: 'fa:bullhorn', background: '#0ff065'}
+    properties: {text: ' Announcement  :', foreground: 'theme:On Secondary Container', font_size: 23, bold: true, icon: 'fa:bullhorn', background: '#0ff065'}
     type: Label
     layout_properties: {x: 414.265625, y: 0, width: 226.765625}
   - name: button_1
-    properties: {text: View Document, background: '#41ee11', foreground: blue, bold: true,
-      font_size: 18, icon: 'fa:bullseye'}
+    properties: {text: View Document, background: '#41ee11', foreground: blue, bold: true, font_size: 18, icon: 'fa:bullseye'}
     type: Button
     layout_properties: {x: 219.68753051757812, y: 394.484375, width: 212}
     event_bindings: {click: button_1_click}
@@ -44,8 +40,7 @@ components:
     type: Label
     layout_properties: {x: 615.09375, y: 487.296875, width: 200}
   - name: button_1_copy
-    properties: {text: View Document, background: '#41ee11', foreground: blue, bold: true,
-      font_size: 17, icon: 'fa:bullseye'}
+    properties: {text: View Document, background: '#41ee11', foreground: blue, bold: true, font_size: 17, icon: 'fa:bullseye'}
     type: Button
     layout_properties: {x: 612.390625, y: 390.921875, width: 202.703125}
     event_bindings: {click: button_1_click}
